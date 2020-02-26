@@ -30,3 +30,7 @@ make run_3
 ```
 
 > See the `Makefile` for a few more useful commands.
+
+### Documentation:
+
+For more information about the ELF format, please see the [Linux ELF Man Page](http://man7.org/linux/man-pages/man5/elf.5.html).
