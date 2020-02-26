@@ -1,0 +1,6558 @@
+Disassembling: dist/entry_point/entry_point...
+
+--------------------------------------------------
+Top Address of .text Section: 4201024
+
+Program Entry Point Address: 4201029
+
+Address Offset: 5
+
+Section header for .text : Container({'sh_name': 132, 'sh_type': 'SHT_PROGBITS', 'sh_flags': 6, 'sh_addr': 4201024, 'sh_offset': 6720, 'sh_size': 14802, 'sh_link': 0, 'sh_info': 0, 'sh_addralign': 16, 'sh_entsize': 0})
+
+Program header: Container({'e_ident': Container({'EI_MAG': [127, 69, 76, 70], 'EI_CLASS': 'ELFCLASS64', 'EI_DATA': 'ELFDATA2LSB', 'EI_VERSION': 'EV_CURRENT', 'EI_OSABI': 'ELFOSABI_SYSV', 'EI_ABIVERSION': 0}), 'e_type': 'ET_EXEC', 'e_machine': 'EM_X86_64', 'e_version': 'EV_CURRENT', 'e_entry': 4201029, 'e_phoff': 64, 'e_shoff': 1877768, 'e_flags': 0, 'e_ehsize': 64, 'e_phentsize': 56, 'e_phnum': 8, 'e_shentsize': 64, 'e_shnum': 29, 'e_shstrndx': 28}) 
+
+--------------------------------------------------
+0x401a45:	xor	ebp, ebp
+0x401a47:	mov	r9, rdx
+0x401a4a:	pop	rsi
+		Instruction group(s): [145] 
+
+0x401a4b:	mov	rdx, rsp
+0x401a4e:	and	rsp, 0xfffffffffffffff0
+0x401a52:	push	rax
+		Instruction group(s): [145] 
+
+0x401a53:	push	rsp
+		Instruction group(s): [145] 
+
+0x401a54:	mov	r8, 0x405410
+0x401a5b:	mov	rcx, 0x4053a0
+0x401a62:	mov	rdi, 0x401a40
+0x401a69:	call	0x4017a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401a6e:	hlt	
+		Instruction group(s): [6] 
+
+0x401a6f:	nop	
+0x401a70:	mov	eax, 0x607a17
+0x401a75:	push	rbp
+		Instruction group(s): [145] 
+
+0x401a76:	sub	rax, 0x607a10
+0x401a7c:	cmp	rax, 0xe
+0x401a80:	mov	rbp, rsp
+0x401a83:	jbe	0x401aa0
+		Instruction group(s): [7, 1] 
+
+0x401a85:	mov	eax, 0
+0x401a8a:	test	rax, rax
+0x401a8d:	je	0x401aa0
+		Instruction group(s): [7, 1] 
+
+0x401a8f:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401a90:	mov	edi, 0x607a10
+0x401a95:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x401a97:	nop	word ptr [rax + rax]
+0x401aa0:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401aa1:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401aa2:	nop	word ptr cs:[rax + rax]
+0x401ab0:	mov	esi, 0x607a10
+0x401ab5:	push	rbp
+		Instruction group(s): [145] 
+
+0x401ab6:	sub	rsi, 0x607a10
+0x401abd:	sar	rsi, 3
+0x401ac1:	mov	rbp, rsp
+0x401ac4:	mov	rax, rsi
+0x401ac7:	shr	rax, 0x3f
+0x401acb:	add	rsi, rax
+0x401ace:	sar	rsi, 1
+0x401ad1:	je	0x401ae8
+		Instruction group(s): [7, 1] 
+
+0x401ad3:	mov	eax, 0
+0x401ad8:	test	rax, rax
+0x401adb:	je	0x401ae8
+		Instruction group(s): [7, 1] 
+
+0x401add:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401ade:	mov	edi, 0x607a10
+0x401ae3:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x401ae5:	nop	dword ptr [rax]
+0x401ae8:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401ae9:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401aea:	nop	word ptr [rax + rax]
+0x401af0:	cmp	byte ptr [rip + 0x205f61], 0
+0x401af7:	jne	0x401b0a
+		Instruction group(s): [7, 1] 
+
+0x401af9:	push	rbp
+		Instruction group(s): [145] 
+
+0x401afa:	mov	rbp, rsp
+0x401afd:	call	0x401a70
+		Instruction group(s): [2, 7, 145] 
+
+0x401b02:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401b03:	mov	byte ptr [rip + 0x205f4e], 1
+0x401b0a:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401b0c:	nop	dword ptr [rax]
+0x401b10:	mov	edi, 0x6075a0
+0x401b15:	cmp	qword ptr [rdi], 0
+0x401b19:	jne	0x401b20
+		Instruction group(s): [7, 1] 
+
+0x401b1b:	jmp	0x401ab0
+		Instruction group(s): [7, 1] 
+
+0x401b1d:	nop	dword ptr [rax]
+0x401b20:	mov	eax, 0
+0x401b25:	test	rax, rax
+0x401b28:	je	0x401b1b
+		Instruction group(s): [7, 1] 
+
+0x401b2a:	push	rbp
+		Instruction group(s): [145] 
+
+0x401b2b:	mov	rbp, rsp
+0x401b2e:	call	rax
+		Instruction group(s): [2, 145] 
+
+0x401b30:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401b31:	jmp	0x401ab0
+		Instruction group(s): [7, 1] 
+
+0x401b36:	nop	word ptr cs:[rax + rax]
+0x401b40:	push	r12
+		Instruction group(s): [145] 
+
+0x401b42:	push	rbp
+		Instruction group(s): [145] 
+
+0x401b43:	mov	rbp, rdi
+0x401b46:	push	rbx
+		Instruction group(s): [145] 
+
+0x401b47:	mov	ebx, esi
+0x401b49:	lea	esi, [rsi - 0x1058]
+		Instruction group(s): [145] 
+
+0x401b4f:	xor	edx, edx
+0x401b51:	sub	rsp, 0x1060
+0x401b58:	mov	rdi, qword ptr [rdi]
+0x401b5b:	movsxd	rsi, esi
+		Instruction group(s): [145] 
+
+0x401b5e:	call	0x4018f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401b63:	test	eax, eax
+0x401b65:	jne	0x401c50
+		Instruction group(s): [7, 1] 
+
+0x401b6b:	mov	rcx, qword ptr [rbp]
+0x401b6f:	mov	edx, 1
+0x401b74:	mov	esi, 0x1058
+0x401b79:	mov	rdi, rsp
+0x401b7c:	mov	r12, rsp
+0x401b7f:	call	0x401680
+		Instruction group(s): [2, 7, 145] 
+
+0x401b84:	test	rax, rax
+0x401b87:	je	0x401c50
+		Instruction group(s): [7, 1] 
+
+0x401b8d:	lea	rdx, [rsp + 0x1000]
+0x401b95:	mov	r10d, 0x405424
+0x401b9b:	mov	r9d, 8
+0x401ba1:	lea	r11, [rsp - 1]
+0x401ba6:	jmp	0x401bbd
+		Instruction group(s): [7, 1] 
+
+0x401ba8:	nop	dword ptr [rax + rax]
+0x401bb0:	sub	rdx, 1
+0x401bb4:	cmp	rdx, r11
+0x401bb7:	je	0x401c50
+		Instruction group(s): [7, 1] 
+
+0x401bbd:	mov	rsi, r10
+0x401bc0:	mov	rdi, rdx
+0x401bc3:	mov	rcx, r9
+0x401bc6:	repe cmpsb	byte ptr [rsi], byte ptr [rdi]
+0x401bc8:	seta	al
+0x401bcb:	setb	r8b
+0x401bcf:	sub	eax, r8d
+0x401bd2:	movsx	eax, al
+0x401bd5:	test	eax, eax
+0x401bd7:	jne	0x401bb0
+		Instruction group(s): [7, 1] 
+
+0x401bd9:	mov	rdi, qword ptr [rdx + 0x10]
+0x401bdd:	mov	rsi, qword ptr [rdx]
+0x401be0:	mov	qword ptr [rbp + 0x30], rdi
+0x401be4:	mov	rdi, qword ptr [rdx + 0x18]
+0x401be8:	mov	qword ptr [rbp + 0x20], rsi
+0x401bec:	mov	rsi, qword ptr [rdx + 8]
+0x401bf0:	mov	qword ptr [rbp + 0x38], rdi
+0x401bf4:	mov	rdi, qword ptr [rdx + 0x20]
+0x401bf8:	mov	qword ptr [rbp + 0x28], rsi
+0x401bfc:	bswap	esi
+0x401bfe:	sub	ebx, esi
+0x401c00:	mov	qword ptr [rbp + 0x40], rdi
+0x401c04:	mov	rdi, qword ptr [rdx + 0x28]
+0x401c08:	mov	qword ptr [rbp + 0x48], rdi
+0x401c0c:	mov	rdi, qword ptr [rdx + 0x30]
+0x401c10:	mov	qword ptr [rbp + 0x50], rdi
+0x401c14:	mov	rdi, qword ptr [rdx + 0x38]
+0x401c18:	mov	qword ptr [rbp + 0x58], rdi
+0x401c1c:	mov	rdi, qword ptr [rdx + 0x40]
+0x401c20:	mov	qword ptr [rbp + 0x60], rdi
+0x401c24:	mov	rdi, qword ptr [rdx + 0x48]
+0x401c28:	mov	qword ptr [rbp + 0x68], rdi
+0x401c2c:	mov	rdi, qword ptr [rdx + 0x50]
+0x401c30:	sub	rdx, r12
+0x401c33:	lea	edx, [rbx + rdx - 0x1000]
+		Instruction group(s): [145] 
+
+0x401c3a:	mov	qword ptr [rbp + 0x70], rdi
+0x401c3e:	mov	dword ptr [rbp + 8], edx
+0x401c41:	add	rsp, 0x1060
+0x401c48:	pop	rbx
+		Instruction group(s): [145] 
+
+0x401c49:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401c4a:	pop	r12
+		Instruction group(s): [145] 
+
+0x401c4c:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401c4d:	nop	dword ptr [rax]
+0x401c50:	add	rsp, 0x1060
+0x401c57:	mov	eax, 0xffffffff
+0x401c5c:	pop	rbx
+		Instruction group(s): [145] 
+
+0x401c5d:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401c5e:	pop	r12
+		Instruction group(s): [145] 
+
+0x401c60:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401c61:	nop	word ptr cs:[rax + rax]
+0x401c70:	mov	eax, dword ptr [rsi]
+0x401c72:	bswap	eax
+0x401c74:	mov	eax, eax
+0x401c76:	add	rax, rsi
+0x401c79:	cmp	rax, qword ptr [rdi + 0x10]
+0x401c7d:	jb	0x401c80
+		Instruction group(s): [7, 1] 
+
+0x401c7f:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401c80:	push	rbx
+		Instruction group(s): [145] 
+
+0x401c81:	xor	eax, eax
+0x401c83:	mov	rbx, rdi
+0x401c86:	mov	edi, 0x405500
+0x401c8b:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401c90:	mov	rax, qword ptr [rbx + 0x18]
+0x401c94:	pop	rbx
+		Instruction group(s): [145] 
+
+0x401c95:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401c96:	nop	word ptr cs:[rax + rax]
+0x401ca0:	push	r15
+		Instruction group(s): [145] 
+
+0x401ca2:	push	r14
+		Instruction group(s): [145] 
+
+0x401ca4:	push	r13
+		Instruction group(s): [145] 
+
+0x401ca6:	push	r12
+		Instruction group(s): [145] 
+
+0x401ca8:	mov	r12, rdi
+0x401cab:	push	rbp
+		Instruction group(s): [145] 
+
+0x401cac:	push	rbx
+		Instruction group(s): [145] 
+
+0x401cad:	mov	r13, rsi
+0x401cb0:	sub	rsp, 0x78
+0x401cb4:	mov	rdi, qword ptr [rdi]
+0x401cb7:	test	rdi, rdi
+0x401cba:	je	0x401dd8
+		Instruction group(s): [7, 1] 
+
+0x401cc0:	mov	esi, dword ptr [r13 + 4]
+0x401cc4:	xor	edx, edx
+0x401cc6:	bswap	esi
+0x401cc8:	add	esi, dword ptr [r12 + 8]
+0x401ccd:	call	0x4018f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401cd2:	mov	ebx, dword ptr [r13 + 8]
+0x401cd6:	bswap	ebx
+0x401cd8:	mov	ebx, ebx
+0x401cda:	mov	rdi, rbx
+0x401cdd:	call	0x4018c0
+		Instruction group(s): [2, 7, 145] 
+
+0x401ce2:	test	rax, rax
+0x401ce5:	mov	rbp, rax
+0x401ce8:	je	0x401e29
+		Instruction group(s): [7, 1] 
+
+0x401cee:	mov	rcx, qword ptr [r12]
+0x401cf2:	mov	edx, 1
+0x401cf7:	mov	rsi, rbx
+0x401cfa:	mov	rdi, rbp
+0x401cfd:	call	0x401680
+		Instruction group(s): [2, 7, 145] 
+
+0x401d02:	test	rax, rax
+0x401d05:	je	0x401e10
+		Instruction group(s): [7, 1] 
+
+0x401d0b:	cmp	byte ptr [r13 + 0x10], 1
+0x401d10:	je	0x401d40
+		Instruction group(s): [7, 1] 
+
+0x401d12:	mov	rdi, qword ptr [r12]
+0x401d16:	test	rdi, rdi
+0x401d19:	je	0x401d28
+		Instruction group(s): [7, 1] 
+
+0x401d1b:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x401d20:	mov	qword ptr [r12], 0
+0x401d28:	add	rsp, 0x78
+0x401d2c:	mov	rax, rbp
+0x401d2f:	pop	rbx
+		Instruction group(s): [145] 
+
+0x401d30:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401d31:	pop	r12
+		Instruction group(s): [145] 
+
+0x401d33:	pop	r13
+		Instruction group(s): [145] 
+
+0x401d35:	pop	r14
+		Instruction group(s): [145] 
+
+0x401d37:	pop	r15
+		Instruction group(s): [145] 
+
+0x401d39:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401d3a:	nop	word ptr [rax + rax]
+0x401d40:	mov	ebx, dword ptr [r13 + 0xc]
+0x401d44:	mov	r14d, dword ptr [r13 + 8]
+0x401d48:	bswap	ebx
+0x401d4a:	mov	edi, ebx
+0x401d4c:	call	0x4018c0
+		Instruction group(s): [2, 7, 145] 
+
+0x401d51:	test	rax, rax
+0x401d54:	mov	r15, rax
+0x401d57:	je	0x401e83
+		Instruction group(s): [7, 1] 
+
+0x401d5d:	bswap	r14d
+0x401d60:	mov	edx, 0x70
+0x401d65:	mov	esi, 0x40544a
+0x401d6a:	mov	rdi, rsp
+0x401d6d:	mov	qword ptr [rsp + 0x40], 0
+0x401d76:	mov	qword ptr [rsp + 0x48], 0
+0x401d7f:	mov	qword ptr [rsp + 0x50], 0
+0x401d88:	mov	qword ptr [rsp], rbp
+0x401d8c:	mov	dword ptr [rsp + 8], r14d
+0x401d91:	mov	qword ptr [rsp + 0x18], rax
+0x401d96:	mov	dword ptr [rsp + 0x20], ebx
+0x401d9a:	call	0x401960
+		Instruction group(s): [2, 7, 145] 
+
+0x401d9f:	test	eax, eax
+0x401da1:	js	0x401e3c
+		Instruction group(s): [7, 1] 
+
+0x401da7:	mov	esi, 4
+0x401dac:	mov	rdi, rsp
+0x401daf:	call	0x401650
+		Instruction group(s): [2, 7, 145] 
+
+0x401db4:	test	eax, eax
+0x401db6:	js	0x401e6e
+		Instruction group(s): [7, 1] 
+
+0x401dbc:	mov	rdi, rsp
+0x401dbf:	call	0x401840
+		Instruction group(s): [2, 7, 145] 
+
+0x401dc4:	mov	rdi, rbp
+0x401dc7:	mov	rbp, r15
+0x401dca:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401dcf:	jmp	0x401d12
+		Instruction group(s): [7, 1] 
+
+0x401dd4:	nop	dword ptr [rax]
+0x401dd8:	lea	rdi, [r12 + 0x78]
+0x401ddd:	mov	esi, 0x40542d
+0x401de2:	call	0x401980
+		Instruction group(s): [2, 7, 145] 
+
+0x401de7:	test	rax, rax
+0x401dea:	mov	rdi, rax
+0x401ded:	mov	qword ptr [r12], rax
+0x401df1:	jne	0x401cc0
+		Instruction group(s): [7, 1] 
+
+0x401df7:	mov	edi, 0x40546b
+0x401dfc:	xor	eax, eax
+0x401dfe:	xor	ebp, ebp
+0x401e00:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e05:	jmp	0x401d28
+		Instruction group(s): [7, 1] 
+
+0x401e0a:	nop	word ptr [rax + rax]
+0x401e10:	mov	edi, 0x405430
+0x401e15:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e1a:	mov	rdi, rbp
+0x401e1d:	xor	ebp, ebp
+0x401e1f:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e24:	jmp	0x401d28
+		Instruction group(s): [7, 1] 
+
+0x401e29:	mov	edi, 0x405520
+0x401e2e:	xor	eax, eax
+0x401e30:	xor	ebp, ebp
+0x401e32:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e37:	jmp	0x401d28
+		Instruction group(s): [7, 1] 
+
+0x401e3c:	mov	rdx, qword ptr [rsp + 0x30]
+0x401e41:	mov	esi, eax
+0x401e43:	mov	edi, 0x405568
+0x401e48:	xor	eax, eax
+0x401e4a:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e4f:	mov	rdi, rbp
+0x401e52:	xor	ebp, ebp
+0x401e54:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e59:	lea	rsi, [r13 + 0x12]
+0x401e5d:	mov	edi, 0x405485
+0x401e62:	xor	eax, eax
+0x401e64:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e69:	jmp	0x401d28
+		Instruction group(s): [7, 1] 
+
+0x401e6e:	mov	rdx, qword ptr [rsp + 0x30]
+0x401e73:	mov	esi, eax
+0x401e75:	mov	edi, 0x405450
+0x401e7a:	xor	eax, eax
+0x401e7c:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e81:	jmp	0x401e4f
+		Instruction group(s): [7, 1] 
+
+0x401e83:	mov	edi, 0x405540
+0x401e88:	xor	eax, eax
+0x401e8a:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x401e8f:	jmp	0x401e4f
+		Instruction group(s): [7, 1] 
+
+0x401e91:	nop	word ptr cs:[rax + rax]
+0x401ea0:	push	r14
+		Instruction group(s): [145] 
+
+0x401ea2:	push	r13
+		Instruction group(s): [145] 
+
+0x401ea4:	mov	r14, rsi
+0x401ea7:	push	r12
+		Instruction group(s): [145] 
+
+0x401ea9:	push	rbp
+		Instruction group(s): [145] 
+
+0x401eaa:	push	rbx
+		Instruction group(s): [145] 
+
+0x401eab:	mov	rbx, rdi
+0x401eae:	call	0x401ca0
+		Instruction group(s): [2, 7, 145] 
+
+0x401eb3:	mov	rdi, rbx
+0x401eb6:	mov	rbp, rax
+0x401eb9:	call	0x404bc0
+		Instruction group(s): [2, 7, 145] 
+
+0x401ebe:	cmp	eax, -1
+0x401ec1:	je	0x401f2a
+		Instruction group(s): [7, 1] 
+
+0x401ec3:	lea	r12, [r14 + 0x12]
+0x401ec7:	lea	rdi, [rbx + 0x2078]
+0x401ece:	mov	rsi, r12
+0x401ed1:	call	0x404e40
+		Instruction group(s): [2, 7, 145] 
+
+0x401ed6:	mov	ebx, dword ptr [r14 + 0xc]
+0x401eda:	test	rax, rax
+0x401edd:	mov	r13, rax
+0x401ee0:	bswap	ebx
+0x401ee2:	mov	ebx, ebx
+0x401ee4:	je	0x401f53
+		Instruction group(s): [7, 1] 
+
+0x401ee6:	mov	rcx, rax
+0x401ee9:	mov	edx, 1
+0x401eee:	mov	rsi, rbx
+0x401ef1:	mov	rdi, rbp
+0x401ef4:	call	0x4019e0
+		Instruction group(s): [2, 7, 145] 
+
+0x401ef9:	cmp	rax, 1
+0x401efd:	je	0x401f04
+		Instruction group(s): [7, 1] 
+
+0x401eff:	test	rbx, rbx
+0x401f02:	jne	0x401f38
+		Instruction group(s): [7, 1] 
+
+0x401f04:	mov	rdi, r13
+0x401f07:	call	0x401870
+		Instruction group(s): [2, 7, 145] 
+
+0x401f0c:	mov	esi, 0x1c0
+0x401f11:	mov	edi, eax
+0x401f13:	call	0x401950
+		Instruction group(s): [2, 7, 145] 
+
+0x401f18:	mov	rdi, r13
+0x401f1b:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x401f20:	mov	rdi, rbp
+0x401f23:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401f28:	xor	eax, eax
+0x401f2a:	pop	rbx
+		Instruction group(s): [145] 
+
+0x401f2b:	pop	rbp
+		Instruction group(s): [145] 
+
+0x401f2c:	pop	r12
+		Instruction group(s): [145] 
+
+0x401f2e:	pop	r13
+		Instruction group(s): [145] 
+
+0x401f30:	pop	r14
+		Instruction group(s): [145] 
+
+0x401f32:	ret	
+		Instruction group(s): [3, 145] 
+
+0x401f33:	nop	dword ptr [rax + rax]
+0x401f38:	xor	eax, eax
+0x401f3a:	mov	rdx, r12
+0x401f3d:	mov	esi, 0x405588
+0x401f42:	mov	edi, 0x4054bf
+0x401f47:	call	0x402470
+		Instruction group(s): [2, 7, 145] 
+
+0x401f4c:	mov	eax, 0xffffffff
+0x401f51:	jmp	0x401f2a
+		Instruction group(s): [7, 1] 
+
+0x401f53:	xor	eax, eax
+0x401f55:	mov	rdx, r12
+0x401f58:	mov	esi, 0x40549d
+0x401f5d:	mov	edi, 0x4054b9
+0x401f62:	call	0x402470
+		Instruction group(s): [2, 7, 145] 
+
+0x401f67:	mov	eax, 0xffffffff
+0x401f6c:	jmp	0x401f2a
+		Instruction group(s): [7, 1] 
+
+0x401f6e:	nop	
+0x401f70:	push	rbp
+		Instruction group(s): [145] 
+
+0x401f71:	push	rbx
+		Instruction group(s): [145] 
+
+0x401f72:	mov	rbx, rdi
+0x401f75:	sub	rsp, 8
+0x401f79:	mov	rdi, qword ptr [rdi]
+0x401f7c:	test	rdi, rdi
+0x401f7f:	je	0x402048
+		Instruction group(s): [7, 1] 
+
+0x401f85:	xor	esi, esi
+0x401f87:	mov	edx, 2
+0x401f8c:	call	0x4018f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401f91:	mov	rdi, qword ptr [rbx]
+0x401f94:	call	0x4017f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401f99:	mov	rdi, rbx
+0x401f9c:	mov	esi, eax
+0x401f9e:	call	0x401b40
+		Instruction group(s): [2, 7, 145] 
+
+0x401fa3:	cmp	eax, -1
+0x401fa6:	je	0x402068
+		Instruction group(s): [7, 1] 
+
+0x401fac:	mov	esi, dword ptr [rbx + 0x2c]
+0x401faf:	mov	eax, dword ptr [rbx + 0x34]
+0x401fb2:	xor	edx, edx
+0x401fb4:	mov	rdi, qword ptr [rbx]
+0x401fb7:	mov	dword ptr [rbx + 0x407c], 0
+0x401fc1:	bswap	esi
+0x401fc3:	add	esi, dword ptr [rbx + 8]
+0x401fc6:	bswap	eax
+0x401fc8:	mov	dword ptr [rip + 0x205a8e], eax
+0x401fce:	call	0x4018f0
+		Instruction group(s): [2, 7, 145] 
+
+0x401fd3:	mov	ebp, dword ptr [rbx + 0x30]
+0x401fd6:	bswap	ebp
+0x401fd8:	mov	ebp, ebp
+0x401fda:	mov	rdi, rbp
+0x401fdd:	call	0x4018c0
+		Instruction group(s): [2, 7, 145] 
+
+0x401fe2:	test	rax, rax
+0x401fe5:	mov	qword ptr [rbx + 0x10], rax
+0x401fe9:	je	0x40209e
+		Instruction group(s): [7, 1] 
+
+0x401fef:	mov	rcx, qword ptr [rbx]
+0x401ff2:	mov	edx, 1
+0x401ff7:	mov	rsi, rbp
+0x401ffa:	mov	rdi, rax
+0x401ffd:	call	0x401680
+		Instruction group(s): [2, 7, 145] 
+
+0x402002:	test	rax, rax
+0x402005:	je	0x402070
+		Instruction group(s): [7, 1] 
+
+0x402007:	mov	eax, dword ptr [rbx + 0x30]
+0x40200a:	mov	rdi, qword ptr [rbx]
+0x40200d:	bswap	eax
+0x40200f:	mov	eax, eax
+0x402011:	add	rax, qword ptr [rbx + 0x10]
+0x402015:	mov	qword ptr [rbx + 0x18], rax
+0x402019:	call	0x401670
+		Instruction group(s): [2, 7, 145] 
+
+0x40201e:	test	eax, eax
+0x402020:	mov	ebp, eax
+0x402022:	jne	0x402090
+		Instruction group(s): [7, 1] 
+
+0x402024:	mov	rdi, qword ptr [rbx]
+0x402027:	test	rdi, rdi
+0x40202a:	je	0x402038
+		Instruction group(s): [7, 1] 
+
+0x40202c:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x402031:	mov	qword ptr [rbx], 0
+0x402038:	add	rsp, 8
+0x40203c:	mov	eax, ebp
+0x40203e:	pop	rbx
+		Instruction group(s): [145] 
+
+0x40203f:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402040:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402041:	nop	dword ptr [rax]
+0x402048:	lea	rdi, [rbx + 0x78]
+0x40204c:	mov	esi, 0x40542d
+0x402051:	call	0x401980
+		Instruction group(s): [2, 7, 145] 
+
+0x402056:	test	rax, rax
+0x402059:	mov	rdi, rax
+0x40205c:	mov	qword ptr [rbx], rax
+0x40205f:	jne	0x401f85
+		Instruction group(s): [7, 1] 
+
+0x402065:	nop	dword ptr [rax]
+0x402068:	mov	ebp, 0xffffffff
+0x40206d:	jmp	0x402038
+		Instruction group(s): [7, 1] 
+
+0x40206f:	nop	
+0x402070:	mov	esi, 0x4054cd
+0x402075:	mov	edi, 0x4054e7
+0x40207a:	mov	ebp, 0xffffffff
+0x40207f:	call	0x402470
+		Instruction group(s): [2, 7, 145] 
+
+0x402084:	jmp	0x402038
+		Instruction group(s): [7, 1] 
+
+0x402086:	nop	word ptr cs:[rax + rax]
+0x402090:	mov	edi, 0x4054ed
+0x402095:	xor	eax, eax
+0x402097:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40209c:	jmp	0x402068
+		Instruction group(s): [7, 1] 
+
+0x40209e:	mov	esi, 0x4055b0
+0x4020a3:	mov	edi, 0x4054c6
+0x4020a8:	mov	ebp, 0xffffffff
+0x4020ad:	call	0x402470
+		Instruction group(s): [2, 7, 145] 
+
+0x4020b2:	jmp	0x402038
+		Instruction group(s): [7, 1] 
+
+0x4020b4:	nop	word ptr cs:[rax + rax]
+0x4020c0:	push	r13
+		Instruction group(s): [145] 
+
+0x4020c2:	push	r12
+		Instruction group(s): [145] 
+
+0x4020c4:	mov	r12, rdx
+0x4020c7:	push	rbp
+		Instruction group(s): [145] 
+
+0x4020c8:	push	rbx
+		Instruction group(s): [145] 
+
+0x4020c9:	mov	rbp, rsi
+0x4020cc:	mov	rbx, rdi
+0x4020cf:	mov	esi, 0x1000
+0x4020d4:	mov	rdi, rbp
+0x4020d7:	sub	rsp, 8
+0x4020db:	call	0x401750
+		Instruction group(s): [2, 7, 145] 
+
+0x4020e0:	mov	esi, 0x1000
+0x4020e5:	mov	r13, rax
+0x4020e8:	mov	rdi, r12
+0x4020eb:	call	0x401750
+		Instruction group(s): [2, 7, 145] 
+
+0x4020f0:	lea	rdx, [r13 + rax + 1]
+0x4020f5:	mov	eax, 0xffffffff
+0x4020fa:	cmp	rdx, 0x1000
+0x402101:	ja	0x40215b
+		Instruction group(s): [7, 1] 
+
+0x402103:	lea	rdi, [rbx + 0x78]
+0x402107:	mov	edx, 0x1000
+0x40210c:	mov	rsi, rbp
+0x40210f:	call	0x401880
+		Instruction group(s): [2, 7, 145] 
+
+0x402114:	mov	rsi, r12
+0x402117:	lea	r12, [rbx + 0x1078]
+0x40211e:	mov	edx, 0x1000
+0x402123:	mov	rdi, rax
+0x402126:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x40212b:	mov	edx, 0x1000
+0x402130:	mov	rsi, rbp
+0x402133:	mov	rdi, r12
+0x402136:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x40213b:	lea	rdi, [rbx + 0x3078]
+0x402142:	mov	dword ptr [rbx + 0x4078], 0
+0x40214c:	mov	edx, 0x1000
+0x402151:	mov	rsi, r12
+0x402154:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x402159:	xor	eax, eax
+0x40215b:	add	rsp, 8
+0x40215f:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402160:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402161:	pop	r12
+		Instruction group(s): [145] 
+
+0x402163:	pop	r13
+		Instruction group(s): [145] 
+
+0x402165:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402166:	nop	word ptr cs:[rax + rax]
+0x402170:	push	rbx
+		Instruction group(s): [145] 
+
+0x402171:	mov	rbx, rdi
+0x402174:	call	0x4020c0
+		Instruction group(s): [2, 7, 145] 
+
+0x402179:	test	eax, eax
+0x40217b:	jne	0x40219d
+		Instruction group(s): [7, 1] 
+
+0x40217d:	mov	rdi, rbx
+0x402180:	call	0x401f70
+		Instruction group(s): [2, 7, 145] 
+
+0x402185:	test	eax, eax
+0x402187:	je	0x4021a2
+		Instruction group(s): [7, 1] 
+
+0x402189:	mov	rdi, qword ptr [rbx]
+0x40218c:	test	rdi, rdi
+0x40218f:	je	0x40219d
+		Instruction group(s): [7, 1] 
+
+0x402191:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x402196:	mov	qword ptr [rbx], 0
+0x40219d:	mov	eax, 0xffffffff
+0x4021a2:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4021a3:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4021a4:	nop	word ptr cs:[rax + rax]
+0x4021b0:	mov	rax, qword ptr [rdi + 0x10]
+0x4021b4:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4021b5:	nop	word ptr cs:[rax + rax]
+0x4021c0:	mov	eax, dword ptr [rsi]
+0x4021c2:	bswap	eax
+0x4021c4:	mov	eax, eax
+0x4021c6:	add	rsi, rax
+0x4021c9:	cmp	rsi, qword ptr [rdi + 0x18]
+0x4021cd:	mov	eax, 0
+0x4021d2:	cmovb	rax, rsi
+		Instruction group(s): [137] 
+
+0x4021d6:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4021d7:	nop	word ptr [rax + rax]
+0x4021e0:	mov	eax, dword ptr [rdi + 0x34]
+0x4021e3:	bswap	eax
+0x4021e5:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4021e6:	nop	word ptr cs:[rax + rax]
+0x4021f0:	test	rdi, rdi
+0x4021f3:	je	0x402220
+		Instruction group(s): [7, 1] 
+
+0x4021f5:	push	rbx
+		Instruction group(s): [145] 
+
+0x4021f6:	mov	rbx, rdi
+0x4021f9:	mov	rdi, qword ptr [rdi + 0x10]
+0x4021fd:	test	rdi, rdi
+0x402200:	je	0x402207
+		Instruction group(s): [7, 1] 
+
+0x402202:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x402207:	mov	rdi, qword ptr [rbx]
+0x40220a:	test	rdi, rdi
+0x40220d:	je	0x402214
+		Instruction group(s): [7, 1] 
+
+0x40220f:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x402214:	mov	rdi, rbx
+0x402217:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402218:	jmp	0x4015f0
+		Instruction group(s): [7, 1] 
+
+0x40221d:	nop	dword ptr [rax]
+0x402220:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402222:	nop	word ptr cs:[rax + rax]
+0x402230:	push	r14
+		Instruction group(s): [145] 
+
+0x402232:	push	r13
+		Instruction group(s): [145] 
+
+0x402234:	mov	r13, rdi
+0x402237:	push	r12
+		Instruction group(s): [145] 
+
+0x402239:	push	rbp
+		Instruction group(s): [145] 
+
+0x40223a:	mov	r12, rsi
+0x40223d:	push	rbx
+		Instruction group(s): [145] 
+
+0x40223e:	mov	rbx, qword ptr [rdi + 0x10]
+0x402242:	mov	rdi, rsi
+0x402245:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x40224a:	mov	r14, qword ptr [r13 + 0x18]
+0x40224e:	movsxd	rbp, eax
+		Instruction group(s): [145] 
+
+0x402251:	nop	dword ptr [rax]
+0x402258:	cmp	rbx, r14
+0x40225b:	jae	0x40228a
+		Instruction group(s): [7, 1] 
+
+0x40225d:	cmp	byte ptr [rbx + 0x11], 0x6f
+0x402261:	je	0x402298
+		Instruction group(s): [7, 1] 
+
+0x402263:	mov	ecx, dword ptr [rbx]
+0x402265:	bswap	ecx
+0x402267:	mov	ecx, ecx
+0x402269:	add	rbx, rcx
+0x40226c:	cmp	rbx, qword ptr [r13 + 0x10]
+0x402270:	jae	0x402258
+		Instruction group(s): [7, 1] 
+
+0x402272:	xor	eax, eax
+0x402274:	mov	edi, 0x405500
+0x402279:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40227e:	mov	rbx, qword ptr [r13 + 0x18]
+0x402282:	mov	r14, rbx
+0x402285:	cmp	rbx, r14
+0x402288:	jb	0x40225d
+		Instruction group(s): [7, 1] 
+
+0x40228a:	pop	rbx
+		Instruction group(s): [145] 
+
+0x40228b:	xor	eax, eax
+0x40228d:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40228e:	pop	r12
+		Instruction group(s): [145] 
+
+0x402290:	pop	r13
+		Instruction group(s): [145] 
+
+0x402292:	pop	r14
+		Instruction group(s): [145] 
+
+0x402294:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402295:	nop	dword ptr [rax]
+0x402298:	lea	rdi, [rbx + 0x12]
+0x40229c:	mov	rdx, rbp
+0x40229f:	mov	rsi, r12
+0x4022a2:	call	0x401630
+		Instruction group(s): [2, 7, 145] 
+
+0x4022a7:	test	eax, eax
+0x4022a9:	jne	0x402263
+		Instruction group(s): [7, 1] 
+
+0x4022ab:	cmp	byte ptr [rbx + rbp + 0x12], 0
+0x4022b0:	lea	rdx, [rbx + rbp + 0x13]
+0x4022b5:	lea	rax, [rbx + rbp + 0x12]
+0x4022ba:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4022bb:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4022bc:	pop	r12
+		Instruction group(s): [145] 
+
+0x4022be:	cmovne	rax, rdx
+		Instruction group(s): [137] 
+
+0x4022c2:	pop	r13
+		Instruction group(s): [145] 
+
+0x4022c4:	pop	r14
+		Instruction group(s): [145] 
+
+0x4022c6:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4022c7:	nop	word ptr [rax + rax]
+0x4022d0:	mov	rdx, rdi
+0x4022d3:	mov	rdi, qword ptr [rip + 0x205776]
+0x4022da:	mov	rcx, rsi
+0x4022dd:	mov	esi, 1
+0x4022e2:	jmp	0x401600
+		Instruction group(s): [7, 1] 
+
+0x4022e7:	nop	word ptr [rax + rax]
+0x4022f0:	sub	rsp, 0xd8
+0x4022f7:	test	al, al
+0x4022f9:	mov	qword ptr [rsp + 0x28], rsi
+0x4022fe:	mov	qword ptr [rsp + 0x30], rdx
+0x402303:	mov	qword ptr [rsp + 0x38], rcx
+0x402308:	mov	qword ptr [rsp + 0x40], r8
+0x40230d:	mov	qword ptr [rsp + 0x48], r9
+0x402312:	je	0x40234b
+		Instruction group(s): [7, 1] 
+
+0x402314:	movaps	xmmword ptr [rsp + 0x50], xmm0
+		Instruction group(s): [148] 
+
+0x402319:	movaps	xmmword ptr [rsp + 0x60], xmm1
+		Instruction group(s): [148] 
+
+0x40231e:	movaps	xmmword ptr [rsp + 0x70], xmm2
+		Instruction group(s): [148] 
+
+0x402323:	movaps	xmmword ptr [rsp + 0x80], xmm3
+		Instruction group(s): [148] 
+
+0x40232b:	movaps	xmmword ptr [rsp + 0x90], xmm4
+		Instruction group(s): [148] 
+
+0x402333:	movaps	xmmword ptr [rsp + 0xa0], xmm5
+		Instruction group(s): [148] 
+
+0x40233b:	movaps	xmmword ptr [rsp + 0xb0], xmm6
+		Instruction group(s): [148] 
+
+0x402343:	movaps	xmmword ptr [rsp + 0xc0], xmm7
+		Instruction group(s): [148] 
+
+0x40234b:	lea	rax, [rsp + 0xe0]
+0x402353:	mov	rdx, rdi
+0x402356:	lea	rcx, [rsp + 8]
+0x40235b:	mov	esi, 1
+0x402360:	mov	rdi, qword ptr [rip + 0x2056e9]
+0x402367:	mov	qword ptr [rsp + 0x10], rax
+0x40236c:	lea	rax, [rsp + 0x20]
+0x402371:	mov	dword ptr [rsp + 8], 8
+0x402379:	mov	dword ptr [rsp + 0xc], 0x30
+0x402381:	mov	qword ptr [rsp + 0x18], rax
+0x402386:	call	0x401600
+		Instruction group(s): [2, 7, 145] 
+
+0x40238b:	add	rsp, 0xd8
+0x402392:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402393:	nop	word ptr cs:[rax + rax]
+0x4023a0:	push	rbx
+		Instruction group(s): [145] 
+
+0x4023a1:	sub	rsp, 0xd0
+0x4023a8:	test	al, al
+0x4023aa:	mov	qword ptr [rsp + 0x28], rsi
+0x4023af:	mov	qword ptr [rsp + 0x30], rdx
+0x4023b4:	mov	qword ptr [rsp + 0x38], rcx
+0x4023b9:	mov	qword ptr [rsp + 0x40], r8
+0x4023be:	mov	qword ptr [rsp + 0x48], r9
+0x4023c3:	je	0x4023fc
+		Instruction group(s): [7, 1] 
+
+0x4023c5:	movaps	xmmword ptr [rsp + 0x50], xmm0
+		Instruction group(s): [148] 
+
+0x4023ca:	movaps	xmmword ptr [rsp + 0x60], xmm1
+		Instruction group(s): [148] 
+
+0x4023cf:	movaps	xmmword ptr [rsp + 0x70], xmm2
+		Instruction group(s): [148] 
+
+0x4023d4:	movaps	xmmword ptr [rsp + 0x80], xmm3
+		Instruction group(s): [148] 
+
+0x4023dc:	movaps	xmmword ptr [rsp + 0x90], xmm4
+		Instruction group(s): [148] 
+
+0x4023e4:	movaps	xmmword ptr [rsp + 0xa0], xmm5
+		Instruction group(s): [148] 
+
+0x4023ec:	movaps	xmmword ptr [rsp + 0xb0], xmm6
+		Instruction group(s): [148] 
+
+0x4023f4:	movaps	xmmword ptr [rsp + 0xc0], xmm7
+		Instruction group(s): [148] 
+
+0x4023fc:	mov	rbx, rdi
+0x4023ff:	call	0x4016b0
+		Instruction group(s): [2, 7, 145] 
+
+0x402404:	mov	edx, 0x4055d3
+0x402409:	mov	ecx, eax
+0x40240b:	mov	esi, 1
+0x402410:	mov	rdi, qword ptr [rip + 0x205639]
+0x402417:	xor	eax, eax
+0x402419:	call	0x4019f0
+		Instruction group(s): [2, 7, 145] 
+
+0x40241e:	lea	rax, [rsp + 0xe0]
+0x402426:	mov	rdi, qword ptr [rip + 0x205623]
+0x40242d:	lea	rcx, [rsp + 8]
+0x402432:	mov	rdx, rbx
+0x402435:	mov	esi, 1
+0x40243a:	mov	dword ptr [rsp + 8], 8
+0x402442:	mov	qword ptr [rsp + 0x10], rax
+0x402447:	lea	rax, [rsp + 0x20]
+0x40244c:	mov	dword ptr [rsp + 0xc], 0x30
+0x402454:	mov	qword ptr [rsp + 0x18], rax
+0x402459:	call	0x401600
+		Instruction group(s): [2, 7, 145] 
+
+0x40245e:	add	rsp, 0xd0
+0x402465:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402466:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402467:	nop	word ptr [rax + rax]
+0x402470:	push	rbx
+		Instruction group(s): [145] 
+
+0x402471:	mov	rbx, rdi
+0x402474:	sub	rsp, 0xd0
+0x40247b:	test	al, al
+0x40247d:	mov	qword ptr [rsp + 0x30], rdx
+0x402482:	mov	qword ptr [rsp + 0x38], rcx
+0x402487:	mov	qword ptr [rsp + 0x40], r8
+0x40248c:	mov	qword ptr [rsp + 0x48], r9
+0x402491:	je	0x4024ca
+		Instruction group(s): [7, 1] 
+
+0x402493:	movaps	xmmword ptr [rsp + 0x50], xmm0
+		Instruction group(s): [148] 
+
+0x402498:	movaps	xmmword ptr [rsp + 0x60], xmm1
+		Instruction group(s): [148] 
+
+0x40249d:	movaps	xmmword ptr [rsp + 0x70], xmm2
+		Instruction group(s): [148] 
+
+0x4024a2:	movaps	xmmword ptr [rsp + 0x80], xmm3
+		Instruction group(s): [148] 
+
+0x4024aa:	movaps	xmmword ptr [rsp + 0x90], xmm4
+		Instruction group(s): [148] 
+
+0x4024b2:	movaps	xmmword ptr [rsp + 0xa0], xmm5
+		Instruction group(s): [148] 
+
+0x4024ba:	movaps	xmmword ptr [rsp + 0xb0], xmm6
+		Instruction group(s): [148] 
+
+0x4024c2:	movaps	xmmword ptr [rsp + 0xc0], xmm7
+		Instruction group(s): [148] 
+
+0x4024ca:	lea	rax, [rsp + 0xe0]
+0x4024d2:	lea	rcx, [rsp + 8]
+0x4024d7:	mov	rdx, rsi
+0x4024da:	mov	esi, 1
+0x4024df:	mov	rdi, qword ptr [rip + 0x20556a]
+0x4024e6:	mov	qword ptr [rsp + 0x10], rax
+0x4024eb:	lea	rax, [rsp + 0x20]
+0x4024f0:	mov	dword ptr [rsp + 8], 0x10
+0x4024f8:	mov	dword ptr [rsp + 0xc], 0x30
+0x402500:	mov	qword ptr [rsp + 0x18], rax
+0x402505:	call	0x401600
+		Instruction group(s): [2, 7, 145] 
+
+0x40250a:	mov	rdi, rbx
+0x40250d:	call	0x401990
+		Instruction group(s): [2, 7, 145] 
+
+0x402512:	add	rsp, 0xd0
+0x402519:	pop	rbx
+		Instruction group(s): [145] 
+
+0x40251a:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40251b:	nop	dword ptr [rax + rax]
+0x402520:	push	rbx
+		Instruction group(s): [145] 
+
+0x402521:	mov	rbx, rdi
+0x402524:	sub	rsp, 0x160
+0x40252b:	test	al, al
+0x40252d:	mov	qword ptr [rsp + 0xc0], rdx
+0x402535:	mov	qword ptr [rsp + 0xc8], rcx
+0x40253d:	mov	qword ptr [rsp + 0xd0], r8
+0x402545:	mov	qword ptr [rsp + 0xd8], r9
+0x40254d:	je	0x40258f
+		Instruction group(s): [7, 1] 
+
+0x40254f:	movaps	xmmword ptr [rsp + 0xe0], xmm0
+		Instruction group(s): [148] 
+
+0x402557:	movaps	xmmword ptr [rsp + 0xf0], xmm1
+		Instruction group(s): [148] 
+
+0x40255f:	movaps	xmmword ptr [rsp + 0x100], xmm2
+		Instruction group(s): [148] 
+
+0x402567:	movaps	xmmword ptr [rsp + 0x110], xmm3
+		Instruction group(s): [148] 
+
+0x40256f:	movaps	xmmword ptr [rsp + 0x120], xmm4
+		Instruction group(s): [148] 
+
+0x402577:	movaps	xmmword ptr [rsp + 0x130], xmm5
+		Instruction group(s): [148] 
+
+0x40257f:	movaps	xmmword ptr [rsp + 0x140], xmm6
+		Instruction group(s): [148] 
+
+0x402587:	movaps	xmmword ptr [rsp + 0x150], xmm7
+		Instruction group(s): [148] 
+
+0x40258f:	lea	rax, [rsp + 0x170]
+0x402597:	lea	r9, [rsp + 8]
+0x40259c:	mov	r8, rsi
+0x40259f:	mov	rdi, rbx
+0x4025a2:	mov	rcx, -1
+0x4025a9:	mov	edx, 1
+0x4025ae:	mov	esi, 0x1000
+0x4025b3:	mov	qword ptr [rsp + 0x10], rax
+0x4025b8:	lea	rax, [rsp + 0xb0]
+0x4025c0:	mov	dword ptr [rsp + 8], 0x10
+0x4025c8:	mov	dword ptr [rsp + 0xc], 0x30
+0x4025d0:	mov	qword ptr [rsp + 0x18], rax
+0x4025d5:	call	0x401900
+		Instruction group(s): [2, 7, 145] 
+
+0x4025da:	lea	rdx, [rsp + 0x20]
+0x4025df:	mov	rsi, rbx
+0x4025e2:	mov	edi, 1
+0x4025e7:	call	0x401890
+		Instruction group(s): [2, 7, 145] 
+
+0x4025ec:	add	rsp, 0x160
+0x4025f3:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4025f4:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4025f5:	nop	word ptr cs:[rax + rax]
+0x402600:	push	r14
+		Instruction group(s): [145] 
+
+0x402602:	push	r13
+		Instruction group(s): [145] 
+
+0x402604:	mov	r13, rdi
+0x402607:	push	r12
+		Instruction group(s): [145] 
+
+0x402609:	push	rbp
+		Instruction group(s): [145] 
+
+0x40260a:	mov	edx, 0x1001
+0x40260f:	push	rbx
+		Instruction group(s): [145] 
+
+0x402610:	sub	rsp, 0x5010
+0x402617:	mov	rbx, qword ptr [rdi]
+0x40261a:	lea	rdi, [rsp + 0x4000]
+0x402622:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x402627:	cmp	byte ptr [rsp + 0x5000], 0
+0x40262f:	jne	0x402857
+		Instruction group(s): [7, 1] 
+
+0x402635:	lea	rdi, [rsp + 0x4000]
+0x40263d:	mov	esi, 0x4055d9
+0x402642:	lea	r12, [rsp + 0x1000]
+0x40264a:	call	0x4019a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40264f:	mov	edx, 0x1000
+0x402654:	mov	rsi, rax
+0x402657:	mov	rdi, rsp
+0x40265a:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x40265f:	xor	edi, edi
+0x402661:	mov	esi, 0x4055d9
+0x402666:	call	0x4019a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40266b:	mov	edx, 0x1000
+0x402670:	mov	rsi, rax
+0x402673:	mov	rdi, r12
+0x402676:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x40267b:	cmp	byte ptr [rsp], 0
+0x40267f:	je	0x402857
+		Instruction group(s): [7, 1] 
+
+0x402685:	cmp	byte ptr [rsp + 0x1000], 0
+0x40268d:	je	0x402857
+		Instruction group(s): [7, 1] 
+
+0x402693:	lea	rdi, [rsp + 0x4000]
+0x40269b:	mov	rsi, rsp
+0x40269e:	lea	rbp, [rbx + 0x1078]
+0x4026a5:	call	0x403190
+		Instruction group(s): [2, 7, 145] 
+
+0x4026aa:	sub	rsp, 8
+0x4026ae:	mov	r9d, 0x4055db
+0x4026b4:	mov	rdx, rbp
+0x4026b7:	push	r12
+		Instruction group(s): [145] 
+
+0x4026b9:	mov	rcx, r9
+0x4026bc:	xor	eax, eax
+0x4026be:	mov	esi, 0x4055e4
+0x4026c3:	lea	r8, [rsp + 0x4010]
+0x4026cb:	lea	rdi, [rsp + 0x2010]
+0x4026d3:	call	0x402520
+		Instruction group(s): [2, 7, 145] 
+
+0x4026d8:	test	eax, eax
+0x4026da:	pop	rdx
+		Instruction group(s): [145] 
+
+0x4026db:	pop	rcx
+		Instruction group(s): [145] 
+
+0x4026dc:	jne	0x402728
+		Instruction group(s): [7, 1] 
+
+0x4026de:	mov	rdi, rbx
+0x4026e1:	call	0x404bc0
+		Instruction group(s): [2, 7, 145] 
+
+0x4026e6:	cmp	eax, -1
+0x4026e9:	je	0x402980
+		Instruction group(s): [7, 1] 
+
+0x4026ef:	lea	rsi, [rbx + 0x2078]
+0x4026f6:	lea	rdi, [rsp + 0x2000]
+0x4026fe:	mov	rdx, r12
+0x402701:	call	0x405000
+		Instruction group(s): [2, 7, 145] 
+
+0x402706:	cmp	eax, -1
+0x402709:	je	0x402980
+		Instruction group(s): [7, 1] 
+
+0x40270f:	xor	eax, eax
+0x402711:	add	rsp, 0x5010
+0x402718:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402719:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40271a:	pop	r12
+		Instruction group(s): [145] 
+
+0x40271c:	pop	r13
+		Instruction group(s): [145] 
+
+0x40271e:	pop	r14
+		Instruction group(s): [145] 
+
+0x402720:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402721:	nop	dword ptr [rax]
+0x402728:	sub	rsp, 8
+0x40272c:	mov	r9d, 0x4055db
+0x402732:	mov	r8d, 0x4055dd
+0x402738:	push	r12
+		Instruction group(s): [145] 
+
+0x40273a:	push	0x4055db
+		Instruction group(s): [145] 
+
+0x40273f:	mov	rcx, r9
+0x402742:	mov	rdx, rbp
+0x402745:	mov	esi, 0x4055e0
+0x40274a:	lea	rax, [rsp + 0x4018]
+0x402752:	push	rax
+		Instruction group(s): [145] 
+
+0x402753:	xor	eax, eax
+0x402755:	lea	rdi, [rsp + 0x2020]
+0x40275d:	call	0x402520
+		Instruction group(s): [2, 7, 145] 
+
+0x402762:	add	rsp, 0x20
+0x402766:	test	eax, eax
+0x402768:	je	0x4026de
+		Instruction group(s): [7, 1] 
+
+0x40276e:	lea	rdi, [rsp + 0x3000]
+0x402776:	xor	eax, eax
+0x402778:	mov	r8, rsp
+0x40277b:	mov	ecx, 0x4055db
+0x402780:	mov	rdx, rbp
+0x402783:	mov	esi, 0x4055ef
+0x402788:	call	0x402520
+		Instruction group(s): [2, 7, 145] 
+
+0x40278d:	test	eax, eax
+0x40278f:	jne	0x402870
+		Instruction group(s): [7, 1] 
+
+0x402795:	mov	rdi, qword ptr [r13]
+0x402799:	call	0x404bc0
+		Instruction group(s): [2, 7, 145] 
+
+0x40279e:	cmp	eax, -1
+0x4027a1:	je	0x4028c0
+		Instruction group(s): [7, 1] 
+
+0x4027a7:	mov	rbx, qword ptr [r13 + 8]
+0x4027ab:	lea	rbp, [r13 + 0x10]
+0x4027af:	lea	r14, [r13 + 8]
+0x4027b3:	test	rbx, rbx
+0x4027b6:	jne	0x4027d4
+		Instruction group(s): [7, 1] 
+
+0x4027b8:	jmp	0x4028e0
+		Instruction group(s): [7, 1] 
+
+0x4027bd:	nop	dword ptr [rax]
+0x4027c0:	mov	r14, rbp
+0x4027c3:	add	rbp, 8
+0x4027c7:	mov	rbx, qword ptr [rbp - 8]
+0x4027cb:	test	rbx, rbx
+0x4027ce:	je	0x4028e0
+		Instruction group(s): [7, 1] 
+
+0x4027d4:	lea	rdi, [rbx + 0x78]
+0x4027d8:	lea	rsi, [rsp + 0x3000]
+0x4027e0:	call	0x4017d0
+		Instruction group(s): [2, 7, 145] 
+
+0x4027e5:	test	eax, eax
+0x4027e7:	jne	0x4027c0
+		Instruction group(s): [7, 1] 
+
+0x4027e9:	mov	rbp, qword ptr [rbx + 0x10]
+0x4027ed:	cmp	rbp, qword ptr [rbx + 0x18]
+0x4027f1:	jae	0x40270f
+		Instruction group(s): [7, 1] 
+
+0x4027f7:	nop	word ptr [rax + rax]
+0x402800:	lea	rdi, [rbp + 0x12]
+0x402804:	mov	rsi, r12
+0x402807:	call	0x4017d0
+		Instruction group(s): [2, 7, 145] 
+
+0x40280c:	test	eax, eax
+0x40280e:	jne	0x40281f
+		Instruction group(s): [7, 1] 
+
+0x402810:	mov	rsi, rbp
+0x402813:	mov	rdi, rbx
+0x402816:	call	0x401ea0
+		Instruction group(s): [2, 7, 145] 
+
+0x40281b:	test	eax, eax
+0x40281d:	jne	0x402840
+		Instruction group(s): [7, 1] 
+
+0x40281f:	mov	rsi, rbp
+0x402822:	mov	rdi, rbx
+0x402825:	call	0x401c70
+		Instruction group(s): [2, 7, 145] 
+
+0x40282a:	cmp	rax, qword ptr [rbx + 0x18]
+0x40282e:	mov	rbp, rax
+0x402831:	jb	0x402800
+		Instruction group(s): [7, 1] 
+
+0x402833:	jmp	0x40270f
+		Instruction group(s): [7, 1] 
+
+0x402838:	nop	dword ptr [rax + rax]
+0x402840:	mov	edi, 0x405648
+0x402845:	mov	rsi, r12
+0x402848:	xor	eax, eax
+0x40284a:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40284f:	mov	rdi, rbx
+0x402852:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x402857:	add	rsp, 0x5010
+0x40285e:	mov	eax, 0xffffffff
+0x402863:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402864:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402865:	pop	r12
+		Instruction group(s): [145] 
+
+0x402867:	pop	r13
+		Instruction group(s): [145] 
+
+0x402869:	pop	r14
+		Instruction group(s): [145] 
+
+0x40286b:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40286c:	nop	dword ptr [rax]
+0x402870:	lea	rdi, [rsp + 0x3000]
+0x402878:	xor	eax, eax
+0x40287a:	mov	r8, rsp
+0x40287d:	mov	ecx, 0x4055db
+0x402882:	mov	rdx, rbp
+0x402885:	mov	esi, 0x4055fa
+0x40288a:	call	0x402520
+		Instruction group(s): [2, 7, 145] 
+
+0x40288f:	test	eax, eax
+0x402891:	je	0x402795
+		Instruction group(s): [7, 1] 
+
+0x402897:	lea	rdi, [rsp + 0x3000]
+0x40289f:	xor	eax, eax
+0x4028a1:	mov	r8, rsp
+0x4028a4:	mov	ecx, 0x4055db
+0x4028a9:	mov	rdx, rbp
+0x4028ac:	mov	esi, 0x4055e8
+0x4028b1:	call	0x402520
+		Instruction group(s): [2, 7, 145] 
+
+0x4028b6:	test	eax, eax
+0x4028b8:	je	0x402795
+		Instruction group(s): [7, 1] 
+
+0x4028be:	nop	
+0x4028c0:	lea	rsi, [rsp + 0x3000]
+0x4028c8:	xor	eax, eax
+0x4028ca:	mov	edi, 0x405605
+0x4028cf:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4028d4:	mov	eax, 0xffffffff
+0x4028d9:	jmp	0x402711
+		Instruction group(s): [7, 1] 
+
+0x4028de:	nop	
+0x4028e0:	mov	edi, 0x4090
+0x4028e5:	call	0x4018c0
+		Instruction group(s): [2, 7, 145] 
+
+0x4028ea:	test	rax, rax
+0x4028ed:	mov	rbx, rax
+0x4028f0:	je	0x4029df
+		Instruction group(s): [7, 1] 
+
+0x4028f6:	lea	rdi, [rax + 0x78]
+0x4028fa:	lea	rsi, [rsp + 0x3000]
+0x402902:	mov	edx, 0x1000
+0x402907:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x40290c:	mov	rbp, qword ptr [r13]
+0x402910:	lea	rdi, [rbx + 0x1078]
+0x402917:	mov	edx, 0x1000
+0x40291c:	lea	rsi, [rbp + 0x1078]
+0x402923:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x402928:	lea	rsi, [rbp + 0x2078]
+0x40292f:	lea	rdi, [rbx + 0x2078]
+0x402936:	mov	edx, 0x1000
+0x40293b:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x402940:	cmp	byte ptr [rbx + 0x1077], 0
+0x402947:	jne	0x4029a0
+		Instruction group(s): [7, 1] 
+
+0x402949:	cmp	byte ptr [rbx + 0x2077], 0
+0x402950:	jne	0x4029a0
+		Instruction group(s): [7, 1] 
+
+0x402952:	cmp	byte ptr [rbx + 0x3077], 0
+0x402959:	jne	0x4029a0
+		Instruction group(s): [7, 1] 
+
+0x40295b:	mov	eax, dword ptr [rbp + 0x4078]
+0x402961:	mov	rdi, rbx
+0x402964:	mov	dword ptr [rbx + 0x4078], eax
+0x40296a:	call	0x401f70
+		Instruction group(s): [2, 7, 145] 
+
+0x40296f:	test	eax, eax
+0x402971:	jne	0x4029b9
+		Instruction group(s): [7, 1] 
+
+0x402973:	mov	qword ptr [r14], rbx
+0x402976:	jmp	0x4027e9
+		Instruction group(s): [7, 1] 
+
+0x40297b:	nop	dword ptr [rax + rax]
+0x402980:	xor	eax, eax
+0x402982:	mov	rsi, r12
+0x402985:	mov	edi, 0x405636
+0x40298a:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40298f:	mov	eax, 0xffffffff
+0x402994:	jmp	0x402711
+		Instruction group(s): [7, 1] 
+
+0x402999:	nop	dword ptr [rax]
+0x4029a0:	mov	edi, 0x4056d0
+0x4029a5:	xor	eax, eax
+0x4029a7:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4029ac:	mov	rdi, rbx
+0x4029af:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x4029b4:	jmp	0x4028c0
+		Instruction group(s): [7, 1] 
+
+0x4029b9:	lea	rdx, [rsp + 0x3000]
+0x4029c1:	mov	esi, 0x40561c
+0x4029c6:	mov	edi, 0x4054c6
+0x4029cb:	xor	eax, eax
+0x4029cd:	call	0x402470
+		Instruction group(s): [2, 7, 145] 
+
+0x4029d2:	mov	rdi, rbx
+0x4029d5:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x4029da:	jmp	0x4028c0
+		Instruction group(s): [7, 1] 
+
+0x4029df:	mov	esi, 0x4056a8
+0x4029e4:	mov	edi, 0x4054c6
+0x4029e9:	xor	eax, eax
+0x4029eb:	call	0x402470
+		Instruction group(s): [2, 7, 145] 
+
+0x4029f0:	jmp	0x4028c0
+		Instruction group(s): [7, 1] 
+
+0x4029f5:	nop	word ptr cs:[rax + rax]
+0x402a00:	mov	rax, qword ptr [rdi + 0x10]
+0x402a04:	cmp	rax, qword ptr [rdi + 0x18]
+0x402a08:	jae	0x402a77
+		Instruction group(s): [7, 1] 
+
+0x402a0a:	movzx	edx, byte ptr [rax + 0x11]
+0x402a0e:	cmp	dl, 0x64
+0x402a11:	sete	sil
+0x402a15:	cmp	dl, 0x78
+0x402a18:	sete	cl
+0x402a1b:	or	sil, cl
+0x402a1e:	jne	0x402a7a
+		Instruction group(s): [7, 1] 
+
+0x402a20:	push	rbx
+		Instruction group(s): [145] 
+
+0x402a21:	mov	rbx, rdi
+0x402a24:	jmp	0x402a46
+		Instruction group(s): [7, 1] 
+
+0x402a26:	nop	word ptr cs:[rax + rax]
+0x402a30:	movzx	edx, byte ptr [rax + 0x11]
+0x402a34:	cmp	dl, 0x64
+0x402a37:	sete	sil
+0x402a3b:	cmp	dl, 0x78
+0x402a3e:	sete	cl
+0x402a41:	or	sil, cl
+0x402a44:	jne	0x402a70
+		Instruction group(s): [7, 1] 
+
+0x402a46:	sub	edx, 0x5a
+0x402a49:	and	edx, 0xf7
+0x402a4f:	je	0x402a70
+		Instruction group(s): [7, 1] 
+
+0x402a51:	mov	rsi, rax
+0x402a54:	mov	rdi, rbx
+0x402a57:	call	0x401c70
+		Instruction group(s): [2, 7, 145] 
+
+0x402a5c:	cmp	qword ptr [rbx + 0x18], rax
+0x402a60:	ja	0x402a30
+		Instruction group(s): [7, 1] 
+
+0x402a62:	xor	eax, eax
+0x402a64:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402a65:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402a66:	nop	word ptr cs:[rax + rax]
+0x402a70:	mov	eax, 1
+0x402a75:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402a76:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402a77:	xor	eax, eax
+0x402a79:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402a7a:	mov	eax, 1
+0x402a7f:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402a80:	push	r12
+		Instruction group(s): [145] 
+
+0x402a82:	push	rbp
+		Instruction group(s): [145] 
+
+0x402a83:	mov	r12, rdi
+0x402a86:	push	rbx
+		Instruction group(s): [145] 
+
+0x402a87:	xor	eax, eax
+0x402a89:	mov	ecx, 0x14
+0x402a8e:	sub	rsp, 0xa0
+0x402a95:	mov	rbx, qword ptr [rdi + 0x10]
+0x402a99:	cmp	rbx, qword ptr [r12 + 0x18]
+0x402a9e:	mov	rdi, rsp
+0x402aa1:	mov	rbp, rsp
+0x402aa4:	rep stosq	qword ptr [rdi], rax
+0x402aa7:	mov	qword ptr [rsp], r12
+0x402aab:	jb	0x402ad5
+		Instruction group(s): [7, 1] 
+
+0x402aad:	jmp	0x402b51
+		Instruction group(s): [7, 1] 
+
+0x402ab2:	nop	word ptr [rax + rax]
+0x402ab8:	cmp	al, 0x78
+0x402aba:	je	0x402ae4
+		Instruction group(s): [7, 1] 
+
+0x402abc:	cmp	al, 0x64
+0x402abe:	je	0x402b00
+		Instruction group(s): [7, 1] 
+
+0x402ac0:	mov	rsi, rbx
+0x402ac3:	mov	rdi, r12
+0x402ac6:	call	0x401c70
+		Instruction group(s): [2, 7, 145] 
+
+0x402acb:	cmp	qword ptr [r12 + 0x18], rax
+0x402ad0:	mov	rbx, rax
+0x402ad3:	jbe	0x402b18
+		Instruction group(s): [7, 1] 
+
+0x402ad5:	movzx	eax, byte ptr [rbx + 0x11]
+0x402ad9:	lea	edx, [rax - 0x5a]
+		Instruction group(s): [145] 
+
+0x402adc:	and	edx, 0xf7
+0x402ae2:	jne	0x402ab8
+		Instruction group(s): [7, 1] 
+
+0x402ae4:	mov	rsi, rbx
+0x402ae7:	mov	rdi, r12
+0x402aea:	call	0x401ea0
+		Instruction group(s): [2, 7, 145] 
+
+0x402aef:	test	eax, eax
+0x402af1:	je	0x402ac0
+		Instruction group(s): [7, 1] 
+
+0x402af3:	mov	rdi, qword ptr [rsp + 8]
+0x402af8:	mov	r12d, 0xffffffff
+0x402afe:	jmp	0x402b20
+		Instruction group(s): [7, 1] 
+
+0x402b00:	lea	rsi, [rbx + 0x12]
+0x402b04:	mov	rdi, rbp
+0x402b07:	call	0x402600
+		Instruction group(s): [2, 7, 145] 
+
+0x402b0c:	cmp	eax, -1
+0x402b0f:	jne	0x402ac0
+		Instruction group(s): [7, 1] 
+
+0x402b11:	jmp	0x402af3
+		Instruction group(s): [7, 1] 
+
+0x402b13:	nop	dword ptr [rax + rax]
+0x402b18:	mov	rdi, qword ptr [rsp + 8]
+0x402b1d:	xor	r12d, r12d
+0x402b20:	test	rdi, rdi
+0x402b23:	lea	rbx, [rbp + 0x10]
+0x402b27:	je	0x402b42
+		Instruction group(s): [7, 1] 
+
+0x402b29:	nop	dword ptr [rax]
+0x402b30:	add	rbx, 8
+0x402b34:	call	0x4021f0
+		Instruction group(s): [2, 7, 145] 
+
+0x402b39:	mov	rdi, qword ptr [rbx - 8]
+0x402b3d:	test	rdi, rdi
+0x402b40:	jne	0x402b30
+		Instruction group(s): [7, 1] 
+
+0x402b42:	add	rsp, 0xa0
+0x402b49:	mov	eax, r12d
+0x402b4c:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402b4d:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402b4e:	pop	r12
+		Instruction group(s): [145] 
+
+0x402b50:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402b51:	xor	r12d, r12d
+0x402b54:	jmp	0x402b42
+		Instruction group(s): [7, 1] 
+
+0x402b56:	nop	word ptr cs:[rax + rax]
+0x402b60:	push	r15
+		Instruction group(s): [145] 
+
+0x402b62:	push	r14
+		Instruction group(s): [145] 
+
+0x402b64:	push	r13
+		Instruction group(s): [145] 
+
+0x402b66:	push	r12
+		Instruction group(s): [145] 
+
+0x402b68:	push	rbp
+		Instruction group(s): [145] 
+
+0x402b69:	push	rbx
+		Instruction group(s): [145] 
+
+0x402b6a:	mov	rbp, rdi
+0x402b6d:	sub	rsp, 0x1018
+0x402b74:	mov	rbx, qword ptr [rdi + 0x10]
+0x402b78:	mov	edi, 0x40565d
+0x402b7d:	call	qword ptr [rip + 0x204f95]
+		Instruction group(s): [2, 145] 
+
+0x402b83:	test	rax, rax
+0x402b86:	mov	qword ptr [rsp + 8], rax
+0x402b8b:	je	0x402cf5
+		Instruction group(s): [7, 1] 
+
+0x402b91:	mov	rdi, qword ptr [rsp + 8]
+0x402b96:	call	qword ptr [rip + 0x204f4c]
+		Instruction group(s): [2, 145] 
+
+0x402b9c:	test	rax, rax
+0x402b9f:	mov	r14, rax
+0x402ba2:	je	0x402d06
+		Instruction group(s): [7, 1] 
+
+0x402ba8:	cmp	rbx, qword ptr [rbp + 0x18]
+0x402bac:	jb	0x402bd0
+		Instruction group(s): [7, 1] 
+
+0x402bae:	jmp	0x402c98
+		Instruction group(s): [7, 1] 
+
+0x402bb3:	nop	dword ptr [rax + rax]
+0x402bb8:	mov	rsi, rbx
+0x402bbb:	mov	rdi, rbp
+0x402bbe:	call	0x401c70
+		Instruction group(s): [2, 7, 145] 
+
+0x402bc3:	cmp	qword ptr [rbp + 0x18], rax
+0x402bc7:	mov	rbx, rax
+0x402bca:	jbe	0x402c98
+		Instruction group(s): [7, 1] 
+
+0x402bd0:	cmp	byte ptr [rbx + 0x11], 0x73
+0x402bd4:	jne	0x402bb8
+		Instruction group(s): [7, 1] 
+
+0x402bd6:	lea	r12, [rbx + 0x12]
+0x402bda:	mov	rsi, rbx
+0x402bdd:	mov	rdi, rbp
+0x402be0:	call	0x401ca0
+		Instruction group(s): [2, 7, 145] 
+
+0x402be5:	mov	esi, 0x1000
+0x402bea:	mov	rdi, r12
+0x402bed:	mov	r13, rax
+0x402bf0:	call	0x401750
+		Instruction group(s): [2, 7, 145] 
+
+0x402bf5:	cmp	rax, 0xffb
+0x402bfb:	ja	0x402cac
+		Instruction group(s): [7, 1] 
+
+0x402c01:	lea	rdi, [rsp + 0x10]
+0x402c06:	mov	edx, 0x1000
+0x402c0b:	mov	rsi, r12
+0x402c0e:	call	0x401880
+		Instruction group(s): [2, 7, 145] 
+
+0x402c13:	mov	dword ptr [rax], 0x79702e
+0x402c19:	mov	eax, dword ptr [rip + 0x215141]
+0x402c1f:	lea	rdi, [rsp + 0x10]
+0x402c24:	test	eax, eax
+0x402c26:	je	0x402c88
+		Instruction group(s): [7, 1] 
+
+0x402c28:	call	qword ptr [rip + 0x204e9a]
+		Instruction group(s): [2, 145] 
+
+0x402c2e:	mov	r15, rax
+0x402c31:	mov	rdx, r15
+0x402c34:	mov	esi, 0x40567d
+0x402c39:	mov	rdi, qword ptr [rsp + 8]
+0x402c3e:	call	qword ptr [rip + 0x204e94]
+		Instruction group(s): [2, 145] 
+
+0x402c44:	mov	rdi, r15
+0x402c47:	call	qword ptr [rip + 0x204f2b]
+		Instruction group(s): [2, 145] 
+
+0x402c4d:	mov	esi, dword ptr [rbx + 0xc]
+0x402c50:	mov	rdi, r13
+0x402c53:	bswap	esi
+0x402c55:	mov	esi, esi
+0x402c57:	call	qword ptr [rip + 0x204e03]
+		Instruction group(s): [2, 145] 
+
+0x402c5d:	test	rax, rax
+0x402c60:	je	0x402cbf
+		Instruction group(s): [7, 1] 
+
+0x402c62:	mov	rdx, r14
+0x402c65:	mov	rsi, r14
+0x402c68:	mov	rdi, rax
+0x402c6b:	call	qword ptr [rip + 0x204df7]
+		Instruction group(s): [2, 145] 
+
+0x402c71:	test	rax, rax
+0x402c74:	je	0x402cd9
+		Instruction group(s): [7, 1] 
+
+0x402c76:	mov	rdi, r13
+0x402c79:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x402c7e:	jmp	0x402bb8
+		Instruction group(s): [7, 1] 
+
+0x402c83:	nop	dword ptr [rax + rax]
+0x402c88:	call	qword ptr [rip + 0x204e0a]
+		Instruction group(s): [2, 145] 
+
+0x402c8e:	mov	r15, rax
+0x402c91:	jmp	0x402c31
+		Instruction group(s): [7, 1] 
+
+0x402c93:	nop	dword ptr [rax + rax]
+0x402c98:	xor	eax, eax
+0x402c9a:	add	rsp, 0x1018
+0x402ca1:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402ca2:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402ca3:	pop	r12
+		Instruction group(s): [145] 
+
+0x402ca5:	pop	r13
+		Instruction group(s): [145] 
+
+0x402ca7:	pop	r14
+		Instruction group(s): [145] 
+
+0x402ca9:	pop	r15
+		Instruction group(s): [145] 
+
+0x402cab:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402cac:	xor	eax, eax
+0x402cae:	mov	edi, 0x405666
+0x402cb3:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x402cb8:	mov	eax, 0xffffffff
+0x402cbd:	jmp	0x402c9a
+		Instruction group(s): [7, 1] 
+
+0x402cbf:	mov	rsi, r12
+0x402cc2:	mov	edi, 0x405738
+0x402cc7:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x402ccc:	call	qword ptr [rip + 0x204e4e]
+		Instruction group(s): [2, 145] 
+
+0x402cd2:	mov	eax, 0xffffffff
+0x402cd7:	jmp	0x402c9a
+		Instruction group(s): [7, 1] 
+
+0x402cd9:	call	qword ptr [rip + 0x204e41]
+		Instruction group(s): [2, 145] 
+
+0x402cdf:	xor	eax, eax
+0x402ce1:	mov	rsi, r12
+0x402ce4:	mov	edi, 0x405686
+0x402ce9:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x402cee:	mov	eax, 0xffffffff
+0x402cf3:	jmp	0x402c9a
+		Instruction group(s): [7, 1] 
+
+0x402cf5:	mov	edi, 0x4056f0
+0x402cfa:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x402cff:	mov	eax, 0xffffffff
+0x402d04:	jmp	0x402c9a
+		Instruction group(s): [7, 1] 
+
+0x402d06:	xor	eax, eax
+0x402d08:	mov	edi, 0x405710
+0x402d0d:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x402d12:	mov	eax, 0xffffffff
+0x402d17:	jmp	0x402c9a
+		Instruction group(s): [7, 1] 
+
+0x402d19:	nop	dword ptr [rax]
+0x402d20:	push	r12
+		Instruction group(s): [145] 
+
+0x402d22:	mov	r12, rsi
+0x402d25:	push	rbp
+		Instruction group(s): [145] 
+
+0x402d26:	push	rbx
+		Instruction group(s): [145] 
+
+0x402d27:	mov	rbx, rdi
+0x402d2a:	mov	edi, 0x40565d
+0x402d2f:	call	qword ptr [rip + 0x204de3]
+		Instruction group(s): [2, 145] 
+
+0x402d35:	test	rax, rax
+0x402d38:	je	0x402df0
+		Instruction group(s): [7, 1] 
+
+0x402d3e:	mov	rdi, rax
+0x402d41:	call	qword ptr [rip + 0x204da1]
+		Instruction group(s): [2, 145] 
+
+0x402d47:	mov	rsi, rbx
+0x402d4a:	mov	rdi, rax
+0x402d4d:	call	qword ptr [rip + 0x204de5]
+		Instruction group(s): [2, 145] 
+
+0x402d53:	test	rax, rax
+0x402d56:	mov	rbx, rax
+0x402d59:	je	0x402e00
+		Instruction group(s): [7, 1] 
+
+0x402d5f:	mov	rdi, rax
+0x402d62:	mov	esi, 0x4054b8
+0x402d67:	xor	eax, eax
+0x402d69:	call	qword ptr [rip + 0x204d71]
+		Instruction group(s): [2, 145] 
+
+0x402d6f:	test	rax, rax
+0x402d72:	mov	rbp, rax
+0x402d75:	je	0x402e10
+		Instruction group(s): [7, 1] 
+
+0x402d7b:	call	qword ptr [rip + 0x204daf]
+		Instruction group(s): [2, 145] 
+
+0x402d81:	mov	rdi, rbp
+0x402d84:	call	qword ptr [rip + 0x204d66]
+		Instruction group(s): [2, 145] 
+
+0x402d8a:	mov	dword ptr [r12], eax
+0x402d8e:	mov	r12d, 0xffffffff
+0x402d94:	call	qword ptr [rip + 0x204d8e]
+		Instruction group(s): [2, 145] 
+
+0x402d9a:	test	rax, rax
+0x402d9d:	je	0x402dc8
+		Instruction group(s): [7, 1] 
+
+0x402d9f:	mov	rdi, rbx
+0x402da2:	call	qword ptr [rip + 0x204dd0]
+		Instruction group(s): [2, 145] 
+
+0x402da8:	mov	rdi, rbp
+0x402dab:	call	qword ptr [rip + 0x204dc7]
+		Instruction group(s): [2, 145] 
+
+0x402db1:	call	qword ptr [rip + 0x204d69]
+		Instruction group(s): [2, 145] 
+
+0x402db7:	call	qword ptr [rip + 0x204d73]
+		Instruction group(s): [2, 145] 
+
+0x402dbd:	mov	eax, r12d
+0x402dc0:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402dc1:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402dc2:	pop	r12
+		Instruction group(s): [145] 
+
+0x402dc4:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402dc5:	nop	dword ptr [rax]
+0x402dc8:	xor	r12d, r12d
+0x402dcb:	mov	rdi, rbx
+0x402dce:	call	qword ptr [rip + 0x204da4]
+		Instruction group(s): [2, 145] 
+
+0x402dd4:	mov	rdi, rbp
+0x402dd7:	call	qword ptr [rip + 0x204d9b]
+		Instruction group(s): [2, 145] 
+
+0x402ddd:	call	qword ptr [rip + 0x204d4d]
+		Instruction group(s): [2, 145] 
+
+0x402de3:	mov	eax, r12d
+0x402de6:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402de7:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402de8:	pop	r12
+		Instruction group(s): [145] 
+
+0x402dea:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402deb:	nop	dword ptr [rax + rax]
+0x402df0:	xor	ebp, ebp
+0x402df2:	xor	ebx, ebx
+0x402df4:	mov	r12d, 0xffffffff
+0x402dfa:	jmp	0x402d9f
+		Instruction group(s): [7, 1] 
+
+0x402dfc:	nop	dword ptr [rax]
+0x402e00:	xor	ebp, ebp
+0x402e02:	mov	r12d, 0xfffffffe
+0x402e08:	jmp	0x402d9f
+		Instruction group(s): [7, 1] 
+
+0x402e0a:	nop	word ptr [rax + rax]
+0x402e10:	mov	r12d, 0xffffffff
+0x402e16:	jmp	0x402d9f
+		Instruction group(s): [7, 1] 
+
+0x402e18:	nop	dword ptr [rax + rax]
+0x402e20:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402e22:	nop	word ptr cs:[rax + rax]
+0x402e30:	push	r12
+		Instruction group(s): [145] 
+
+0x402e32:	push	rbp
+		Instruction group(s): [145] 
+
+0x402e33:	push	rbx
+		Instruction group(s): [145] 
+
+0x402e34:	mov	rbx, rdi
+0x402e37:	call	0x4040e0
+		Instruction group(s): [2, 7, 145] 
+
+0x402e3c:	test	eax, eax
+0x402e3e:	jne	0x402e90
+		Instruction group(s): [7, 1] 
+
+0x402e40:	mov	dword ptr [rbx + 0x407c], 1
+0x402e4a:	mov	rdi, rbx
+0x402e4d:	call	0x404390
+		Instruction group(s): [2, 7, 145] 
+
+0x402e52:	test	eax, eax
+0x402e54:	jne	0x402e90
+		Instruction group(s): [7, 1] 
+
+0x402e56:	mov	rdi, rbx
+0x402e59:	call	0x404680
+		Instruction group(s): [2, 7, 145] 
+
+0x402e5e:	test	eax, eax
+0x402e60:	jne	0x402e90
+		Instruction group(s): [7, 1] 
+
+0x402e62:	mov	rdi, rbx
+0x402e65:	call	0x4048f0
+		Instruction group(s): [2, 7, 145] 
+
+0x402e6a:	test	eax, eax
+0x402e6c:	jne	0x402e90
+		Instruction group(s): [7, 1] 
+
+0x402e6e:	mov	rax, qword ptr [rip + 0x204d43]
+0x402e75:	cmp	qword ptr [rax], 0
+0x402e79:	je	0x402ea0
+		Instruction group(s): [7, 1] 
+
+0x402e7b:	mov	rdi, rbx
+0x402e7e:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402e7f:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402e80:	pop	r12
+		Instruction group(s): [145] 
+
+0x402e82:	jmp	0x402b60
+		Instruction group(s): [7, 1] 
+
+0x402e87:	nop	word ptr [rax + rax]
+0x402e90:	pop	rbx
+		Instruction group(s): [145] 
+
+0x402e91:	mov	eax, 0xffffffff
+0x402e96:	pop	rbp
+		Instruction group(s): [145] 
+
+0x402e97:	pop	r12
+		Instruction group(s): [145] 
+
+0x402e99:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402e9a:	nop	word ptr [rax + rax]
+0x402ea0:	xor	esi, esi
+0x402ea2:	xor	edi, edi
+0x402ea4:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x402ea9:	mov	rdi, rax
+0x402eac:	call	0x401790
+		Instruction group(s): [2, 7, 145] 
+
+0x402eb1:	mov	esi, 0x4054b8
+0x402eb6:	xor	edi, edi
+0x402eb8:	mov	rbp, rax
+0x402ebb:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x402ec0:	mov	edi, 0xe
+0x402ec5:	call	0x4018e0
+		Instruction group(s): [2, 7, 145] 
+
+0x402eca:	mov	rsi, rbp
+0x402ecd:	xor	edi, edi
+0x402ecf:	mov	r12, rax
+0x402ed2:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x402ed7:	mov	rdi, rbp
+0x402eda:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x402edf:	mov	rdx, qword ptr [rip + 0x204cd2]
+0x402ee6:	mov	qword ptr [rdx], r12
+0x402ee9:	jmp	0x402e7b
+		Instruction group(s): [7, 1] 
+
+0x402eeb:	nop	dword ptr [rax + rax]
+0x402ef0:	jmp	0x404940
+		Instruction group(s): [7, 1] 
+
+0x402ef5:	nop	word ptr cs:[rax + rax]
+0x402f00:	ret	
+		Instruction group(s): [3, 145] 
+
+0x402f02:	nop	word ptr cs:[rax + rax]
+0x402f0c:	nop	dword ptr [rax]
+0x402f10:	push	r14
+		Instruction group(s): [145] 
+
+0x402f12:	push	r13
+		Instruction group(s): [145] 
+
+0x402f14:	mov	r13d, edi
+0x402f17:	push	r12
+		Instruction group(s): [145] 
+
+0x402f19:	push	rbp
+		Instruction group(s): [145] 
+
+0x402f1a:	mov	r12, rsi
+0x402f1d:	push	rbx
+		Instruction group(s): [145] 
+
+0x402f1e:	mov	esi, 0x4090
+0x402f23:	mov	edi, 1
+0x402f28:	sub	rsp, 0x3000
+0x402f2f:	call	0x4017c0
+		Instruction group(s): [2, 7, 145] 
+
+0x402f34:	test	rax, rax
+0x402f37:	mov	rbx, rax
+0x402f3a:	je	0x403174
+		Instruction group(s): [7, 1] 
+
+0x402f40:	mov	rsi, qword ptr [r12]
+0x402f44:	mov	rdi, rsp
+0x402f47:	lea	r14, [rsp + 0x1000]
+0x402f4f:	call	0x403500
+		Instruction group(s): [2, 7, 145] 
+
+0x402f54:	lea	rdi, [rsp + 0x2000]
+0x402f5c:	mov	rsi, rsp
+0x402f5f:	call	0x4035a0
+		Instruction group(s): [2, 7, 145] 
+
+0x402f64:	mov	rsi, rsp
+0x402f67:	mov	rdi, r14
+0x402f6a:	call	0x403590
+		Instruction group(s): [2, 7, 145] 
+
+0x402f6f:	mov	edi, 0x4057ba
+0x402f74:	call	0x404aa0
+		Instruction group(s): [2, 7, 145] 
+
+0x402f79:	mov	edi, 0x4057ba
+0x402f7e:	mov	rbp, rax
+0x402f81:	call	0x404b50
+		Instruction group(s): [2, 7, 145] 
+
+0x402f86:	mov	r9, r14
+0x402f89:	mov	eax, dword ptr [r9]
+0x402f8c:	add	r9, 4
+0x402f90:	lea	r8d, [rax - 0x1010101]
+		Instruction group(s): [145] 
+
+0x402f97:	not	eax
+0x402f99:	and	r8d, eax
+0x402f9c:	and	r8d, 0x80808080
+0x402fa3:	je	0x402f89
+		Instruction group(s): [7, 1] 
+
+0x402fa5:	mov	eax, r8d
+0x402fa8:	mov	rsi, r14
+0x402fab:	mov	rdi, rbx
+0x402fae:	shr	eax, 0x10
+0x402fb1:	test	r8d, 0x8080
+0x402fb8:	cmove	r8d, eax
+		Instruction group(s): [137] 
+
+0x402fbc:	lea	rax, [r9 + 2]
+0x402fc0:	cmove	r9, rax
+		Instruction group(s): [137] 
+
+0x402fc4:	add	r8b, r8b
+0x402fc7:	sbb	r9, 3
+0x402fcb:	sub	r9, r14
+0x402fce:	lea	rdx, [rsp + r9]
+0x402fd2:	call	0x402170
+		Instruction group(s): [2, 7, 145] 
+
+0x402fd7:	test	eax, eax
+0x402fd9:	jne	0x403078
+		Instruction group(s): [7, 1] 
+
+0x402fdf:	test	rbp, rbp
+0x402fe2:	mov	dword ptr [rbx + 0x4080], r13d
+0x402fe9:	mov	qword ptr [rbx + 0x4088], r12
+0x402ff0:	je	0x4030f0
+		Instruction group(s): [7, 1] 
+
+0x402ff6:	mov	rsi, rbp
+0x402ff9:	mov	rdi, r14
+0x402ffc:	call	0x4017d0
+		Instruction group(s): [2, 7, 145] 
+
+0x403001:	test	eax, eax
+0x403003:	je	0x403047
+		Instruction group(s): [7, 1] 
+
+0x403005:	lea	r12, [rbx + 0x2078]
+0x40300c:	mov	edx, 0x1000
+0x403011:	mov	rsi, rbp
+0x403014:	mov	rdi, r12
+0x403017:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x40301c:	cmp	byte ptr [rbx + 0x3077], 0
+0x403023:	jne	0x403160
+		Instruction group(s): [7, 1] 
+
+0x403029:	lea	rdi, [rbx + 0x3078]
+0x403030:	mov	edx, 0x1000
+0x403035:	mov	rsi, r12
+0x403038:	mov	dword ptr [rbx + 0x4078], 1
+0x403042:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x403047:	mov	rdi, rbx
+0x40304a:	call	0x402e20
+		Instruction group(s): [2, 7, 145] 
+
+0x40304f:	mov	rdi, rbx
+0x403052:	call	0x402e30
+		Instruction group(s): [2, 7, 145] 
+
+0x403057:	mov	rdi, rbx
+0x40305a:	mov	ebp, eax
+0x40305c:	call	0x402ef0
+		Instruction group(s): [2, 7, 145] 
+
+0x403061:	mov	eax, ebp
+0x403063:	add	rsp, 0x3000
+0x40306a:	pop	rbx
+		Instruction group(s): [145] 
+
+0x40306b:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40306c:	pop	r12
+		Instruction group(s): [145] 
+
+0x40306e:	pop	r13
+		Instruction group(s): [145] 
+
+0x403070:	pop	r14
+		Instruction group(s): [145] 
+
+0x403072:	ret	
+		Instruction group(s): [3, 145] 
+
+0x403073:	nop	dword ptr [rax + rax]
+0x403078:	mov	rdx, r14
+0x40307b:	mov	ecx, dword ptr [rdx]
+0x40307d:	add	rdx, 4
+0x403081:	lea	eax, [rcx - 0x1010101]
+		Instruction group(s): [145] 
+
+0x403087:	not	ecx
+0x403089:	and	eax, ecx
+0x40308b:	and	eax, 0x80808080
+0x403090:	je	0x40307b
+		Instruction group(s): [7, 1] 
+
+0x403092:	mov	ecx, eax
+0x403094:	mov	rsi, r14
+0x403097:	mov	rdi, rbx
+0x40309a:	shr	ecx, 0x10
+0x40309d:	test	eax, 0x8080
+0x4030a2:	cmove	eax, ecx
+		Instruction group(s): [137] 
+
+0x4030a5:	lea	rcx, [rdx + 2]
+0x4030a9:	cmove	rdx, rcx
+		Instruction group(s): [137] 
+
+0x4030ad:	add	al, al
+0x4030af:	lea	rax, [rsp + 0x2000]
+0x4030b7:	sbb	rdx, 3
+0x4030bb:	sub	rdx, r14
+0x4030be:	add	rdx, rax
+0x4030c1:	call	0x402170
+		Instruction group(s): [2, 7, 145] 
+
+0x4030c6:	test	eax, eax
+0x4030c8:	je	0x402fdf
+		Instruction group(s): [7, 1] 
+
+0x4030ce:	lea	rdx, [rsp + 0x2000]
+0x4030d6:	xor	eax, eax
+0x4030d8:	mov	rsi, rsp
+0x4030db:	mov	edi, 0x405790
+0x4030e0:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4030e5:	mov	eax, 0xffffffff
+0x4030ea:	jmp	0x403063
+		Instruction group(s): [7, 1] 
+
+0x4030ef:	nop	
+0x4030f0:	mov	rdi, rbx
+0x4030f3:	call	0x402a80
+		Instruction group(s): [2, 7, 145] 
+
+0x4030f8:	test	eax, eax
+0x4030fa:	jne	0x403160
+		Instruction group(s): [7, 1] 
+
+0x4030fc:	cmp	byte ptr [rbx + 0x2078], 0
+0x403103:	lea	rbp, [rbx + 0x2078]
+0x40310a:	mov	rsi, r14
+0x40310d:	mov	edi, 0x4057ba
+0x403112:	cmovne	rsi, rbp
+		Instruction group(s): [137] 
+
+0x403116:	call	0x404b40
+		Instruction group(s): [2, 7, 145] 
+
+0x40311b:	mov	rdi, rbx
+0x40311e:	call	0x405140
+		Instruction group(s): [2, 7, 145] 
+
+0x403123:	cmp	eax, -1
+0x403126:	je	0x403160
+		Instruction group(s): [7, 1] 
+
+0x403128:	xor	eax, eax
+0x40312a:	call	0x402f00
+		Instruction group(s): [2, 7, 145] 
+
+0x40312f:	mov	rcx, r12
+0x403132:	mov	edx, r13d
+0x403135:	mov	rsi, rbx
+0x403138:	mov	rdi, rsp
+0x40313b:	call	0x4051d0
+		Instruction group(s): [2, 7, 145] 
+
+0x403140:	cmp	dword ptr [rbx + 0x4078], 1
+0x403147:	mov	r12d, eax
+0x40314a:	je	0x40316a
+		Instruction group(s): [7, 1] 
+
+0x40314c:	mov	rdi, rbx
+0x40314f:	call	0x4021f0
+		Instruction group(s): [2, 7, 145] 
+
+0x403154:	mov	eax, r12d
+0x403157:	jmp	0x403063
+		Instruction group(s): [7, 1] 
+
+0x40315c:	nop	dword ptr [rax]
+0x403160:	mov	eax, 0xffffffff
+0x403165:	jmp	0x403063
+		Instruction group(s): [7, 1] 
+
+0x40316a:	mov	rdi, rbp
+0x40316d:	call	0x404cc0
+		Instruction group(s): [2, 7, 145] 
+
+0x403172:	jmp	0x40314c
+		Instruction group(s): [7, 1] 
+
+0x403174:	xor	eax, eax
+0x403176:	mov	esi, 0x405760
+0x40317b:	mov	edi, 0x4057b3
+0x403180:	call	0x402470
+		Instruction group(s): [2, 7, 145] 
+
+0x403185:	mov	eax, 0xffffffff
+0x40318a:	jmp	0x403063
+		Instruction group(s): [7, 1] 
+
+0x40318f:	nop	
+0x403190:	push	rbx
+		Instruction group(s): [145] 
+
+0x403191:	mov	edx, 0x1000
+0x403196:	mov	rbx, rdi
+0x403199:	sub	rsp, 0x1000
+0x4031a0:	mov	rdi, rsp
+0x4031a3:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x4031a8:	mov	rdi, rsp
+0x4031ab:	call	0x401730
+		Instruction group(s): [2, 7, 145] 
+
+0x4031b0:	mov	rdi, rbx
+0x4031b3:	mov	rsi, rax
+0x4031b6:	call	0x401640
+		Instruction group(s): [2, 7, 145] 
+
+0x4031bb:	add	rsp, 0x1000
+0x4031c2:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4031c3:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4031c4:	nop	word ptr cs:[rax + rax]
+0x4031d0:	push	rbx
+		Instruction group(s): [145] 
+
+0x4031d1:	mov	rbx, rdi
+0x4031d4:	mov	rdi, rsi
+0x4031d7:	call	0x401860
+		Instruction group(s): [2, 7, 145] 
+
+0x4031dc:	mov	rdi, rbx
+0x4031df:	mov	rsi, rax
+0x4031e2:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4031e3:	jmp	0x401640
+		Instruction group(s): [7, 1] 
+
+0x4031e8:	nop	dword ptr [rax + rax]
+0x4031f0:	push	r13
+		Instruction group(s): [145] 
+
+0x4031f2:	push	r12
+		Instruction group(s): [145] 
+
+0x4031f4:	mov	r12, rsi
+0x4031f7:	push	rbp
+		Instruction group(s): [145] 
+
+0x4031f8:	push	rbx
+		Instruction group(s): [145] 
+
+0x4031f9:	mov	rbp, rdx
+0x4031fc:	mov	rbx, rdi
+0x4031ff:	sub	rsp, 8
+0x403203:	test	rdi, rdi
+0x403206:	je	0x4032b8
+		Instruction group(s): [7, 1] 
+
+0x40320c:	lea	rax, [rdi + 8]
+0x403210:	mov	rcx, rbx
+0x403213:	mov	qword ptr [rdi], 0
+0x40321a:	mov	qword ptr [rdi + 0xff8], 0
+0x403225:	and	rax, 0xfffffffffffffff8
+0x403229:	sub	rcx, rax
+0x40322c:	mov	rdi, rax
+0x40322f:	xor	eax, eax
+0x403231:	add	ecx, 0x1000
+0x403237:	shr	ecx, 3
+0x40323a:	rep stosq	qword ptr [rdi], rax
+0x40323d:	mov	rdi, r12
+0x403240:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x403245:	mov	rsi, r12
+0x403248:	mov	rdx, rax
+0x40324b:	mov	rdi, rbx
+0x40324e:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x403253:	mov	rdi, rbx
+0x403256:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x40325b:	cmp	byte ptr [rbx + rax - 1], 0x2f
+0x403260:	je	0x40326b
+		Instruction group(s): [7, 1] 
+
+0x403262:	mov	byte ptr [rbx + rax], 0x2f
+0x403266:	mov	byte ptr [rbx + rax + 1], 0
+0x40326b:	mov	rdi, rbp
+0x40326e:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x403273:	cmp	byte ptr [rbp + rax - 1], 0x2f
+0x403278:	je	0x403298
+		Instruction group(s): [7, 1] 
+
+0x40327a:	mov	rsi, rbp
+0x40327d:	mov	rdi, rbx
+0x403280:	call	0x4019d0
+		Instruction group(s): [2, 7, 145] 
+
+0x403285:	mov	rax, rbx
+0x403288:	add	rsp, 8
+0x40328c:	pop	rbx
+		Instruction group(s): [145] 
+
+0x40328d:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40328e:	pop	r12
+		Instruction group(s): [145] 
+
+0x403290:	pop	r13
+		Instruction group(s): [145] 
+
+0x403292:	ret	
+		Instruction group(s): [3, 145] 
+
+0x403293:	nop	dword ptr [rax + rax]
+0x403298:	lea	rdx, [rax - 2]
+0x40329c:	mov	rsi, rbp
+0x40329f:	mov	rdi, rbx
+0x4032a2:	call	0x401760
+		Instruction group(s): [2, 7, 145] 
+
+0x4032a7:	add	rsp, 8
+0x4032ab:	mov	rax, rbx
+0x4032ae:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4032af:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4032b0:	pop	r12
+		Instruction group(s): [145] 
+
+0x4032b2:	pop	r13
+		Instruction group(s): [145] 
+
+0x4032b4:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4032b5:	nop	dword ptr [rax]
+0x4032b8:	mov	rdi, rsi
+0x4032bb:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x4032c0:	mov	rdi, rbp
+0x4032c3:	mov	rbx, rax
+0x4032c6:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x4032cb:	lea	r13, [rbx + rax + 2]
+0x4032d0:	mov	rdi, r13
+0x4032d3:	call	0x4018c0
+		Instruction group(s): [2, 7, 145] 
+
+0x4032d8:	test	rax, rax
+0x4032db:	mov	rbx, rax
+0x4032de:	je	0x4032f2
+		Instruction group(s): [7, 1] 
+
+0x4032e0:	mov	rdx, r13
+0x4032e3:	xor	esi, esi
+0x4032e5:	mov	rdi, rax
+0x4032e8:	call	0x401740
+		Instruction group(s): [2, 7, 145] 
+
+0x4032ed:	jmp	0x40323d
+		Instruction group(s): [7, 1] 
+
+0x4032f2:	xor	eax, eax
+0x4032f4:	jmp	0x403288
+		Instruction group(s): [7, 1] 
+
+0x4032f6:	nop	word ptr cs:[rax + rax]
+0x403300:	ret	
+		Instruction group(s): [3, 145] 
+
+0x403302:	nop	word ptr cs:[rax + rax]
+0x403310:	push	rbp
+		Instruction group(s): [145] 
+
+0x403311:	push	rbx
+		Instruction group(s): [145] 
+
+0x403312:	mov	rbp, rdi
+0x403315:	mov	rbx, rsi
+0x403318:	sub	rsp, 0x3008
+0x40331f:	lea	rdi, [rsp + 0x2000]
+0x403327:	call	0x4031d0
+		Instruction group(s): [2, 7, 145] 
+
+0x40332c:	mov	rsi, rbx
+0x40332f:	mov	rdi, rsp
+0x403332:	call	0x403190
+		Instruction group(s): [2, 7, 145] 
+
+0x403337:	lea	rsi, [rsp + 0x1000]
+0x40333f:	mov	edx, 0x1000
+0x403344:	mov	rdi, rsp
+0x403347:	call	0x401770
+		Instruction group(s): [2, 7, 145] 
+
+0x40334c:	xor	edx, edx
+0x40334e:	test	rax, rax
+0x403351:	je	0x403373
+		Instruction group(s): [7, 1] 
+
+0x403353:	lea	rdx, [rsp + 0x2000]
+0x40335b:	lea	rsi, [rsp + 0x1000]
+0x403363:	mov	rdi, rbp
+0x403366:	call	0x4031f0
+		Instruction group(s): [2, 7, 145] 
+
+0x40336b:	xor	edx, edx
+0x40336d:	test	rax, rax
+0x403370:	sete	dl
+0x403373:	add	rsp, 0x3008
+0x40337a:	mov	eax, edx
+0x40337c:	pop	rbx
+		Instruction group(s): [145] 
+
+0x40337d:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40337e:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40337f:	nop	
+0x403380:	sub	rsp, 8
+0x403384:	mov	rsi, rdi
+0x403387:	mov	rdi, rdx
+0x40338a:	call	0x401830
+		Instruction group(s): [2, 7, 145] 
+
+0x40338f:	test	rax, rax
+0x403392:	setne	al
+0x403395:	add	rsp, 8
+0x403399:	movzx	eax, al
+0x40339c:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40339d:	nop	dword ptr [rax]
+0x4033a0:	sub	rsp, 0x98
+0x4033a7:	mov	rsi, rdi
+0x4033aa:	mov	edi, 1
+0x4033af:	mov	rdx, rsp
+0x4033b2:	call	0x401890
+		Instruction group(s): [2, 7, 145] 
+
+0x4033b7:	test	eax, eax
+0x4033b9:	sete	al
+0x4033bc:	add	rsp, 0x98
+0x4033c3:	movzx	eax, al
+0x4033c6:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4033c7:	nop	word ptr [rax + rax]
+0x4033d0:	push	r15
+		Instruction group(s): [145] 
+
+0x4033d2:	push	r14
+		Instruction group(s): [145] 
+
+0x4033d4:	mov	r14, rdi
+0x4033d7:	push	r13
+		Instruction group(s): [145] 
+
+0x4033d9:	push	r12
+		Instruction group(s): [145] 
+
+0x4033db:	mov	edi, 0x406443
+0x4033e0:	push	rbp
+		Instruction group(s): [145] 
+
+0x4033e1:	push	rbx
+		Instruction group(s): [145] 
+
+0x4033e2:	mov	r12, rsi
+0x4033e5:	sub	rsp, 0x20b8
+0x4033ec:	call	0x404aa0
+		Instruction group(s): [2, 7, 145] 
+
+0x4033f1:	test	rax, rax
+0x4033f4:	mov	rbp, rax
+0x4033f7:	je	0x4034c9
+		Instruction group(s): [7, 1] 
+
+0x4033fd:	mov	r13d, 0x1000
+0x403403:	jmp	0x40346e
+		Instruction group(s): [7, 1] 
+
+0x403405:	nop	dword ptr [rax]
+0x403408:	mov	rbx, rax
+0x40340b:	lea	rdi, [rsp + 0x90]
+0x403413:	mov	ecx, 0x1001
+0x403418:	sub	rbx, rbp
+0x40341b:	mov	rsi, rbp
+0x40341e:	cmp	rbx, 0x1000
+0x403425:	cmova	rbx, r13
+		Instruction group(s): [137] 
+
+0x403429:	mov	rdx, rbx
+0x40342c:	call	0x401910
+		Instruction group(s): [2, 7, 145] 
+
+0x403431:	lea	rsi, [rsp + 0x90]
+0x403439:	lea	rdi, [rsp + 0x10a0]
+0x403441:	mov	rdx, r12
+0x403444:	mov	byte ptr [rsp + rbx + 0x90], 0
+0x40344c:	call	0x4031f0
+		Instruction group(s): [2, 7, 145] 
+
+0x403451:	lea	rsi, [rsp + 0x10a0]
+0x403459:	mov	rdx, rsp
+0x40345c:	mov	edi, 1
+0x403461:	call	0x401890
+		Instruction group(s): [2, 7, 145] 
+
+0x403466:	test	eax, eax
+0x403468:	je	0x4034e0
+		Instruction group(s): [7, 1] 
+
+0x40346a:	lea	rbp, [r15 + 1]
+0x40346e:	mov	esi, 0x3a
+0x403473:	mov	rdi, rbp
+0x403476:	call	0x401720
+		Instruction group(s): [2, 7, 145] 
+
+0x40347b:	test	rax, rax
+0x40347e:	mov	r15, rax
+0x403481:	jne	0x403408
+		Instruction group(s): [7, 1] 
+
+0x403483:	lea	rdi, [rsp + 0x90]
+0x40348b:	mov	edx, 0x1000
+0x403490:	mov	rsi, rbp
+0x403493:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x403498:	lea	rsi, [rsp + 0x90]
+0x4034a0:	lea	rdi, [rsp + 0x10a0]
+0x4034a8:	mov	rdx, r12
+0x4034ab:	call	0x4031f0
+		Instruction group(s): [2, 7, 145] 
+
+0x4034b0:	lea	rsi, [rsp + 0x10a0]
+0x4034b8:	mov	rdx, rsp
+0x4034bb:	mov	edi, 1
+0x4034c0:	call	0x401890
+		Instruction group(s): [2, 7, 145] 
+
+0x4034c5:	test	eax, eax
+0x4034c7:	je	0x4034e0
+		Instruction group(s): [7, 1] 
+
+0x4034c9:	mov	eax, 0xffffffff
+0x4034ce:	add	rsp, 0x20b8
+0x4034d5:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4034d6:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4034d7:	pop	r12
+		Instruction group(s): [145] 
+
+0x4034d9:	pop	r13
+		Instruction group(s): [145] 
+
+0x4034db:	pop	r14
+		Instruction group(s): [145] 
+
+0x4034dd:	pop	r15
+		Instruction group(s): [145] 
+
+0x4034df:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4034e0:	lea	rsi, [rsp + 0x10a0]
+0x4034e8:	mov	edx, 0x1000
+0x4034ed:	mov	rdi, r14
+0x4034f0:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x4034f5:	xor	eax, eax
+0x4034f7:	jmp	0x4034ce
+		Instruction group(s): [7, 1] 
+
+0x4034f9:	nop	dword ptr [rax]
+0x403500:	push	r12
+		Instruction group(s): [145] 
+
+0x403502:	push	rbp
+		Instruction group(s): [145] 
+
+0x403503:	mov	r12, rdi
+0x403506:	push	rbx
+		Instruction group(s): [145] 
+
+0x403507:	mov	rbp, rsi
+0x40350a:	sub	rsp, 0x1000
+0x403511:	cmp	byte ptr [rsi], 0x2f
+0x403514:	je	0x403528
+		Instruction group(s): [7, 1] 
+
+0x403516:	mov	esi, 0x2f
+0x40351b:	mov	rdi, rbp
+0x40351e:	call	0x401720
+		Instruction group(s): [2, 7, 145] 
+
+0x403523:	test	rax, rax
+0x403526:	je	0x403550
+		Instruction group(s): [7, 1] 
+
+0x403528:	mov	rsi, rbp
+0x40352b:	mov	rdi, r12
+0x40352e:	call	0x403310
+		Instruction group(s): [2, 7, 145] 
+
+0x403533:	test	eax, eax
+0x403535:	sete	al
+0x403538:	movzx	eax, al
+0x40353b:	neg	eax
+0x40353d:	add	rsp, 0x1000
+0x403544:	pop	rbx
+		Instruction group(s): [145] 
+
+0x403545:	pop	rbp
+		Instruction group(s): [145] 
+
+0x403546:	pop	r12
+		Instruction group(s): [145] 
+
+0x403548:	ret	
+		Instruction group(s): [3, 145] 
+
+0x403549:	nop	dword ptr [rax]
+0x403550:	mov	rsi, rbp
+0x403553:	mov	rdi, rsp
+0x403556:	call	0x4033d0
+		Instruction group(s): [2, 7, 145] 
+
+0x40355b:	cmp	eax, -1
+0x40355e:	mov	ebx, eax
+0x403560:	je	0x403570
+		Instruction group(s): [7, 1] 
+
+0x403562:	mov	rsi, rsp
+0x403565:	jmp	0x40352b
+		Instruction group(s): [7, 1] 
+
+0x403567:	nop	word ptr [rax + rax]
+0x403570:	mov	edx, 0x1000
+0x403575:	mov	rsi, rbp
+0x403578:	mov	rdi, rsp
+0x40357b:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x403580:	cmp	byte ptr [rsp + 0xfff], 0
+0x403588:	je	0x403562
+		Instruction group(s): [7, 1] 
+
+0x40358a:	mov	eax, ebx
+0x40358c:	jmp	0x40353d
+		Instruction group(s): [7, 1] 
+
+0x40358e:	nop	
+0x403590:	jmp	0x403190
+		Instruction group(s): [7, 1] 
+
+0x403595:	nop	word ptr cs:[rax + rax]
+0x4035a0:	sub	rsp, 8
+0x4035a4:	call	0x4016e0
+		Instruction group(s): [2, 7, 145] 
+
+0x4035a9:	mov	dword ptr [rax], 0x676b702e
+0x4035af:	mov	byte ptr [rax + 4], 0
+0x4035b3:	add	rsp, 8
+0x4035b7:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4035b8:	nop	dword ptr [rax + rax]
+0x4035c0:	push	rbp
+		Instruction group(s): [145] 
+
+0x4035c1:	push	rbx
+		Instruction group(s): [145] 
+
+0x4035c2:	mov	ebp, esi
+0x4035c4:	mov	esi, 0x4057c4
+0x4035c9:	mov	rbx, rdi
+0x4035cc:	sub	rsp, 8
+0x4035d0:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4035d5:	test	rax, rax
+0x4035d8:	mov	qword ptr [rip + 0x2045e1], rax
+0x4035df:	je	0x403b90
+		Instruction group(s): [7, 1] 
+
+0x4035e5:	mov	esi, 0x4057dd
+0x4035ea:	mov	rdi, rbx
+0x4035ed:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4035f2:	test	rax, rax
+0x4035f5:	mov	qword ptr [rip + 0x2045bc], rax
+0x4035fc:	je	0x403ba4
+		Instruction group(s): [7, 1] 
+
+0x403602:	mov	esi, 0x4057fa
+0x403607:	mov	rdi, rbx
+0x40360a:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x40360f:	test	rax, rax
+0x403612:	mov	qword ptr [rip + 0x204597], rax
+0x403619:	je	0x403bb8
+		Instruction group(s): [7, 1] 
+
+0x40361f:	mov	esi, 0x405808
+0x403624:	mov	rdi, rbx
+0x403627:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x40362c:	test	rax, rax
+0x40362f:	mov	qword ptr [rip + 0x204572], rax
+0x403636:	je	0x403bcc
+		Instruction group(s): [7, 1] 
+
+0x40363c:	mov	esi, 0x405821
+0x403641:	mov	rdi, rbx
+0x403644:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403649:	test	rax, rax
+0x40364c:	mov	qword ptr [rip + 0x20454d], rax
+0x403653:	je	0x403be0
+		Instruction group(s): [7, 1] 
+
+0x403659:	mov	esi, 0x40582f
+0x40365e:	mov	rdi, rbx
+0x403661:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403666:	test	rax, rax
+0x403669:	mov	qword ptr [rip + 0x204528], rax
+0x403670:	je	0x403bf4
+		Instruction group(s): [7, 1] 
+
+0x403676:	mov	esi, 0x405846
+0x40367b:	mov	rdi, rbx
+0x40367e:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403683:	test	rax, rax
+0x403686:	mov	qword ptr [rip + 0x204503], rax
+0x40368d:	je	0x403c08
+		Instruction group(s): [7, 1] 
+
+0x403693:	mov	esi, 0x405856
+0x403698:	mov	rdi, rbx
+0x40369b:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4036a0:	test	rax, rax
+0x4036a3:	mov	qword ptr [rip + 0x2044de], rax
+0x4036aa:	je	0x403c1c
+		Instruction group(s): [7, 1] 
+
+0x4036b0:	mov	esi, 0x405865
+0x4036b5:	mov	rdi, rbx
+0x4036b8:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4036bd:	test	rax, rax
+0x4036c0:	mov	qword ptr [rip + 0x2044b9], rax
+0x4036c7:	je	0x403c30
+		Instruction group(s): [7, 1] 
+
+0x4036cd:	mov	esi, 0x405873
+0x4036d2:	mov	rdi, rbx
+0x4036d5:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4036da:	test	rax, rax
+0x4036dd:	mov	qword ptr [rip + 0x204494], rax
+0x4036e4:	je	0x403c44
+		Instruction group(s): [7, 1] 
+
+0x4036ea:	mov	esi, 0x405899
+0x4036ef:	mov	rdi, rbx
+0x4036f2:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4036f7:	test	rax, rax
+0x4036fa:	mov	qword ptr [rip + 0x20446f], rax
+0x403701:	je	0x403c58
+		Instruction group(s): [7, 1] 
+
+0x403707:	mov	esi, 0x4058c3
+0x40370c:	mov	rdi, rbx
+0x40370f:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403714:	test	rax, rax
+0x403717:	mov	qword ptr [rip + 0x20444a], rax
+0x40371e:	je	0x403c6c
+		Instruction group(s): [7, 1] 
+
+0x403724:	mov	esi, 0x4058e9
+0x403729:	mov	rdi, rbx
+0x40372c:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403731:	test	rax, rax
+0x403734:	mov	qword ptr [rip + 0x204425], rax
+0x40373b:	je	0x403e4c
+		Instruction group(s): [7, 1] 
+
+0x403741:	cmp	ebp, 0x1d
+0x403744:	jg	0x403a00
+		Instruction group(s): [7, 1] 
+
+0x40374a:	mov	esi, 0x405947
+0x40374f:	mov	rdi, rbx
+0x403752:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403757:	test	rax, rax
+0x40375a:	mov	qword ptr [rip + 0x2043e7], rax
+0x403761:	je	0x403c80
+		Instruction group(s): [7, 1] 
+
+0x403767:	mov	esi, 0x405959
+0x40376c:	mov	rdi, rbx
+0x40376f:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403774:	test	rax, rax
+0x403777:	mov	qword ptr [rip + 0x2043c2], rax
+0x40377e:	je	0x403c94
+		Instruction group(s): [7, 1] 
+
+0x403784:	mov	esi, 0x40596a
+0x403789:	mov	rdi, rbx
+0x40378c:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403791:	test	rax, rax
+0x403794:	mov	qword ptr [rip + 0x20439d], rax
+0x40379b:	je	0x403ca8
+		Instruction group(s): [7, 1] 
+
+0x4037a1:	mov	esi, 0x40597f
+0x4037a6:	mov	rdi, rbx
+0x4037a9:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4037ae:	test	rax, rax
+0x4037b1:	mov	qword ptr [rip + 0x204378], rax
+0x4037b8:	je	0x403cbc
+		Instruction group(s): [7, 1] 
+
+0x4037be:	mov	esi, 0x4059a9
+0x4037c3:	mov	rdi, rbx
+0x4037c6:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4037cb:	test	rax, rax
+0x4037ce:	mov	qword ptr [rip + 0x204353], rax
+0x4037d5:	je	0x403cd0
+		Instruction group(s): [7, 1] 
+
+0x4037db:	mov	esi, 0x4059b8
+0x4037e0:	mov	rdi, rbx
+0x4037e3:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4037e8:	test	rax, rax
+0x4037eb:	mov	qword ptr [rip + 0x20432e], rax
+0x4037f2:	je	0x403ce4
+		Instruction group(s): [7, 1] 
+
+0x4037f8:	mov	esi, 0x4059e2
+0x4037fd:	mov	rdi, rbx
+0x403800:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403805:	test	rax, rax
+0x403808:	mov	qword ptr [rip + 0x204309], rax
+0x40380f:	je	0x403cf8
+		Instruction group(s): [7, 1] 
+
+0x403815:	mov	esi, 0x4059f5
+0x40381a:	mov	rdi, rbx
+0x40381d:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403822:	test	rax, rax
+0x403825:	mov	qword ptr [rip + 0x2042e4], rax
+0x40382c:	je	0x403d20
+		Instruction group(s): [7, 1] 
+
+0x403832:	mov	esi, 0x405a0d
+0x403837:	mov	rdi, rbx
+0x40383a:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x40383f:	test	rax, rax
+0x403842:	mov	qword ptr [rip + 0x2042bf], rax
+0x403849:	je	0x403d0c
+		Instruction group(s): [7, 1] 
+
+0x40384f:	mov	esi, 0x405a23
+0x403854:	mov	rdi, rbx
+0x403857:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x40385c:	test	rax, rax
+0x40385f:	mov	qword ptr [rip + 0x20429a], rax
+0x403866:	je	0x403d48
+		Instruction group(s): [7, 1] 
+
+0x40386c:	mov	esi, 0x405a31
+0x403871:	mov	rdi, rbx
+0x403874:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403879:	test	rax, rax
+0x40387c:	mov	qword ptr [rip + 0x204275], rax
+0x403883:	je	0x403d34
+		Instruction group(s): [7, 1] 
+
+0x403889:	mov	esi, 0x405a59
+0x40388e:	mov	rdi, rbx
+0x403891:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403896:	test	rax, rax
+0x403899:	mov	qword ptr [rip + 0x204250], rax
+0x4038a0:	je	0x403d70
+		Instruction group(s): [7, 1] 
+
+0x4038a6:	mov	esi, 0x405a67
+0x4038ab:	mov	rdi, rbx
+0x4038ae:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4038b3:	test	rax, rax
+0x4038b6:	mov	qword ptr [rip + 0x20422b], rax
+0x4038bd:	je	0x403d5c
+		Instruction group(s): [7, 1] 
+
+0x4038c3:	mov	esi, 0x405a78
+0x4038c8:	mov	rdi, rbx
+0x4038cb:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4038d0:	test	rax, rax
+0x4038d3:	mov	qword ptr [rip + 0x204206], rax
+0x4038da:	je	0x403d98
+		Instruction group(s): [7, 1] 
+
+0x4038e0:	mov	esi, 0x405a8e
+0x4038e5:	mov	rdi, rbx
+0x4038e8:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4038ed:	test	rax, rax
+0x4038f0:	mov	qword ptr [rip + 0x2041e1], rax
+0x4038f7:	je	0x403d84
+		Instruction group(s): [7, 1] 
+
+0x4038fd:	mov	esi, 0x405aa5
+0x403902:	mov	rdi, rbx
+0x403905:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x40390a:	test	rax, rax
+0x40390d:	mov	qword ptr [rip + 0x2041bc], rax
+0x403914:	je	0x403e60
+		Instruction group(s): [7, 1] 
+
+0x40391a:	cmp	ebp, 0x1d
+0x40391d:	jle	0x403a50
+		Instruction group(s): [7, 1] 
+
+0x403923:	mov	esi, 0x405ae0
+0x403928:	mov	rdi, rbx
+0x40392b:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403930:	test	rax, rax
+0x403933:	mov	qword ptr [rip + 0x204186], rax
+0x40393a:	je	0x403dac
+		Instruction group(s): [7, 1] 
+
+0x403940:	mov	esi, 0x405af4
+0x403945:	mov	rdi, rbx
+0x403948:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x40394d:	test	rax, rax
+0x403950:	mov	qword ptr [rip + 0x204161], rax
+0x403957:	je	0x403de8
+		Instruction group(s): [7, 1] 
+
+0x40395d:	mov	esi, 0x405b04
+0x403962:	mov	rdi, rbx
+0x403965:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x40396a:	test	rax, rax
+0x40396d:	mov	qword ptr [rip + 0x20413c], rax
+0x403974:	je	0x403dd4
+		Instruction group(s): [7, 1] 
+
+0x40397a:	mov	esi, 0x405b14
+0x40397f:	mov	rdi, rbx
+0x403982:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403987:	test	rax, rax
+0x40398a:	mov	qword ptr [rip + 0x204117], rax
+0x403991:	je	0x403dc0
+		Instruction group(s): [7, 1] 
+
+0x403997:	mov	esi, 0x405b24
+0x40399c:	mov	rdi, rbx
+0x40399f:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4039a4:	test	rax, rax
+0x4039a7:	mov	qword ptr [rip + 0x2040f2], rax
+0x4039ae:	je	0x403e10
+		Instruction group(s): [7, 1] 
+
+0x4039b4:	mov	esi, 0x405b32
+0x4039b9:	mov	rdi, rbx
+0x4039bc:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4039c1:	test	rax, rax
+0x4039c4:	mov	qword ptr [rip + 0x20409d], rax
+0x4039cb:	je	0x403dfc
+		Instruction group(s): [7, 1] 
+
+0x4039d1:	mov	esi, 0x406088
+0x4039d6:	mov	rdi, rbx
+0x4039d9:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x4039de:	test	rax, rax
+0x4039e1:	mov	qword ptr [rip + 0x204078], rax
+0x4039e8:	je	0x403e74
+		Instruction group(s): [7, 1] 
+
+0x4039ee:	cmp	ebp, 0x1d
+0x4039f1:	jg	0x403aa0
+		Instruction group(s): [7, 1] 
+
+0x4039f7:	xor	eax, eax
+0x4039f9:	add	rsp, 8
+0x4039fd:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4039fe:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4039ff:	ret	
+		Instruction group(s): [3, 145] 
+
+0x403a00:	mov	esi, 0x4058f7
+0x403a05:	mov	rdi, rbx
+0x403a08:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403a0d:	test	rax, rax
+0x403a10:	mov	qword ptr [rip + 0x204141], rax
+0x403a17:	je	0x403e24
+		Instruction group(s): [7, 1] 
+
+0x403a1d:	mov	esi, 0x40591f
+0x403a22:	mov	rdi, rbx
+0x403a25:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403a2a:	test	rax, rax
+0x403a2d:	mov	qword ptr [rip + 0x20411c], rax
+0x403a34:	jne	0x40374a
+		Instruction group(s): [7, 1] 
+
+0x403a3a:	mov	edi, 0x40592a
+0x403a3f:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403a44:	mov	eax, 0xffffffff
+0x403a49:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403a4b:	nop	dword ptr [rax + rax]
+0x403a50:	mov	esi, 0x405ab8
+0x403a55:	mov	rdi, rbx
+0x403a58:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403a5d:	test	rax, rax
+0x403a60:	mov	qword ptr [rip + 0x204061], rax
+0x403a67:	je	0x403e38
+		Instruction group(s): [7, 1] 
+
+0x403a6d:	mov	esi, 0x405acc
+0x403a72:	mov	rdi, rbx
+0x403a75:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403a7a:	test	rax, rax
+0x403a7d:	mov	qword ptr [rip + 0x204004], rax
+0x403a84:	jne	0x403923
+		Instruction group(s): [7, 1] 
+
+0x403a8a:	mov	edi, 0x405f78
+0x403a8f:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403a94:	mov	eax, 0xffffffff
+0x403a99:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403a9e:	nop	
+0x403aa0:	mov	esi, 0x405b42
+0x403aa5:	mov	rdi, rbx
+0x403aa8:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403aad:	test	rax, rax
+0x403ab0:	mov	qword ptr [rip + 0x203fe1], rax
+0x403ab7:	je	0x403eb0
+		Instruction group(s): [7, 1] 
+
+0x403abd:	cmp	ebp, 0x22
+0x403ac0:	jg	0x403b58
+		Instruction group(s): [7, 1] 
+
+0x403ac6:	mov	esi, 0x405b67
+0x403acb:	mov	rdi, rbx
+0x403ace:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403ad3:	test	rax, rax
+0x403ad6:	mov	qword ptr [rip + 0x203fb3], rax
+0x403add:	je	0x403ec2
+		Instruction group(s): [7, 1] 
+
+0x403ae3:	mov	esi, 0x405ba1
+0x403ae8:	mov	rdi, rbx
+0x403aeb:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403af0:	test	rax, rax
+0x403af3:	mov	qword ptr [rip + 0x203f86], rax
+0x403afa:	je	0x403e88
+		Instruction group(s): [7, 1] 
+
+0x403b00:	mov	esi, 0x405b76
+0x403b05:	mov	rdi, rbx
+0x403b08:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403b0d:	test	rax, rax
+0x403b10:	mov	qword ptr [rip + 0x203f59], rax
+0x403b17:	je	0x403e9e
+		Instruction group(s): [7, 1] 
+
+0x403b1d:	cmp	ebp, 0x1f
+0x403b20:	jle	0x4039f7
+		Instruction group(s): [7, 1] 
+
+0x403b26:	mov	esi, 0x405b87
+0x403b2b:	mov	rdi, rbx
+0x403b2e:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403b33:	test	rax, rax
+0x403b36:	mov	qword ptr [rip + 0x203f3b], rax
+0x403b3d:	jne	0x4039f7
+		Instruction group(s): [7, 1] 
+
+0x403b43:	mov	edi, 0x4061a8
+0x403b48:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403b4d:	or	eax, 0xffffffff
+0x403b50:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403b55:	nop	dword ptr [rax]
+0x403b58:	mov	esi, 0x405b57
+0x403b5d:	mov	rdi, rbx
+0x403b60:	call	0x401a10
+		Instruction group(s): [2, 7, 145] 
+
+0x403b65:	test	rax, rax
+0x403b68:	mov	qword ptr [rip + 0x203f21], rax
+0x403b6f:	jne	0x403ae3
+		Instruction group(s): [7, 1] 
+
+0x403b75:	mov	edi, 0x406108
+0x403b7a:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403b7f:	or	eax, 0xffffffff
+0x403b82:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403b87:	nop	word ptr [rax + rax]
+0x403b90:	mov	edi, 0x405bb8
+0x403b95:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403b9a:	mov	eax, 0xffffffff
+0x403b9f:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403ba4:	mov	edi, 0x405be8
+0x403ba9:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403bae:	mov	eax, 0xffffffff
+0x403bb3:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403bb8:	mov	edi, 0x405c18
+0x403bbd:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403bc2:	mov	eax, 0xffffffff
+0x403bc7:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403bcc:	mov	edi, 0x405c38
+0x403bd1:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403bd6:	mov	eax, 0xffffffff
+0x403bdb:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403be0:	mov	edi, 0x405c68
+0x403be5:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403bea:	mov	eax, 0xffffffff
+0x403bef:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403bf4:	mov	edi, 0x405c88
+0x403bf9:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403bfe:	mov	eax, 0xffffffff
+0x403c03:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c08:	mov	edi, 0x405cb8
+0x403c0d:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c12:	mov	eax, 0xffffffff
+0x403c17:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c1c:	mov	edi, 0x405ce0
+0x403c21:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c26:	mov	eax, 0xffffffff
+0x403c2b:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c30:	mov	edi, 0x405d08
+0x403c35:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c3a:	mov	eax, 0xffffffff
+0x403c3f:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c44:	mov	edi, 0x40587d
+0x403c49:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c4e:	mov	eax, 0xffffffff
+0x403c53:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c58:	mov	edi, 0x4058a5
+0x403c5d:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c62:	mov	eax, 0xffffffff
+0x403c67:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c6c:	mov	edi, 0x4058cd
+0x403c71:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c76:	mov	eax, 0xffffffff
+0x403c7b:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c80:	mov	edi, 0x405d48
+0x403c85:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c8a:	mov	eax, 0xffffffff
+0x403c8f:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403c94:	mov	edi, 0x405d70
+0x403c99:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403c9e:	mov	eax, 0xffffffff
+0x403ca3:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403ca8:	mov	edi, 0x405d98
+0x403cad:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403cb2:	mov	eax, 0xffffffff
+0x403cb7:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403cbc:	mov	edi, 0x40598b
+0x403cc1:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403cc6:	mov	eax, 0xffffffff
+0x403ccb:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403cd0:	mov	edi, 0x405dc0
+0x403cd5:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403cda:	mov	eax, 0xffffffff
+0x403cdf:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403ce4:	mov	edi, 0x4059c4
+0x403ce9:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403cee:	mov	eax, 0xffffffff
+0x403cf3:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403cf8:	mov	edi, 0x405de8
+0x403cfd:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d02:	mov	eax, 0xffffffff
+0x403d07:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d0c:	mov	edi, 0x405e40
+0x403d11:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d16:	mov	eax, 0xffffffff
+0x403d1b:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d20:	mov	edi, 0x405e10
+0x403d25:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d2a:	mov	eax, 0xffffffff
+0x403d2f:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d34:	mov	edi, 0x405a3c
+0x403d39:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d3e:	mov	eax, 0xffffffff
+0x403d43:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d48:	mov	edi, 0x405e68
+0x403d4d:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d52:	mov	eax, 0xffffffff
+0x403d57:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d5c:	mov	edi, 0x405ea8
+0x403d61:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d66:	mov	eax, 0xffffffff
+0x403d6b:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d70:	mov	edi, 0x405e88
+0x403d75:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d7a:	mov	eax, 0xffffffff
+0x403d7f:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d84:	mov	edi, 0x405ef8
+0x403d89:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403d8e:	mov	eax, 0xffffffff
+0x403d93:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403d98:	mov	edi, 0x405ed0
+0x403d9d:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403da2:	mov	eax, 0xffffffff
+0x403da7:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403dac:	mov	edi, 0x405fa0
+0x403db1:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403db6:	mov	eax, 0xffffffff
+0x403dbb:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403dc0:	mov	edi, 0x406018
+0x403dc5:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403dca:	mov	eax, 0xffffffff
+0x403dcf:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403dd4:	mov	edi, 0x405ff0
+0x403dd9:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403dde:	mov	eax, 0xffffffff
+0x403de3:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403de8:	mov	edi, 0x405fc8
+0x403ded:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403df2:	mov	eax, 0xffffffff
+0x403df7:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403dfc:	mov	edi, 0x406060
+0x403e01:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e06:	mov	eax, 0xffffffff
+0x403e0b:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e10:	mov	edi, 0x406040
+0x403e15:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e1a:	mov	eax, 0xffffffff
+0x403e1f:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e24:	mov	edi, 0x405902
+0x403e29:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e2e:	mov	eax, 0xffffffff
+0x403e33:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e38:	mov	edi, 0x405f50
+0x403e3d:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e42:	mov	eax, 0xffffffff
+0x403e47:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e4c:	mov	edi, 0x405d28
+0x403e51:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e56:	mov	eax, 0xffffffff
+0x403e5b:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e60:	mov	edi, 0x405f28
+0x403e65:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e6a:	mov	eax, 0xffffffff
+0x403e6f:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e74:	mov	edi, 0x4060a8
+0x403e79:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e7e:	mov	eax, 0xffffffff
+0x403e83:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e88:	xor	eax, eax
+0x403e8a:	mov	edi, 0x406158
+0x403e8f:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403e94:	mov	eax, 0xffffffff
+0x403e99:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403e9e:	mov	edi, 0x406180
+0x403ea3:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403ea8:	or	eax, 0xffffffff
+0x403eab:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403eb0:	mov	edi, 0x4060e0
+0x403eb5:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403eba:	or	eax, 0xffffffff
+0x403ebd:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403ec2:	mov	edi, 0x406130
+0x403ec7:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x403ecc:	or	eax, 0xffffffff
+0x403ecf:	jmp	0x4039f9
+		Instruction group(s): [7, 1] 
+
+0x403ed4:	nop	word ptr cs:[rax + rax]
+0x403ede:	nop	
+0x403ee0:	mov	rax, qword ptr [rip + 0x203c59]
+0x403ee7:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x403ee9:	nop	dword ptr [rax]
+0x403ef0:	mov	rax, qword ptr [rip + 0x203c51]
+0x403ef7:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x403ef9:	nop	dword ptr [rax]
+0x403f00:	mov	rax, qword ptr [rip + 0x203b99]
+0x403f07:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x403f09:	nop	dword ptr [rax]
+0x403f10:	mov	rax, qword ptr [rip + 0x203ba1]
+0x403f17:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x403f19:	nop	dword ptr [rax]
+0x403f20:	mov	rax, qword ptr [rip + 0x203b99]
+0x403f27:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x403f29:	nop	dword ptr [rax]
+0x403f30:	push	r14
+		Instruction group(s): [145] 
+
+0x403f32:	push	r13
+		Instruction group(s): [145] 
+
+0x403f34:	push	r12
+		Instruction group(s): [145] 
+
+0x403f36:	push	rbp
+		Instruction group(s): [145] 
+
+0x403f37:	xor	r12d, r12d
+0x403f3a:	push	rbx
+		Instruction group(s): [145] 
+
+0x403f3b:	mov	rbp, rdi
+0x403f3e:	sub	rsp, 0x4010
+0x403f45:	mov	rax, qword ptr [rip + 0x203c54]
+0x403f4c:	mov	rbx, qword ptr [rdi + 0x10]
+0x403f50:	cmp	rbx, qword ptr [rdi + 0x18]
+0x403f54:	mov	dword ptr [rax], 1
+0x403f5a:	mov	rax, qword ptr [rip + 0x203c4f]
+0x403f61:	mov	dword ptr [rax], 1
+0x403f67:	mov	rax, qword ptr [rip + 0x203c52]
+0x403f6e:	mov	dword ptr [rax], 1
+0x403f74:	mov	rax, qword ptr [rip + 0x203c1d]
+0x403f7b:	mov	dword ptr [rax], 1
+0x403f81:	mov	rax, qword ptr [rip + 0x203c20]
+0x403f88:	mov	dword ptr [rax], 1
+0x403f8e:	mov	rax, qword ptr [rip + 0x203bf3]
+0x403f95:	mov	dword ptr [rax], 0
+0x403f9b:	jb	0x403fd4
+		Instruction group(s): [7, 1] 
+
+0x403f9d:	jmp	0x40407f
+		Instruction group(s): [7, 1] 
+
+0x403fa2:	nop	word ptr [rax + rax]
+0x403fa8:	cmp	al, 0x75
+0x403faa:	je	0x404010
+		Instruction group(s): [7, 1] 
+
+0x403fac:	cmp	al, 0x76
+0x403fae:	jne	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x403fb0:	mov	rax, qword ptr [rip + 0x203bd1]
+0x403fb7:	mov	dword ptr [rax], 1
+0x403fbd:	nop	dword ptr [rax]
+0x403fc0:	mov	rsi, rbx
+0x403fc3:	mov	rdi, rbp
+0x403fc6:	call	0x401c70
+		Instruction group(s): [2, 7, 145] 
+
+0x403fcb:	cmp	qword ptr [rbp + 0x18], rax
+0x403fcf:	mov	rbx, rax
+0x403fd2:	jbe	0x404038
+		Instruction group(s): [7, 1] 
+
+0x403fd4:	cmp	byte ptr [rbx + 0x11], 0x6f
+0x403fd8:	jne	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x403fda:	lea	rsi, [rbx + 0x12]
+0x403fde:	mov	edi, 0x4061d4
+0x403fe3:	mov	ecx, 4
+0x403fe8:	repe cmpsb	byte ptr [rsi], byte ptr [rdi]
+0x403fea:	je	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x403fec:	movzx	eax, byte ptr [rbx + 0x12]
+0x403ff0:	cmp	al, 0x57
+0x403ff2:	je	0x404020
+		Instruction group(s): [7, 1] 
+
+0x403ff4:	jg	0x403fa8
+		Instruction group(s): [7, 1] 
+
+0x403ff6:	cmp	al, 0x4f
+0x403ff8:	jne	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x403ffa:	mov	rax, qword ptr [rip + 0x203b8f]
+0x404001:	mov	dword ptr [rax], 1
+0x404007:	jmp	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x404009:	nop	dword ptr [rax]
+0x404010:	mov	r12d, 1
+0x404016:	jmp	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x404018:	nop	dword ptr [rax + rax]
+0x404020:	mov	eax, dword ptr [rip + 0x213d3a]
+0x404026:	test	eax, eax
+0x404028:	je	0x404098
+		Instruction group(s): [7, 1] 
+
+0x40402a:	lea	rdi, [rbx + 0x14]
+0x40402e:	call	0x403f20
+		Instruction group(s): [2, 7, 145] 
+
+0x404033:	jmp	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x404035:	nop	dword ptr [rax]
+0x404038:	test	r12d, r12d
+0x40403b:	je	0x40407f
+		Instruction group(s): [7, 1] 
+
+0x40403d:	mov	rdi, qword ptr [rip + 0x2039fc]
+0x404044:	call	0x4018d0
+		Instruction group(s): [2, 7, 145] 
+
+0x404049:	mov	rdi, qword ptr [rip + 0x203a00]
+0x404050:	call	0x4018d0
+		Instruction group(s): [2, 7, 145] 
+
+0x404055:	mov	rdi, qword ptr [rip + 0x2039ec]
+0x40405c:	xor	esi, esi
+0x40405e:	call	0x401710
+		Instruction group(s): [2, 7, 145] 
+
+0x404063:	mov	rdi, qword ptr [rip + 0x2039d6]
+0x40406a:	xor	esi, esi
+0x40406c:	call	0x401710
+		Instruction group(s): [2, 7, 145] 
+
+0x404071:	mov	rdi, qword ptr [rip + 0x2039d8]
+0x404078:	xor	esi, esi
+0x40407a:	call	0x401710
+		Instruction group(s): [2, 7, 145] 
+
+0x40407f:	xor	eax, eax
+0x404081:	add	rsp, 0x4010
+0x404088:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404089:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40408a:	pop	r12
+		Instruction group(s): [145] 
+
+0x40408c:	pop	r13
+		Instruction group(s): [145] 
+
+0x40408e:	pop	r14
+		Instruction group(s): [145] 
+
+0x404090:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404091:	nop	dword ptr [rax]
+0x404098:	lea	r14, [rbx + 0x14]
+0x40409c:	mov	edx, 0x1000
+0x4040a1:	mov	rdi, rsp
+0x4040a4:	mov	rsi, r14
+0x4040a7:	call	0x401690
+		Instruction group(s): [2, 7, 145] 
+
+0x4040ac:	cmp	rax, -1
+0x4040b0:	mov	r13, rax
+0x4040b3:	je	0x4040c3
+		Instruction group(s): [7, 1] 
+
+0x4040b5:	mov	rdi, rsp
+0x4040b8:	call	qword ptr [rip + 0x203a02]
+		Instruction group(s): [2, 145] 
+
+0x4040be:	jmp	0x403fc0
+		Instruction group(s): [7, 1] 
+
+0x4040c3:	xor	eax, eax
+0x4040c5:	mov	rsi, r14
+0x4040c8:	mov	edi, 0x406248
+0x4040cd:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4040d2:	mov	eax, r13d
+0x4040d5:	jmp	0x404081
+		Instruction group(s): [7, 1] 
+
+0x4040d7:	nop	word ptr [rax + rax]
+0x4040e0:	push	rbx
+		Instruction group(s): [145] 
+
+0x4040e1:	lea	rsi, [rdi + 0x38]
+0x4040e5:	mov	rbx, rdi
+0x4040e8:	mov	edx, 0x40
+0x4040ed:	sub	rsp, 0x1040
+0x4040f4:	mov	eax, dword ptr [rip + 0x203962]
+0x4040fa:	mov	rdi, rsp
+0x4040fd:	sub	eax, 0x14
+0x404100:	cmp	eax, 9
+0x404103:	setbe	al
+0x404106:	movzx	eax, al
+0x404109:	mov	dword ptr [rip + 0x213c51], eax
+0x40410f:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x404114:	cmp	byte ptr [rsp + 0x3f], 0
+0x404119:	jne	0x404158
+		Instruction group(s): [7, 1] 
+
+0x40411b:	lea	rsi, [rbx + 0x3078]
+0x404122:	lea	rdi, [rsp + 0x40]
+0x404127:	mov	rdx, rsp
+0x40412a:	call	0x4031f0
+		Instruction group(s): [2, 7, 145] 
+
+0x40412f:	lea	rdi, [rsp + 0x40]
+0x404134:	call	0x405130
+		Instruction group(s): [2, 7, 145] 
+
+0x404139:	test	rax, rax
+0x40413c:	je	0x40416b
+		Instruction group(s): [7, 1] 
+
+0x40413e:	mov	esi, dword ptr [rip + 0x203918]
+0x404144:	mov	rdi, rax
+0x404147:	call	0x4035c0
+		Instruction group(s): [2, 7, 145] 
+
+0x40414c:	add	rsp, 0x1040
+0x404153:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404154:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404155:	nop	dword ptr [rax]
+0x404158:	xor	eax, eax
+0x40415a:	mov	edi, 0x406290
+0x40415f:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404164:	mov	eax, 0xffffffff
+0x404169:	jmp	0x40414c
+		Instruction group(s): [7, 1] 
+
+0x40416b:	call	0x401a30
+		Instruction group(s): [2, 7, 145] 
+
+0x404170:	lea	rsi, [rsp + 0x40]
+0x404175:	mov	rdx, rax
+0x404178:	mov	edi, 0x4062b0
+0x40417d:	xor	eax, eax
+0x40417f:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404184:	mov	eax, 0xffffffff
+0x404189:	jmp	0x40414c
+		Instruction group(s): [7, 1] 
+
+0x40418b:	nop	dword ptr [rax + rax]
+0x404190:	xor	eax, eax
+0x404192:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404193:	nop	word ptr cs:[rax + rax]
+0x4041a0:	push	rbp
+		Instruction group(s): [145] 
+
+0x4041a1:	push	rbx
+		Instruction group(s): [145] 
+
+0x4041a2:	mov	rbp, rdi
+0x4041a5:	mov	rbx, rbp
+0x4041a8:	sub	rsp, 8
+0x4041ac:	mov	rdi, qword ptr [rdi]
+0x4041af:	test	rdi, rdi
+0x4041b2:	je	0x4041c9
+		Instruction group(s): [7, 1] 
+
+0x4041b4:	nop	dword ptr [rax]
+0x4041b8:	add	rbx, 8
+0x4041bc:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x4041c1:	mov	rdi, qword ptr [rbx]
+0x4041c4:	test	rdi, rdi
+0x4041c7:	jne	0x4041b8
+		Instruction group(s): [7, 1] 
+
+0x4041c9:	add	rsp, 8
+0x4041cd:	mov	rdi, rbp
+0x4041d0:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4041d1:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4041d2:	jmp	0x4015f0
+		Instruction group(s): [7, 1] 
+
+0x4041d7:	nop	word ptr [rax + rax]
+0x4041e0:	push	r15
+		Instruction group(s): [145] 
+
+0x4041e2:	push	r14
+		Instruction group(s): [145] 
+
+0x4041e4:	push	r13
+		Instruction group(s): [145] 
+
+0x4041e6:	push	r12
+		Instruction group(s): [145] 
+
+0x4041e8:	mov	r13, rsi
+0x4041eb:	push	rbp
+		Instruction group(s): [145] 
+
+0x4041ec:	push	rbx
+		Instruction group(s): [145] 
+
+0x4041ed:	xor	esi, esi
+0x4041ef:	mov	ebx, edi
+0x4041f1:	xor	edi, edi
+0x4041f3:	sub	rsp, 0x18
+0x4041f7:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x4041fc:	mov	rdi, rax
+0x4041ff:	call	0x401790
+		Instruction group(s): [2, 7, 145] 
+
+0x404204:	test	rax, rax
+0x404207:	mov	r15, rax
+0x40420a:	je	0x4042ea
+		Instruction group(s): [7, 1] 
+
+0x404210:	lea	r14d, [rbx + 1]
+		Instruction group(s): [145] 
+
+0x404214:	mov	esi, 1
+0x404219:	movsxd	r14, r14d
+		Instruction group(s): [145] 
+
+0x40421c:	lea	rax, [r14*8]
+0x404224:	mov	rdi, rax
+0x404227:	mov	qword ptr [rsp + 8], rax
+0x40422c:	call	0x4017c0
+		Instruction group(s): [2, 7, 145] 
+
+0x404231:	test	rax, rax
+0x404234:	mov	rbp, rax
+0x404237:	je	0x4042ea
+		Instruction group(s): [7, 1] 
+
+0x40423d:	xor	edi, edi
+0x40423f:	mov	esi, 0x4054b8
+0x404244:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x404249:	test	ebx, ebx
+0x40424b:	jle	0x4042b8
+		Instruction group(s): [7, 1] 
+
+0x40424d:	sub	ebx, 1
+0x404250:	xor	r14d, r14d
+0x404253:	add	rbx, 1
+0x404257:	jmp	0x404269
+		Instruction group(s): [7, 1] 
+
+0x404259:	nop	dword ptr [rax]
+0x404260:	add	r14, 1
+0x404264:	cmp	r14, rbx
+0x404267:	je	0x4042b8
+		Instruction group(s): [7, 1] 
+
+0x404269:	xor	esi, esi
+0x40426b:	mov	rdi, qword ptr [r13 + r14*8]
+0x404270:	call	qword ptr [rip + 0x20381a]
+		Instruction group(s): [2, 145] 
+
+0x404276:	test	rax, rax
+0x404279:	mov	qword ptr [rbp + r14*8], rax
+0x40427e:	jne	0x404260
+		Instruction group(s): [7, 1] 
+
+0x404280:	mov	rdi, rbp
+0x404283:	call	0x4041a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404288:	mov	rdi, r15
+0x40428b:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x404290:	lea	esi, [r14 + 1]
+		Instruction group(s): [145] 
+
+0x404294:	xor	eax, eax
+0x404296:	mov	edi, 0x4062e0
+0x40429b:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4042a0:	xor	eax, eax
+0x4042a2:	add	rsp, 0x18
+0x4042a6:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4042a7:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4042a8:	pop	r12
+		Instruction group(s): [145] 
+
+0x4042aa:	pop	r13
+		Instruction group(s): [145] 
+
+0x4042ac:	pop	r14
+		Instruction group(s): [145] 
+
+0x4042ae:	pop	r15
+		Instruction group(s): [145] 
+
+0x4042b0:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4042b1:	nop	dword ptr [rax]
+0x4042b8:	mov	rax, qword ptr [rsp + 8]
+0x4042bd:	mov	rsi, r15
+0x4042c0:	xor	edi, edi
+0x4042c2:	mov	qword ptr [rbp + rax - 8], 0
+0x4042cb:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x4042d0:	mov	rdi, r15
+0x4042d3:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x4042d8:	add	rsp, 0x18
+0x4042dc:	mov	rax, rbp
+0x4042df:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4042e0:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4042e1:	pop	r12
+		Instruction group(s): [145] 
+
+0x4042e3:	pop	r13
+		Instruction group(s): [145] 
+
+0x4042e5:	pop	r14
+		Instruction group(s): [145] 
+
+0x4042e7:	pop	r15
+		Instruction group(s): [145] 
+
+0x4042e9:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4042ea:	xor	eax, eax
+0x4042ec:	mov	edi, 0x4061d9
+0x4042f1:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4042f6:	xor	eax, eax
+0x4042f8:	jmp	0x4042a2
+		Instruction group(s): [7, 1] 
+
+0x4042fa:	nop	word ptr [rax + rax]
+0x404300:	push	rbp
+		Instruction group(s): [145] 
+
+0x404301:	push	rbx
+		Instruction group(s): [145] 
+
+0x404302:	mov	rbp, rsi
+0x404305:	mov	rbx, rdi
+0x404308:	xor	esi, esi
+0x40430a:	xor	edi, edi
+0x40430c:	sub	rsp, 0x18
+0x404310:	mov	qword ptr [rsp + 8], rdx
+0x404315:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x40431a:	mov	rdi, rax
+0x40431d:	call	0x401790
+		Instruction group(s): [2, 7, 145] 
+
+0x404322:	xor	edi, edi
+0x404324:	mov	esi, 0x4054b8
+0x404329:	mov	qword ptr [rip + 0x213a28], rax
+0x404330:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x404335:	mov	rdi, rbp
+0x404338:	lea	rsi, [rsp + 8]
+0x40433d:	call	qword ptr [rip + 0x20374d]
+		Instruction group(s): [2, 145] 
+
+0x404343:	mov	rsi, qword ptr [rip + 0x213a0e]
+0x40434a:	mov	rbp, rax
+0x40434d:	xor	edi, edi
+0x40434f:	call	0x401940
+		Instruction group(s): [2, 7, 145] 
+
+0x404354:	test	rbp, rbp
+0x404357:	je	0x404380
+		Instruction group(s): [7, 1] 
+
+0x404359:	mov	rdx, qword ptr [rsp + 8]
+0x40435e:	mov	rsi, rbp
+0x404361:	mov	rdi, rbx
+0x404364:	call	0x4017b0
+		Instruction group(s): [2, 7, 145] 
+
+0x404369:	mov	rdi, rbp
+0x40436c:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x404371:	mov	rax, rbx
+0x404374:	add	rsp, 0x18
+0x404378:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404379:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40437a:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40437b:	nop	dword ptr [rax + rax]
+0x404380:	xor	eax, eax
+0x404382:	jmp	0x404374
+		Instruction group(s): [7, 1] 
+
+0x404384:	nop	word ptr cs:[rax + rax]
+0x404390:	push	rbp
+		Instruction group(s): [145] 
+
+0x404391:	push	rbx
+		Instruction group(s): [145] 
+
+0x404392:	lea	rsi, [rdi + 0x78]
+0x404396:	mov	rbx, rdi
+0x404399:	mov	edx, 0x1000
+0x40439e:	sub	rsp, 8
+0x4043a2:	mov	r10d, dword ptr [rip + 0x2139b7]
+0x4043a9:	test	r10d, r10d
+0x4043ac:	je	0x4044b8
+		Instruction group(s): [7, 1] 
+
+0x4043b2:	mov	edi, 0x616d40
+0x4043b7:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x4043bc:	mov	edi, 0x616d40
+0x4043c1:	call	0x403ef0
+		Instruction group(s): [2, 7, 145] 
+
+0x4043c6:	mov	r9d, dword ptr [rip + 0x213993]
+0x4043cd:	lea	rbp, [rbx + 0x3078]
+0x4043d4:	test	r9d, r9d
+0x4043d7:	jne	0x4044e0
+		Instruction group(s): [7, 1] 
+
+0x4043dd:	mov	edx, 0x1000
+0x4043e2:	mov	rsi, rbp
+0x4043e5:	mov	edi, 0x60dc80
+0x4043ea:	call	0x404300
+		Instruction group(s): [2, 7, 145] 
+
+0x4043ef:	test	rax, rax
+0x4043f2:	je	0x404664
+		Instruction group(s): [7, 1] 
+
+0x4043f8:	mov	edi, 0x60dc80
+0x4043fd:	call	qword ptr [rip + 0x20373d]
+		Instruction group(s): [2, 145] 
+
+0x404403:	mov	r8d, dword ptr [rip + 0x213956]
+0x40440a:	mov	rdi, rbp
+0x40440d:	test	r8d, r8d
+0x404410:	je	0x40450f
+		Instruction group(s): [7, 1] 
+
+0x404416:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x40441b:	mov	ecx, 0x200e
+0x404420:	mov	rdx, rax
+0x404423:	mov	rsi, rbp
+0x404426:	mov	edi, 0x60bc40
+0x40442b:	call	0x401910
+		Instruction group(s): [2, 7, 145] 
+
+0x404430:	mov	rdi, rbx
+0x404433:	call	0x403f30
+		Instruction group(s): [2, 7, 145] 
+
+0x404438:	call	qword ptr [rip + 0x203722]
+		Instruction group(s): [2, 145] 
+
+0x40443e:	mov	edx, dword ptr [rip + 0x21391c]
+0x404444:	test	edx, edx
+0x404446:	je	0x4045f0
+		Instruction group(s): [7, 1] 
+
+0x40444c:	mov	edi, 0x60bc40
+0x404451:	call	0x403f00
+		Instruction group(s): [2, 7, 145] 
+
+0x404456:	mov	eax, dword ptr [rip + 0x213904]
+0x40445c:	mov	rsi, qword ptr [rbx + 0x4088]
+0x404463:	mov	edi, dword ptr [rbx + 0x4080]
+0x404469:	test	eax, eax
+0x40446b:	jne	0x404600
+		Instruction group(s): [7, 1] 
+
+0x404471:	call	0x4041e0
+		Instruction group(s): [2, 7, 145] 
+
+0x404476:	test	rax, rax
+0x404479:	mov	rbp, rax
+0x40447c:	je	0x40463a
+		Instruction group(s): [7, 1] 
+
+0x404482:	mov	edi, dword ptr [rbx + 0x4080]
+0x404488:	xor	edx, edx
+0x40448a:	mov	rsi, rax
+0x40448d:	call	qword ptr [rip + 0x203625]
+		Instruction group(s): [2, 145] 
+
+0x404493:	mov	rdi, rbp
+0x404496:	call	0x4041a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40449b:	call	qword ptr [rip + 0x203687]
+		Instruction group(s): [2, 145] 
+
+0x4044a1:	test	rax, rax
+0x4044a4:	jne	0x404610
+		Instruction group(s): [7, 1] 
+
+0x4044aa:	add	rsp, 8
+0x4044ae:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4044af:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4044b0:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4044b1:	nop	dword ptr [rax]
+0x4044b8:	mov	edi, 0x612d00
+0x4044bd:	call	0x404300
+		Instruction group(s): [2, 7, 145] 
+
+0x4044c2:	test	rax, rax
+0x4044c5:	je	0x404626
+		Instruction group(s): [7, 1] 
+
+0x4044cb:	mov	edi, 0x612d00
+0x4044d0:	call	qword ptr [rip + 0x203672]
+		Instruction group(s): [2, 145] 
+
+0x4044d6:	jmp	0x4043c6
+		Instruction group(s): [7, 1] 
+
+0x4044db:	nop	dword ptr [rax + rax]
+0x4044e0:	mov	edx, 0x1001
+0x4044e5:	mov	rsi, rbp
+0x4044e8:	mov	edi, 0x611cc0
+0x4044ed:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x4044f2:	mov	edi, 0x611cc0
+0x4044f7:	call	0x403ee0
+		Instruction group(s): [2, 7, 145] 
+
+0x4044fc:	mov	r8d, dword ptr [rip + 0x21385d]
+0x404503:	mov	rdi, rbp
+0x404506:	test	r8d, r8d
+0x404509:	jne	0x404416
+		Instruction group(s): [7, 1] 
+
+0x40450f:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x404514:	mov	ecx, 0x200e
+0x404519:	mov	rdx, rax
+0x40451c:	mov	rsi, rbp
+0x40451f:	mov	edi, 0x60bc40
+0x404524:	call	0x401910
+		Instruction group(s): [2, 7, 145] 
+
+0x404529:	mov	edx, 0x60bc40
+0x40452e:	mov	ecx, dword ptr [rdx]
+0x404530:	add	rdx, 4
+0x404534:	lea	eax, [rcx - 0x1010101]
+		Instruction group(s): [145] 
+
+0x40453a:	not	ecx
+0x40453c:	and	eax, ecx
+0x40453e:	and	eax, 0x80808080
+0x404543:	je	0x40452e
+		Instruction group(s): [7, 1] 
+
+0x404545:	mov	ecx, eax
+0x404547:	mov	esi, 0x2f
+0x40454c:	mov	edi, 0x3a
+0x404551:	shr	ecx, 0x10
+0x404554:	test	eax, 0x8080
+0x404559:	cmove	eax, ecx
+		Instruction group(s): [137] 
+
+0x40455c:	lea	rcx, [rdx + 2]
+0x404560:	cmove	rdx, rcx
+		Instruction group(s): [137] 
+
+0x404564:	add	al, al
+0x404566:	sbb	rdx, 3
+0x40456a:	sub	rdx, 0x60bc40
+0x404571:	lea	rcx, [rdx + 0x60bc40]
+0x404578:	mov	word ptr [rdx + 0x60bc40], si
+0x40457f:	lea	rax, [rdx + 0x60bc41]
+0x404586:	movabs	rdx, 0x62696c5f65736162
+0x404590:	mov	qword ptr [rcx + 1], rdx
+0x404594:	movabs	rcx, 0x70697a2e79726172
+0x40459e:	mov	word ptr [rax + 0x10], di
+0x4045a2:	mov	qword ptr [rax + 8], rcx
+0x4045a6:	mov	rdi, rbp
+0x4045a9:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x4045ae:	mov	ecx, 0x200e
+0x4045b3:	mov	rdx, rax
+0x4045b6:	mov	rsi, rbp
+0x4045b9:	mov	edi, 0x60bc40
+0x4045be:	call	0x401a00
+		Instruction group(s): [2, 7, 145] 
+
+0x4045c3:	mov	edx, 0x1000
+0x4045c8:	mov	esi, 0x60bc40
+0x4045cd:	mov	edi, 0x607c00
+0x4045d2:	call	0x404300
+		Instruction group(s): [2, 7, 145] 
+
+0x4045d7:	test	rax, rax
+0x4045da:	je	0x404650
+		Instruction group(s): [7, 1] 
+
+0x4045dc:	mov	edi, 0x607c00
+0x4045e1:	call	qword ptr [rip + 0x203571]
+		Instruction group(s): [2, 145] 
+
+0x4045e7:	jmp	0x404430
+		Instruction group(s): [7, 1] 
+
+0x4045ec:	nop	dword ptr [rax]
+0x4045f0:	mov	edi, 0x607c00
+0x4045f5:	call	qword ptr [rip + 0x2034a5]
+		Instruction group(s): [2, 145] 
+
+0x4045fb:	jmp	0x404456
+		Instruction group(s): [7, 1] 
+
+0x404600:	xor	edx, edx
+0x404602:	call	0x403f10
+		Instruction group(s): [2, 7, 145] 
+
+0x404607:	jmp	0x40449b
+		Instruction group(s): [7, 1] 
+
+0x40460c:	nop	dword ptr [rax]
+0x404610:	xor	eax, eax
+0x404612:	mov	edi, 0x4063c0
+0x404617:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40461c:	mov	eax, 0xffffffff
+0x404621:	jmp	0x4044aa
+		Instruction group(s): [7, 1] 
+
+0x404626:	mov	edi, 0x406320
+0x40462b:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404630:	mov	eax, 0xffffffff
+0x404635:	jmp	0x4044aa
+		Instruction group(s): [7, 1] 
+
+0x40463a:	xor	eax, eax
+0x40463c:	mov	edi, 0x406398
+0x404641:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404646:	mov	eax, 0xffffffff
+0x40464b:	jmp	0x4044aa
+		Instruction group(s): [7, 1] 
+
+0x404650:	mov	edi, 0x406370
+0x404655:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40465a:	mov	eax, 0xffffffff
+0x40465f:	jmp	0x4044aa
+		Instruction group(s): [7, 1] 
+
+0x404664:	mov	edi, 0x406348
+0x404669:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40466e:	mov	eax, 0xffffffff
+0x404673:	jmp	0x4044aa
+		Instruction group(s): [7, 1] 
+
+0x404678:	nop	dword ptr [rax + rax]
+0x404680:	mov	edx, dword ptr [rip + 0x2136da]
+0x404686:	push	r14
+		Instruction group(s): [145] 
+
+0x404688:	push	r13
+		Instruction group(s): [145] 
+
+0x40468a:	push	r12
+		Instruction group(s): [145] 
+
+0x40468c:	push	rbp
+		Instruction group(s): [145] 
+
+0x40468d:	mov	rbp, rdi
+0x404690:	push	rbx
+		Instruction group(s): [145] 
+
+0x404691:	test	edx, edx
+0x404693:	lea	rdi, [rdi + 0x3078]
+0x40469a:	je	0x404808
+		Instruction group(s): [7, 1] 
+
+0x4046a0:	call	qword ptr [rip + 0x203422]
+		Instruction group(s): [2, 145] 
+
+0x4046a6:	test	rax, rax
+0x4046a9:	je	0x404813
+		Instruction group(s): [7, 1] 
+
+0x4046af:	mov	rsi, rax
+0x4046b2:	mov	edi, 0x4061e8
+0x4046b7:	call	qword ptr [rip + 0x2033eb]
+		Instruction group(s): [2, 145] 
+
+0x4046bd:	mov	edi, 0x4061f1
+0x4046c2:	call	qword ptr [rip + 0x203440]
+		Instruction group(s): [2, 145] 
+
+0x4046c8:	mov	rdi, rax
+0x4046cb:	call	qword ptr [rip + 0x203417]
+		Instruction group(s): [2, 145] 
+
+0x4046d1:	mov	esi, 0x4061f9
+0x4046d6:	mov	rdi, rax
+0x4046d9:	call	qword ptr [rip + 0x203459]
+		Instruction group(s): [2, 145] 
+
+0x4046df:	mov	rbx, qword ptr [rbp + 0x10]
+0x4046e3:	cmp	rbx, qword ptr [rbp + 0x18]
+0x4046e7:	mov	r13, rax
+0x4046ea:	jb	0x404710
+		Instruction group(s): [7, 1] 
+
+0x4046ec:	jmp	0x4047d8
+		Instruction group(s): [7, 1] 
+
+0x4046f1:	nop	dword ptr [rax]
+0x4046f8:	mov	rsi, rbx
+0x4046fb:	mov	rdi, rbp
+0x4046fe:	call	0x401c70
+		Instruction group(s): [2, 7, 145] 
+
+0x404703:	cmp	qword ptr [rbp + 0x18], rax
+0x404707:	mov	rbx, rax
+0x40470a:	jbe	0x4047d8
+		Instruction group(s): [7, 1] 
+
+0x404710:	movzx	edx, byte ptr [rbx + 0x11]
+0x404714:	and	edx, 0xffffffdf
+0x404717:	cmp	dl, 0x4d
+0x40471a:	jne	0x4046f8
+		Instruction group(s): [7, 1] 
+
+0x40471c:	mov	rsi, rbx
+0x40471f:	mov	rdi, rbp
+0x404722:	call	0x401ca0
+		Instruction group(s): [2, 7, 145] 
+
+0x404727:	mov	r12, rax
+0x40472a:	mov	eax, dword ptr [rip + 0x213630]
+0x404730:	mov	ecx, dword ptr [rbx + 0xc]
+0x404733:	test	eax, eax
+0x404735:	bswap	ecx
+0x404737:	jne	0x4047e8
+		Instruction group(s): [7, 1] 
+
+0x40473d:	cmp	dword ptr [rip + 0x203318], 0x24
+0x404744:	jle	0x4047a0
+		Instruction group(s): [7, 1] 
+
+0x404746:	sub	ecx, 0x10
+0x404749:	lea	rdx, [r12 + 0x10]
+0x40474e:	mov	esi, 0x406202
+0x404753:	mov	rdi, r13
+0x404756:	xor	eax, eax
+0x404758:	call	qword ptr [rip + 0x203382]
+		Instruction group(s): [2, 145] 
+
+0x40475e:	test	rax, rax
+0x404761:	lea	r14, [rbx + 0x12]
+0x404765:	je	0x4047c1
+		Instruction group(s): [7, 1] 
+
+0x404767:	mov	rsi, rax
+0x40476a:	mov	rdi, r14
+0x40476d:	call	qword ptr [rip + 0x20339d]
+		Instruction group(s): [2, 145] 
+
+0x404773:	test	rax, rax
+0x404776:	je	0x4047c1
+		Instruction group(s): [7, 1] 
+
+0x404778:	call	qword ptr [rip + 0x2033aa]
+		Instruction group(s): [2, 145] 
+
+0x40477e:	test	rax, rax
+0x404781:	je	0x40478f
+		Instruction group(s): [7, 1] 
+
+0x404783:	call	qword ptr [rip + 0x203397]
+		Instruction group(s): [2, 145] 
+
+0x404789:	call	qword ptr [rip + 0x2033a1]
+		Instruction group(s): [2, 145] 
+
+0x40478f:	mov	rdi, r12
+0x404792:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x404797:	jmp	0x4046f8
+		Instruction group(s): [7, 1] 
+
+0x40479c:	nop	dword ptr [rax]
+0x4047a0:	sub	ecx, 0xc
+0x4047a3:	xor	eax, eax
+0x4047a5:	lea	rdx, [r12 + 0xc]
+0x4047aa:	mov	esi, 0x406202
+0x4047af:	mov	rdi, r13
+0x4047b2:	lea	r14, [rbx + 0x12]
+0x4047b6:	call	qword ptr [rip + 0x203324]
+		Instruction group(s): [2, 145] 
+
+0x4047bc:	test	rax, rax
+0x4047bf:	jne	0x404767
+		Instruction group(s): [7, 1] 
+
+0x4047c1:	mov	rsi, r14
+0x4047c4:	mov	edi, 0x406205
+0x4047c9:	xor	eax, eax
+0x4047cb:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4047d0:	jmp	0x404778
+		Instruction group(s): [7, 1] 
+
+0x4047d2:	nop	word ptr [rax + rax]
+0x4047d8:	xor	eax, eax
+0x4047da:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4047db:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4047dc:	pop	r12
+		Instruction group(s): [145] 
+
+0x4047de:	pop	r13
+		Instruction group(s): [145] 
+
+0x4047e0:	pop	r14
+		Instruction group(s): [145] 
+
+0x4047e2:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4047e3:	nop	dword ptr [rax + rax]
+0x4047e8:	sub	ecx, 8
+0x4047eb:	lea	rdx, [r12 + 8]
+0x4047f0:	mov	esi, 0x4061ff
+0x4047f5:	mov	rdi, r13
+0x4047f8:	xor	eax, eax
+0x4047fa:	call	qword ptr [rip + 0x2032e0]
+		Instruction group(s): [2, 145] 
+
+0x404800:	jmp	0x40475e
+		Instruction group(s): [7, 1] 
+
+0x404805:	nop	dword ptr [rax]
+0x404808:	call	qword ptr [rip + 0x20326a]
+		Instruction group(s): [2, 145] 
+
+0x40480e:	jmp	0x4046a6
+		Instruction group(s): [7, 1] 
+
+0x404813:	mov	edi, 0x4063e8
+0x404818:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x40481d:	mov	eax, 0xffffffff
+0x404822:	jmp	0x4047da
+		Instruction group(s): [7, 1] 
+
+0x404824:	nop	word ptr cs:[rax + rax]
+0x404830:	push	rbp
+		Instruction group(s): [145] 
+
+0x404831:	push	rbx
+		Instruction group(s): [145] 
+
+0x404832:	sub	rsp, 8
+0x404836:	mov	ebx, dword ptr [rsi + 4]
+0x404839:	mov	eax, dword ptr [rip + 0x213521]
+0x40483f:	bswap	ebx
+0x404841:	add	ebx, dword ptr [rdi + 8]
+0x404844:	test	eax, eax
+0x404846:	je	0x404890
+		Instruction group(s): [7, 1] 
+
+0x404848:	lea	rsi, [rdi + 0x78]
+0x40484c:	mov	edx, ebx
+0x40484e:	mov	edi, 0x406216
+0x404853:	xor	eax, eax
+0x404855:	call	qword ptr [rip + 0x20322d]
+		Instruction group(s): [2, 145] 
+
+0x40485b:	mov	rbx, rax
+0x40485e:	mov	edi, 0x406222
+0x404863:	call	qword ptr [rip + 0x203247]
+		Instruction group(s): [2, 145] 
+
+0x404869:	test	rax, rax
+0x40486c:	je	0x4048d3
+		Instruction group(s): [7, 1] 
+
+0x40486e:	mov	rsi, rbx
+0x404871:	mov	rdi, rax
+0x404874:	call	qword ptr [rip + 0x203286]
+		Instruction group(s): [2, 145] 
+
+0x40487a:	mov	ebx, eax
+0x40487c:	xor	eax, eax
+0x40487e:	test	ebx, ebx
+0x404880:	jne	0x4048c0
+		Instruction group(s): [7, 1] 
+
+0x404882:	add	rsp, 8
+0x404886:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404887:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404888:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404889:	nop	dword ptr [rax]
+0x404890:	add	rdi, 0x78
+0x404894:	call	qword ptr [rip + 0x2031de]
+		Instruction group(s): [2, 145] 
+
+0x40489a:	mov	rbp, rax
+0x40489d:	mov	edx, ebx
+0x40489f:	mov	rsi, rax
+0x4048a2:	mov	edi, 0x40621c
+0x4048a7:	xor	eax, eax
+0x4048a9:	call	qword ptr [rip + 0x2031d1]
+		Instruction group(s): [2, 145] 
+
+0x4048af:	mov	rdi, rbp
+0x4048b2:	mov	rbx, rax
+0x4048b5:	call	qword ptr [rip + 0x2032bd]
+		Instruction group(s): [2, 145] 
+
+0x4048bb:	jmp	0x40485e
+		Instruction group(s): [7, 1] 
+
+0x4048bd:	nop	dword ptr [rax]
+0x4048c0:	mov	edi, 0x406227
+0x4048c5:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4048ca:	add	rsp, 8
+0x4048ce:	mov	eax, ebx
+0x4048d0:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4048d1:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4048d2:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4048d3:	mov	edi, 0x406410
+0x4048d8:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4048dd:	mov	rdi, rbx
+0x4048e0:	call	qword ptr [rip + 0x203292]
+		Instruction group(s): [2, 145] 
+
+0x4048e6:	mov	eax, 0xffffffff
+0x4048eb:	jmp	0x404882
+		Instruction group(s): [7, 1] 
+
+0x4048ed:	nop	dword ptr [rax]
+0x4048f0:	push	rbp
+		Instruction group(s): [145] 
+
+0x4048f1:	push	rbx
+		Instruction group(s): [145] 
+
+0x4048f2:	mov	rbp, rdi
+0x4048f5:	sub	rsp, 8
+0x4048f9:	mov	rbx, qword ptr [rdi + 0x10]
+0x4048fd:	cmp	rbx, qword ptr [rdi + 0x18]
+0x404901:	jb	0x40491c
+		Instruction group(s): [7, 1] 
+
+0x404903:	jmp	0x404930
+		Instruction group(s): [7, 1] 
+
+0x404905:	nop	dword ptr [rax]
+0x404908:	mov	rsi, rbx
+0x40490b:	mov	rdi, rbp
+0x40490e:	call	0x401c70
+		Instruction group(s): [2, 7, 145] 
+
+0x404913:	cmp	qword ptr [rbp + 0x18], rax
+0x404917:	mov	rbx, rax
+0x40491a:	jbe	0x404930
+		Instruction group(s): [7, 1] 
+
+0x40491c:	cmp	byte ptr [rbx + 0x11], 0x7a
+0x404920:	jne	0x404908
+		Instruction group(s): [7, 1] 
+
+0x404922:	mov	rsi, rbx
+0x404925:	mov	rdi, rbp
+0x404928:	call	0x404830
+		Instruction group(s): [2, 7, 145] 
+
+0x40492d:	jmp	0x404908
+		Instruction group(s): [7, 1] 
+
+0x40492f:	nop	
+0x404930:	add	rsp, 8
+0x404934:	xor	eax, eax
+0x404936:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404937:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404938:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404939:	nop	dword ptr [rax]
+0x404940:	cmp	dword ptr [rdi + 0x407c], 1
+0x404947:	je	0x404950
+		Instruction group(s): [7, 1] 
+
+0x404949:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40494b:	nop	dword ptr [rax + rax]
+0x404950:	mov	rax, qword ptr [rip + 0x203219]
+0x404957:	jmp	rax
+		Instruction group(s): [145, 1] 
+
+0x404959:	nop	dword ptr [rax]
+0x404960:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404962:	nop	word ptr cs:[rax + rax]
+0x404970:	mov	esi, edi
+0x404972:	mov	edi, dword ptr [rip + 0x2133d0]
+0x404978:	jmp	0x401850
+		Instruction group(s): [7, 1] 
+
+0x40497d:	nop	dword ptr [rax]
+0x404980:	push	r15
+		Instruction group(s): [145] 
+
+0x404982:	push	r14
+		Instruction group(s): [145] 
+
+0x404984:	mov	r15, rsi
+0x404987:	push	r13
+		Instruction group(s): [145] 
+
+0x404989:	push	r12
+		Instruction group(s): [145] 
+
+0x40498b:	mov	r14, rdi
+0x40498e:	push	rbp
+		Instruction group(s): [145] 
+
+0x40498f:	push	rbx
+		Instruction group(s): [145] 
+
+0x404990:	mov	r13, rdx
+0x404993:	sub	rsp, 0x18
+0x404997:	test	rdi, rdi
+0x40499a:	je	0x404a58
+		Instruction group(s): [7, 1] 
+
+0x4049a0:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x4049a5:	test	r15, r15
+0x4049a8:	mov	ebp, eax
+0x4049aa:	je	0x404a68
+		Instruction group(s): [7, 1] 
+
+0x4049b0:	mov	rdi, r15
+0x4049b3:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x4049b8:	test	r13, r13
+0x4049bb:	mov	dword ptr [rsp + 0xc], eax
+0x4049bf:	je	0x404a80
+		Instruction group(s): [7, 1] 
+
+0x4049c5:	mov	rdi, r13
+0x4049c8:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x4049cd:	mov	r12d, eax
+0x4049d0:	mov	eax, dword ptr [rsp + 0xc]
+0x4049d4:	add	eax, ebp
+0x4049d6:	lea	edi, [r12 + rax + 1]
+		Instruction group(s): [145] 
+
+0x4049db:	movsxd	rdi, edi
+		Instruction group(s): [145] 
+
+0x4049de:	call	0x4018c0
+		Instruction group(s): [2, 7, 145] 
+
+0x4049e3:	test	rax, rax
+0x4049e6:	mov	rbx, rax
+0x4049e9:	je	0x404a90
+		Instruction group(s): [7, 1] 
+
+0x4049ef:	test	ebp, ebp
+0x4049f1:	mov	byte ptr [rax], 0
+0x4049f4:	jne	0x404a10
+		Instruction group(s): [7, 1] 
+
+0x4049f6:	test	r12d, r12d
+0x4049f9:	mov	rax, rbx
+0x4049fc:	jne	0x404a36
+		Instruction group(s): [7, 1] 
+
+0x4049fe:	add	rsp, 0x18
+0x404a02:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404a03:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404a04:	pop	r12
+		Instruction group(s): [145] 
+
+0x404a06:	pop	r13
+		Instruction group(s): [145] 
+
+0x404a08:	pop	r14
+		Instruction group(s): [145] 
+
+0x404a0a:	pop	r15
+		Instruction group(s): [145] 
+
+0x404a0c:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404a0d:	nop	dword ptr [rax]
+0x404a10:	mov	rdi, rax
+0x404a13:	mov	rsi, r14
+0x404a16:	call	0x4016e0
+		Instruction group(s): [2, 7, 145] 
+
+0x404a1b:	mov	rdi, rax
+0x404a1e:	mov	eax, dword ptr [rsp + 0xc]
+0x404a22:	test	eax, eax
+0x404a24:	je	0x4049f6
+		Instruction group(s): [7, 1] 
+
+0x404a26:	test	r12d, r12d
+0x404a29:	mov	rax, rbx
+0x404a2c:	je	0x4049fe
+		Instruction group(s): [7, 1] 
+
+0x404a2e:	mov	rsi, r15
+0x404a31:	call	0x401640
+		Instruction group(s): [2, 7, 145] 
+
+0x404a36:	mov	rsi, r13
+0x404a39:	mov	rdi, rbx
+0x404a3c:	call	0x4019d0
+		Instruction group(s): [2, 7, 145] 
+
+0x404a41:	add	rsp, 0x18
+0x404a45:	mov	rax, rbx
+0x404a48:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404a49:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404a4a:	pop	r12
+		Instruction group(s): [145] 
+
+0x404a4c:	pop	r13
+		Instruction group(s): [145] 
+
+0x404a4e:	pop	r14
+		Instruction group(s): [145] 
+
+0x404a50:	pop	r15
+		Instruction group(s): [145] 
+
+0x404a52:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404a53:	nop	dword ptr [rax + rax]
+0x404a58:	xor	ebp, ebp
+0x404a5a:	test	r15, r15
+0x404a5d:	jne	0x4049b0
+		Instruction group(s): [7, 1] 
+
+0x404a63:	nop	dword ptr [rax + rax]
+0x404a68:	test	r13, r13
+0x404a6b:	mov	dword ptr [rsp + 0xc], 0
+0x404a73:	jne	0x4049c5
+		Instruction group(s): [7, 1] 
+
+0x404a79:	nop	dword ptr [rax]
+0x404a80:	xor	r12d, r12d
+0x404a83:	jmp	0x4049d0
+		Instruction group(s): [7, 1] 
+
+0x404a88:	nop	dword ptr [rax + rax]
+0x404a90:	xor	eax, eax
+0x404a92:	jmp	0x4049fe
+		Instruction group(s): [7, 1] 
+
+0x404a97:	nop	word ptr [rax + rax]
+0x404aa0:	sub	rsp, 8
+0x404aa4:	call	0x4015c0
+		Instruction group(s): [2, 7, 145] 
+
+0x404aa9:	test	rax, rax
+0x404aac:	je	0x404ac0
+		Instruction group(s): [7, 1] 
+
+0x404aae:	cmp	byte ptr [rax], 0
+0x404ab1:	je	0x404ac0
+		Instruction group(s): [7, 1] 
+
+0x404ab3:	mov	rdi, rax
+0x404ab6:	add	rsp, 8
+0x404aba:	jmp	0x401790
+		Instruction group(s): [7, 1] 
+
+0x404abf:	nop	
+0x404ac0:	xor	eax, eax
+0x404ac2:	add	rsp, 8
+0x404ac6:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404ac7:	nop	word ptr [rax + rax]
+0x404ad0:	push	rbp
+		Instruction group(s): [145] 
+
+0x404ad1:	push	rbx
+		Instruction group(s): [145] 
+
+0x404ad2:	mov	rbp, rdi
+0x404ad5:	mov	edi, 0x406438
+0x404ada:	sub	rsp, 8
+0x404ade:	call	0x404aa0
+		Instruction group(s): [2, 7, 145] 
+
+0x404ae3:	test	rax, rax
+0x404ae6:	mov	rbx, rax
+0x404ae9:	je	0x404afd
+		Instruction group(s): [7, 1] 
+
+0x404aeb:	mov	edx, 1
+0x404af0:	mov	rsi, rax
+0x404af3:	mov	edi, 0x406448
+0x404af8:	call	0x4016a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404afd:	mov	rdx, rbx
+0x404b00:	mov	rdi, rbp
+0x404b03:	mov	esi, 0x4055d9
+0x404b08:	call	0x404980
+		Instruction group(s): [2, 7, 145] 
+
+0x404b0d:	mov	edx, 1
+0x404b12:	mov	rbx, rax
+0x404b15:	mov	rsi, rax
+0x404b18:	mov	edi, 0x406438
+0x404b1d:	call	0x4016a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404b22:	mov	rdi, rbx
+0x404b25:	mov	ebp, eax
+0x404b27:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x404b2c:	add	rsp, 8
+0x404b30:	mov	eax, ebp
+0x404b32:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404b33:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404b34:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404b35:	nop	word ptr cs:[rax + rax]
+0x404b40:	mov	edx, 1
+0x404b45:	jmp	0x4016a0
+		Instruction group(s): [7, 1] 
+
+0x404b4a:	nop	word ptr [rax + rax]
+0x404b50:	jmp	0x4019b0
+		Instruction group(s): [7, 1] 
+
+0x404b55:	nop	word ptr cs:[rax + rax]
+0x404b60:	push	rbx
+		Instruction group(s): [145] 
+
+0x404b61:	mov	rbx, rdi
+0x404b64:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x404b69:	cmp	byte ptr [rbx + rax - 1], 0x2f
+0x404b6e:	je	0x404b81
+		Instruction group(s): [7, 1] 
+
+0x404b70:	mov	ecx, 0x2f
+0x404b75:	mov	rdi, rbx
+0x404b78:	mov	word ptr [rbx + rax], cx
+0x404b7c:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x404b81:	add	rax, rbx
+0x404b84:	movabs	rdx, 0x5858585849454d5f
+0x404b8e:	mov	rdi, rbx
+0x404b91:	mov	qword ptr [rax], rdx
+0x404b94:	mov	edx, 0x5858
+0x404b99:	mov	byte ptr [rax + 0xa], 0
+0x404b9d:	mov	word ptr [rax + 8], dx
+0x404ba1:	call	0x401930
+		Instruction group(s): [2, 7, 145] 
+
+0x404ba6:	test	rax, rax
+0x404ba9:	setne	al
+0x404bac:	movzx	eax, al
+0x404baf:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404bb0:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404bb1:	nop	word ptr cs:[rax + rax]
+0x404bc0:	xor	eax, eax
+0x404bc2:	cmp	dword ptr [rdi + 0x4078], 1
+0x404bc9:	je	0x404c1e
+		Instruction group(s): [7, 1] 
+
+0x404bcb:	push	r12
+		Instruction group(s): [145] 
+
+0x404bcd:	push	rbp
+		Instruction group(s): [145] 
+
+0x404bce:	mov	esi, 0x406464
+0x404bd3:	push	rbx
+		Instruction group(s): [145] 
+
+0x404bd4:	mov	r12, rdi
+0x404bd7:	lea	rbx, [r12 + 0x2078]
+0x404bdf:	call	0x402230
+		Instruction group(s): [2, 7, 145] 
+
+0x404be4:	test	rax, rax
+0x404be7:	je	0x404c20
+		Instruction group(s): [7, 1] 
+
+0x404be9:	mov	edx, 0x1000
+0x404bee:	mov	rsi, rax
+0x404bf1:	mov	rdi, rbx
+0x404bf4:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x404bf9:	mov	rdi, rbx
+0x404bfc:	call	0x404b60
+		Instruction group(s): [2, 7, 145] 
+
+0x404c01:	test	eax, eax
+0x404c03:	jne	0x404ca0
+		Instruction group(s): [7, 1] 
+
+0x404c09:	xor	eax, eax
+0x404c0b:	mov	edi, 0x4064c8
+0x404c10:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404c15:	mov	eax, 0xffffffff
+0x404c1a:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404c1b:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404c1c:	pop	r12
+		Instruction group(s): [145] 
+
+0x404c1e:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404c20:	mov	ebp, 0x406560
+0x404c25:	mov	edi, 0x40645d
+0x404c2a:	nop	word ptr [rax + rax]
+0x404c30:	call	0x404aa0
+		Instruction group(s): [2, 7, 145] 
+
+0x404c35:	test	rax, rax
+0x404c38:	je	0x404c56
+		Instruction group(s): [7, 1] 
+
+0x404c3a:	mov	edx, 0x1000
+0x404c3f:	mov	rsi, rax
+0x404c42:	mov	rdi, rbx
+0x404c45:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x404c4a:	mov	rdi, rbx
+0x404c4d:	call	0x404b60
+		Instruction group(s): [2, 7, 145] 
+
+0x404c52:	test	eax, eax
+0x404c54:	jne	0x404ca0
+		Instruction group(s): [7, 1] 
+
+0x404c56:	add	rbp, 8
+0x404c5a:	mov	rdi, qword ptr [rbp]
+0x404c5e:	test	rdi, rdi
+0x404c61:	jne	0x404c30
+		Instruction group(s): [7, 1] 
+
+0x404c63:	mov	ebp, 0x406540
+0x404c68:	mov	esi, 0x4064ab
+0x404c6d:	jmp	0x404c7d
+		Instruction group(s): [7, 1] 
+
+0x404c6f:	nop	
+0x404c70:	add	rbp, 8
+0x404c74:	mov	rsi, qword ptr [rbp]
+0x404c78:	test	rsi, rsi
+0x404c7b:	je	0x404c09
+		Instruction group(s): [7, 1] 
+
+0x404c7d:	mov	edx, 0x1000
+0x404c82:	mov	rdi, rbx
+0x404c85:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x404c8a:	mov	rdi, rbx
+0x404c8d:	call	0x404b60
+		Instruction group(s): [2, 7, 145] 
+
+0x404c92:	test	eax, eax
+0x404c94:	je	0x404c70
+		Instruction group(s): [7, 1] 
+
+0x404c96:	nop	word ptr cs:[rax + rax]
+0x404ca0:	mov	dword ptr [r12 + 0x4078], 1
+0x404cac:	xor	eax, eax
+0x404cae:	jmp	0x404c1a
+		Instruction group(s): [7, 1] 
+
+0x404cb3:	nop	word ptr cs:[rax + rax]
+0x404cc0:	push	r13
+		Instruction group(s): [145] 
+
+0x404cc2:	push	r12
+		Instruction group(s): [145] 
+
+0x404cc4:	mov	edx, 0x1000
+0x404cc9:	push	rbp
+		Instruction group(s): [145] 
+
+0x404cca:	push	rbx
+		Instruction group(s): [145] 
+
+0x404ccb:	mov	rsi, rdi
+0x404cce:	mov	r13, rdi
+0x404cd1:	sub	rsp, 0x10a8
+0x404cd8:	lea	rbp, [rsp + 0x90]
+0x404ce0:	mov	rdi, rbp
+0x404ce3:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x404ce8:	mov	rdx, rbp
+0x404ceb:	mov	ecx, dword ptr [rdx]
+0x404ced:	add	rdx, 4
+0x404cf1:	lea	eax, [rcx - 0x1010101]
+		Instruction group(s): [145] 
+
+0x404cf7:	not	ecx
+0x404cf9:	and	eax, ecx
+0x404cfb:	and	eax, 0x80808080
+0x404d00:	je	0x404ceb
+		Instruction group(s): [7, 1] 
+
+0x404d02:	mov	ecx, eax
+0x404d04:	shr	ecx, 0x10
+0x404d07:	test	eax, 0x8080
+0x404d0c:	cmove	eax, ecx
+		Instruction group(s): [137] 
+
+0x404d0f:	lea	rcx, [rdx + 2]
+0x404d13:	cmove	rdx, rcx
+		Instruction group(s): [137] 
+
+0x404d17:	add	al, al
+0x404d19:	sbb	rdx, 3
+0x404d1d:	sub	rdx, rbp
+0x404d20:	lea	eax, [rdx - 1]
+		Instruction group(s): [145] 
+
+0x404d23:	mov	r12d, edx
+0x404d26:	cdqe	
+0x404d28:	cmp	byte ptr [rsp + rax + 0x90], 0x2f
+0x404d30:	je	0x404d40
+		Instruction group(s): [7, 1] 
+
+0x404d32:	mov	eax, 0x2f
+0x404d37:	lea	r12d, [rdx + 1]
+		Instruction group(s): [145] 
+
+0x404d3b:	mov	word ptr [rbp + rdx], ax
+0x404d40:	mov	rdi, r13
+0x404d43:	movsxd	r12, r12d
+		Instruction group(s): [145] 
+
+0x404d46:	call	0x4016d0
+		Instruction group(s): [2, 7, 145] 
+
+0x404d4b:	mov	rdi, rax
+0x404d4e:	mov	rbx, rax
+0x404d51:	call	0x4018a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404d56:	test	rax, rax
+0x404d59:	mov	rdx, rax
+0x404d5c:	jne	0x404dc0
+		Instruction group(s): [7, 1] 
+
+0x404d5e:	jmp	0x404df0
+		Instruction group(s): [7, 1] 
+
+0x404d63:	nop	dword ptr [rax + rax]
+0x404d68:	lea	rsi, [rdx + 0x13]
+0x404d6c:	mov	rdi, rbp
+0x404d6f:	mov	edx, 0x1001
+0x404d74:	mov	byte ptr [rsp + r12 + 0x90], 0
+0x404d7d:	call	0x4015b0
+		Instruction group(s): [2, 7, 145] 
+
+0x404d82:	mov	rdx, rsp
+0x404d85:	mov	rsi, rbp
+0x404d88:	mov	edi, 1
+0x404d8d:	call	0x401890
+		Instruction group(s): [2, 7, 145] 
+
+0x404d92:	test	eax, eax
+0x404d94:	jne	0x404db0
+		Instruction group(s): [7, 1] 
+
+0x404d96:	mov	eax, dword ptr [rsp + 0x18]
+0x404d9a:	mov	rdi, rbp
+0x404d9d:	and	eax, 0xf000
+0x404da2:	cmp	eax, 0x4000
+0x404da7:	je	0x404e10
+		Instruction group(s): [7, 1] 
+
+0x404da9:	call	0x401610
+		Instruction group(s): [2, 7, 145] 
+
+0x404dae:	nop	
+0x404db0:	mov	rdi, rbx
+0x404db3:	call	0x4018a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404db8:	test	rax, rax
+0x404dbb:	mov	rdx, rax
+0x404dbe:	je	0x404df0
+		Instruction group(s): [7, 1] 
+
+0x404dc0:	cmp	byte ptr [rdx + 0x13], 0x2e
+0x404dc4:	jne	0x404d68
+		Instruction group(s): [7, 1] 
+
+0x404dc6:	movzx	eax, byte ptr [rdx + 0x14]
+0x404dca:	test	al, al
+0x404dcc:	je	0x404db0
+		Instruction group(s): [7, 1] 
+
+0x404dce:	cmp	al, 0x2e
+0x404dd0:	jne	0x404d68
+		Instruction group(s): [7, 1] 
+
+0x404dd2:	cmp	byte ptr [rdx + 0x15], 0
+0x404dd6:	jne	0x404d68
+		Instruction group(s): [7, 1] 
+
+0x404dd8:	mov	rdi, rbx
+0x404ddb:	call	0x4018a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404de0:	test	rax, rax
+0x404de3:	mov	rdx, rax
+0x404de6:	jne	0x404dc0
+		Instruction group(s): [7, 1] 
+
+0x404de8:	nop	dword ptr [rax + rax]
+0x404df0:	mov	rdi, rbx
+0x404df3:	call	0x401780
+		Instruction group(s): [2, 7, 145] 
+
+0x404df8:	mov	rdi, r13
+0x404dfb:	call	0x4016f0
+		Instruction group(s): [2, 7, 145] 
+
+0x404e00:	add	rsp, 0x10a8
+0x404e07:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404e08:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404e09:	pop	r12
+		Instruction group(s): [145] 
+
+0x404e0b:	pop	r13
+		Instruction group(s): [145] 
+
+0x404e0d:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404e0e:	nop	
+0x404e10:	call	0x404cc0
+		Instruction group(s): [2, 7, 145] 
+
+0x404e15:	jmp	0x404db0
+		Instruction group(s): [7, 1] 
+
+0x404e17:	nop	word ptr [rax + rax]
+0x404e20:	cmp	byte ptr [rdi + 0x2078], 0
+0x404e27:	jne	0x404e30
+		Instruction group(s): [7, 1] 
+
+0x404e29:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404e2b:	nop	dword ptr [rax + rax]
+0x404e30:	add	rdi, 0x2078
+0x404e37:	jmp	0x404cc0
+		Instruction group(s): [7, 1] 
+
+0x404e3c:	nop	dword ptr [rax]
+0x404e40:	push	r12
+		Instruction group(s): [145] 
+
+0x404e42:	push	rbp
+		Instruction group(s): [145] 
+
+0x404e43:	mov	edx, 0x1000
+0x404e48:	push	rbx
+		Instruction group(s): [145] 
+
+0x404e49:	mov	rbx, rsi
+0x404e4c:	mov	rsi, rdi
+0x404e4f:	sub	rsp, 0x2090
+0x404e56:	lea	r12, [rsp + 0x90]
+0x404e5e:	mov	rdi, r12
+0x404e61:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x404e66:	lea	rdi, [rsp + 0x1090]
+0x404e6e:	mov	edx, 0x1000
+0x404e73:	mov	rsi, rbx
+0x404e76:	call	0x401620
+		Instruction group(s): [2, 7, 145] 
+
+0x404e7b:	cmp	byte ptr [rsp + 0x108f], 0
+0x404e83:	jne	0x404fa0
+		Instruction group(s): [7, 1] 
+
+0x404e89:	cmp	byte ptr [rsp + 0x208f], 0
+0x404e91:	jne	0x404fa0
+		Instruction group(s): [7, 1] 
+
+0x404e97:	mov	rbx, r12
+0x404e9a:	mov	edx, dword ptr [rbx]
+0x404e9c:	add	rbx, 4
+0x404ea0:	lea	eax, [rdx - 0x1010101]
+		Instruction group(s): [145] 
+
+0x404ea6:	not	edx
+0x404ea8:	and	eax, edx
+0x404eaa:	and	eax, 0x80808080
+0x404eaf:	je	0x404e9a
+		Instruction group(s): [7, 1] 
+
+0x404eb1:	mov	edx, eax
+0x404eb3:	lea	rdi, [rsp + 0x1090]
+0x404ebb:	mov	esi, 0x4055db
+0x404ec0:	shr	edx, 0x10
+0x404ec3:	test	eax, 0x8080
+0x404ec8:	cmove	eax, edx
+		Instruction group(s): [137] 
+
+0x404ecb:	lea	rdx, [rbx + 2]
+0x404ecf:	cmove	rbx, rdx
+		Instruction group(s): [137] 
+
+0x404ed3:	add	al, al
+0x404ed5:	sbb	rbx, 3
+0x404ed9:	sub	rbx, r12
+0x404edc:	call	0x4019a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404ee1:	test	rax, rax
+0x404ee4:	mov	rbp, rax
+0x404ee7:	je	0x404fb0
+		Instruction group(s): [7, 1] 
+
+0x404eed:	nop	dword ptr [rax]
+0x404ef0:	mov	rdi, rbp
+0x404ef3:	call	0x401700
+		Instruction group(s): [2, 7, 145] 
+
+0x404ef8:	lea	rbx, [rbx + rax + 1]
+0x404efd:	cmp	rbx, 0xffe
+0x404f04:	ja	0x404fa0
+		Instruction group(s): [7, 1] 
+
+0x404f0a:	mov	rcx, r12
+0x404f0d:	mov	eax, dword ptr [rcx]
+0x404f0f:	add	rcx, 4
+0x404f13:	lea	edx, [rax - 0x1010101]
+		Instruction group(s): [145] 
+
+0x404f19:	not	eax
+0x404f1b:	and	edx, eax
+0x404f1d:	and	edx, 0x80808080
+0x404f23:	je	0x404f0d
+		Instruction group(s): [7, 1] 
+
+0x404f25:	mov	eax, edx
+0x404f27:	mov	rsi, rbp
+0x404f2a:	shr	eax, 0x10
+0x404f2d:	test	edx, 0x8080
+0x404f33:	cmove	edx, eax
+		Instruction group(s): [137] 
+
+0x404f36:	lea	rax, [rcx + 2]
+0x404f3a:	cmove	rcx, rax
+		Instruction group(s): [137] 
+
+0x404f3e:	add	dl, dl
+0x404f40:	mov	eax, 0x2f
+0x404f45:	sbb	rcx, 3
+0x404f49:	mov	edx, 0x1000
+0x404f4e:	lea	rdi, [rcx + 1]
+0x404f52:	mov	word ptr [rcx], ax
+0x404f55:	call	0x401920
+		Instruction group(s): [2, 7, 145] 
+
+0x404f5a:	xor	edi, edi
+0x404f5c:	mov	esi, 0x4055db
+0x404f61:	call	0x4019a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404f66:	test	rax, rax
+0x404f69:	mov	rbp, rax
+0x404f6c:	je	0x404fb0
+		Instruction group(s): [7, 1] 
+
+0x404f6e:	mov	rdx, rsp
+0x404f71:	mov	rsi, r12
+0x404f74:	mov	edi, 1
+0x404f79:	call	0x401890
+		Instruction group(s): [2, 7, 145] 
+
+0x404f7e:	test	eax, eax
+0x404f80:	jns	0x404ef0
+		Instruction group(s): [7, 1] 
+
+0x404f86:	mov	esi, 0x1c0
+0x404f8b:	mov	rdi, r12
+0x404f8e:	call	0x401660
+		Instruction group(s): [2, 7, 145] 
+
+0x404f93:	jmp	0x404ef0
+		Instruction group(s): [7, 1] 
+
+0x404f98:	nop	dword ptr [rax + rax]
+0x404fa0:	add	rsp, 0x2090
+0x404fa7:	xor	eax, eax
+0x404fa9:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404faa:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404fab:	pop	r12
+		Instruction group(s): [145] 
+
+0x404fad:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404fae:	nop	
+0x404fb0:	mov	rdx, rsp
+0x404fb3:	mov	rsi, r12
+0x404fb6:	mov	edi, 1
+0x404fbb:	call	0x401890
+		Instruction group(s): [2, 7, 145] 
+
+0x404fc0:	test	eax, eax
+0x404fc2:	je	0x404fdd
+		Instruction group(s): [7, 1] 
+
+0x404fc4:	mov	esi, 0x406477
+0x404fc9:	mov	rdi, r12
+0x404fcc:	call	0x401980
+		Instruction group(s): [2, 7, 145] 
+
+0x404fd1:	add	rsp, 0x2090
+0x404fd8:	pop	rbx
+		Instruction group(s): [145] 
+
+0x404fd9:	pop	rbp
+		Instruction group(s): [145] 
+
+0x404fda:	pop	r12
+		Instruction group(s): [145] 
+
+0x404fdc:	ret	
+		Instruction group(s): [3, 145] 
+
+0x404fdd:	mov	rsi, r12
+0x404fe0:	mov	edi, 0x406500
+0x404fe5:	call	0x4023a0
+		Instruction group(s): [2, 7, 145] 
+
+0x404fea:	mov	esi, 0x406477
+0x404fef:	mov	rdi, r12
+0x404ff2:	call	0x401980
+		Instruction group(s): [2, 7, 145] 
+
+0x404ff7:	jmp	0x404fd1
+		Instruction group(s): [7, 1] 
+
+0x404ff9:	nop	dword ptr [rax]
+0x405000:	push	r12
+		Instruction group(s): [145] 
+
+0x405002:	push	rbp
+		Instruction group(s): [145] 
+
+0x405003:	mov	r12, rdx
+0x405006:	push	rbx
+		Instruction group(s): [145] 
+
+0x405007:	mov	rbp, rsi
+0x40500a:	mov	esi, 0x40542d
+0x40500f:	sub	rsp, 0x1000
+0x405016:	call	0x401980
+		Instruction group(s): [2, 7, 145] 
+
+0x40501b:	mov	rsi, r12
+0x40501e:	mov	rdi, rbp
+0x405021:	mov	rbx, rax
+0x405024:	call	0x404e40
+		Instruction group(s): [2, 7, 145] 
+
+0x405029:	test	rax, rax
+0x40502c:	mov	r12, rax
+0x40502f:	je	0x4050f8
+		Instruction group(s): [7, 1] 
+
+0x405035:	test	rbx, rbx
+0x405038:	je	0x4050f8
+		Instruction group(s): [7, 1] 
+
+0x40503e:	nop	
+0x405040:	mov	rdi, rbx
+0x405043:	call	0x401800
+		Instruction group(s): [2, 7, 145] 
+
+0x405048:	test	eax, eax
+0x40504a:	jne	0x405120
+		Instruction group(s): [7, 1] 
+
+0x405050:	mov	rcx, rbx
+0x405053:	mov	edx, 1
+0x405058:	mov	esi, 0x1000
+0x40505d:	mov	rdi, rsp
+0x405060:	call	0x401680
+		Instruction group(s): [2, 7, 145] 
+
+0x405065:	cmp	rax, -1
+0x405069:	mov	rbp, rax
+0x40506c:	je	0x4050d8
+		Instruction group(s): [7, 1] 
+
+0x40506e:	mov	rcx, r12
+0x405071:	mov	edx, 1
+0x405076:	mov	esi, 0x1000
+0x40507b:	mov	rdi, rsp
+0x40507e:	call	0x4019e0
+		Instruction group(s): [2, 7, 145] 
+
+0x405083:	test	eax, eax
+0x405085:	jle	0x405093
+		Instruction group(s): [7, 1] 
+
+0x405087:	mov	rdi, r12
+0x40508a:	call	0x401670
+		Instruction group(s): [2, 7, 145] 
+
+0x40508f:	test	eax, eax
+0x405091:	je	0x405040
+		Instruction group(s): [7, 1] 
+
+0x405093:	mov	rdi, r12
+0x405096:	mov	ebp, 0xffffffff
+0x40509b:	call	0x401820
+		Instruction group(s): [2, 7, 145] 
+
+0x4050a0:	mov	rdi, r12
+0x4050a3:	call	0x401870
+		Instruction group(s): [2, 7, 145] 
+
+0x4050a8:	mov	esi, 0x1c0
+0x4050ad:	mov	edi, eax
+0x4050af:	call	0x401950
+		Instruction group(s): [2, 7, 145] 
+
+0x4050b4:	mov	rdi, rbx
+0x4050b7:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x4050bc:	mov	rdi, r12
+0x4050bf:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x4050c4:	add	rsp, 0x1000
+0x4050cb:	mov	eax, ebp
+0x4050cd:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4050ce:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4050cf:	pop	r12
+		Instruction group(s): [145] 
+
+0x4050d1:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4050d2:	nop	word ptr [rax + rax]
+0x4050d8:	mov	rdi, rbx
+0x4050db:	call	0x401670
+		Instruction group(s): [2, 7, 145] 
+
+0x4050e0:	test	eax, eax
+0x4050e2:	je	0x405040
+		Instruction group(s): [7, 1] 
+
+0x4050e8:	mov	rdi, rbx
+0x4050eb:	call	0x401820
+		Instruction group(s): [2, 7, 145] 
+
+0x4050f0:	jmp	0x4050a0
+		Instruction group(s): [7, 1] 
+
+0x4050f2:	nop	word ptr [rax + rax]
+0x4050f8:	test	rbx, rbx
+0x4050fb:	je	0x405105
+		Instruction group(s): [7, 1] 
+
+0x4050fd:	mov	rdi, rbx
+0x405100:	call	0x4016c0
+		Instruction group(s): [2, 7, 145] 
+
+0x405105:	test	r12, r12
+0x405108:	mov	ebp, 0xffffffff
+0x40510d:	jne	0x4050bc
+		Instruction group(s): [7, 1] 
+
+0x40510f:	add	rsp, 0x1000
+0x405116:	mov	eax, ebp
+0x405118:	pop	rbx
+		Instruction group(s): [145] 
+
+0x405119:	pop	rbp
+		Instruction group(s): [145] 
+
+0x40511a:	pop	r12
+		Instruction group(s): [145] 
+
+0x40511c:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40511d:	nop	dword ptr [rax]
+0x405120:	xor	ebp, ebp
+0x405122:	jmp	0x4050a0
+		Instruction group(s): [7, 1] 
+
+0x405127:	nop	word ptr [rax + rax]
+0x405130:	mov	esi, 0x102
+0x405135:	jmp	0x4018b0
+		Instruction group(s): [7, 1] 
+
+0x40513a:	nop	word ptr [rax + rax]
+0x405140:	cmp	byte ptr [rdi + 0x2078], 0
+0x405147:	jne	0x405158
+		Instruction group(s): [7, 1] 
+
+0x405149:	add	rdi, 0x1078
+0x405150:	jmp	0x404ad0
+		Instruction group(s): [7, 1] 
+
+0x405155:	nop	dword ptr [rax]
+0x405158:	add	rdi, 0x2078
+0x40515f:	jmp	0x404ad0
+		Instruction group(s): [7, 1] 
+
+0x405164:	nop	word ptr cs:[rax + rax]
+0x405170:	sub	rsp, 0x28
+0x405174:	mov	edi, 0x40647a
+0x405179:	call	0x404aa0
+		Instruction group(s): [2, 7, 145] 
+
+0x40517e:	mov	rdx, rax
+0x405181:	xor	eax, eax
+0x405183:	test	rdx, rdx
+0x405186:	je	0x4051c1
+		Instruction group(s): [7, 1] 
+
+0x405188:	call	0x4016b0
+		Instruction group(s): [2, 7, 145] 
+
+0x40518d:	mov	edx, 1
+0x405192:	movsxd	r9, eax
+		Instruction group(s): [145] 
+
+0x405195:	mov	esi, 0x17
+0x40519a:	mov	rdi, rsp
+0x40519d:	mov	r8d, 0x406485
+0x4051a3:	mov	ecx, 0x17
+0x4051a8:	xor	eax, eax
+0x4051aa:	call	0x4015d0
+		Instruction group(s): [2, 7, 145] 
+
+0x4051af:	mov	edx, 1
+0x4051b4:	mov	rsi, rsp
+0x4051b7:	mov	edi, 0x40647a
+0x4051bc:	call	0x4016a0
+		Instruction group(s): [2, 7, 145] 
+
+0x4051c1:	add	rsp, 0x28
+0x4051c5:	ret	
+		Instruction group(s): [3, 145] 
+
+0x4051c6:	nop	word ptr cs:[rax + rax]
+0x4051d0:	push	r15
+		Instruction group(s): [145] 
+
+0x4051d2:	mov	r15, rdi
+0x4051d5:	push	r14
+		Instruction group(s): [145] 
+
+0x4051d7:	lea	edi, [rdx + 1]
+		Instruction group(s): [145] 
+
+0x4051da:	push	r13
+		Instruction group(s): [145] 
+
+0x4051dc:	push	r12
+		Instruction group(s): [145] 
+
+0x4051de:	push	rbp
+		Instruction group(s): [145] 
+
+0x4051df:	push	rbx
+		Instruction group(s): [145] 
+
+0x4051e0:	mov	ebp, edx
+0x4051e2:	mov	r14, rsi
+0x4051e5:	movsxd	rdi, edi
+		Instruction group(s): [145] 
+
+0x4051e8:	mov	esi, 8
+0x4051ed:	sub	rsp, 0x18
+0x4051f1:	mov	r13, rcx
+0x4051f4:	mov	dword ptr [rsp + 0xc], 0
+0x4051fc:	call	0x4017c0
+		Instruction group(s): [2, 7, 145] 
+
+0x405201:	test	ebp, ebp
+0x405203:	mov	r12, rax
+0x405206:	mov	qword ptr [rip + 0x212b43], rax
+0x40520d:	mov	dword ptr [rip + 0x212b35], 0
+0x405217:	jle	0x405248
+		Instruction group(s): [7, 1] 
+
+0x405219:	sub	ebp, 1
+0x40521c:	xor	ebx, ebx
+0x40521e:	add	rbp, 1
+0x405222:	nop	word ptr [rax + rax]
+0x405228:	mov	rdi, qword ptr [r13 + rbx*8]
+0x40522d:	lea	eax, [rbx + 1]
+		Instruction group(s): [145] 
+
+0x405230:	mov	dword ptr [rip + 0x212b16], eax
+0x405236:	call	0x401790
+		Instruction group(s): [2, 7, 145] 
+
+0x40523b:	mov	qword ptr [r12 + rbx*8], rax
+0x40523f:	add	rbx, 1
+0x405243:	cmp	rbx, rbp
+0x405246:	jne	0x405228
+		Instruction group(s): [7, 1] 
+
+0x405248:	call	0x401a20
+		Instruction group(s): [2, 7, 145] 
+
+0x40524d:	test	eax, eax
+0x40524f:	mov	ebx, eax
+0x405251:	js	0x405388
+		Instruction group(s): [7, 1] 
+
+0x405257:	je	0x40533d
+		Instruction group(s): [7, 1] 
+
+0x40525d:	mov	esi, 0x406489
+0x405262:	mov	rdi, r14
+0x405265:	mov	dword ptr [rip + 0x212add], ebx
+0x40526b:	mov	r12d, 0x404970
+0x405271:	mov	ebp, 1
+0x405276:	call	0x402230
+		Instruction group(s): [2, 7, 145] 
+
+0x40527b:	test	rax, rax
+0x40527e:	mov	eax, 0x404960
+0x405283:	cmovne	r12, rax
+		Instruction group(s): [137] 
+
+0x405287:	xor	ebx, ebx
+0x405289:	jmp	0x405296
+		Instruction group(s): [7, 1] 
+
+0x40528b:	nop	dword ptr [rax + rax]
+0x405290:	add	ebx, 1
+0x405293:	add	ebp, 1
+0x405296:	cmp	ebx, 0x11
+0x405299:	je	0x405290
+		Instruction group(s): [7, 1] 
+
+0x40529b:	mov	rsi, r12
+0x40529e:	mov	edi, ebx
+0x4052a0:	call	0x4017e0
+		Instruction group(s): [2, 7, 145] 
+
+0x4052a5:	cmp	ebp, 0x41
+0x4052a8:	jne	0x405290
+		Instruction group(s): [7, 1] 
+
+0x4052aa:	mov	edi, dword ptr [rip + 0x212a98]
+0x4052b0:	lea	rsi, [rsp + 0xc]
+0x4052b5:	xor	edx, edx
+0x4052b7:	xor	ebx, ebx
+0x4052b9:	call	0x401970
+		Instruction group(s): [2, 7, 145] 
+
+0x4052be:	mov	r13d, eax
+0x4052c1:	nop	dword ptr [rax]
+0x4052c8:	xor	esi, esi
+0x4052ca:	mov	edi, ebx
+0x4052cc:	add	ebx, 1
+0x4052cf:	call	0x4017e0
+		Instruction group(s): [2, 7, 145] 
+
+0x4052d4:	cmp	ebx, 0x41
+0x4052d7:	jne	0x4052c8
+		Instruction group(s): [7, 1] 
+
+0x4052d9:	mov	r12d, dword ptr [rip + 0x212a6c]
+0x4052e0:	mov	rbp, qword ptr [rip + 0x212a69]
+0x4052e7:	test	r12d, r12d
+0x4052ea:	jle	0x405303
+		Instruction group(s): [7, 1] 
+
+0x4052ec:	xor	ebx, ebx
+0x4052ee:	nop	
+0x4052f0:	mov	rdi, qword ptr [rbp + rbx*8]
+0x4052f5:	add	rbx, 1
+0x4052f9:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x4052fe:	cmp	r12d, ebx
+0x405301:	jg	0x4052f0
+		Instruction group(s): [7, 1] 
+
+0x405303:	mov	rdi, rbp
+0x405306:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x40530b:	test	r13d, r13d
+0x40530e:	js	0x40537c
+		Instruction group(s): [7, 1] 
+
+0x405310:	mov	eax, dword ptr [rsp + 0xc]
+0x405314:	mov	edi, eax
+0x405316:	and	edi, 0x7f
+0x405319:	je	0x405383
+		Instruction group(s): [7, 1] 
+
+0x40531b:	lea	eax, [rdi + 1]
+		Instruction group(s): [145] 
+
+0x40531e:	mov	ebx, 1
+0x405323:	cmp	al, 1
+0x405325:	jle	0x40532c
+		Instruction group(s): [7, 1] 
+
+0x405327:	call	0x4015e0
+		Instruction group(s): [2, 7, 145] 
+
+0x40532c:	add	rsp, 0x18
+0x405330:	mov	eax, ebx
+0x405332:	pop	rbx
+		Instruction group(s): [145] 
+
+0x405333:	pop	rbp
+		Instruction group(s): [145] 
+
+0x405334:	pop	r12
+		Instruction group(s): [145] 
+
+0x405336:	pop	r13
+		Instruction group(s): [145] 
+
+0x405338:	pop	r14
+		Instruction group(s): [145] 
+
+0x40533a:	pop	r15
+		Instruction group(s): [145] 
+
+0x40533c:	ret	
+		Instruction group(s): [3, 145] 
+
+0x40533d:	xor	eax, eax
+0x40533f:	call	0x405170
+		Instruction group(s): [2, 7, 145] 
+
+0x405344:	mov	rbp, qword ptr [rip + 0x212a05]
+0x40534b:	mov	rdi, r15
+0x40534e:	mov	rsi, rbp
+0x405351:	call	0x4019c0
+		Instruction group(s): [2, 7, 145] 
+
+0x405356:	test	eax, eax
+0x405358:	jns	0x40525d
+		Instruction group(s): [7, 1] 
+
+0x40535e:	mov	r12d, dword ptr [rip + 0x2129e7]
+0x405365:	mov	r13d, 0xffffffff
+0x40536b:	test	r12d, r12d
+0x40536e:	jg	0x4052ec
+		Instruction group(s): [7, 1] 
+
+0x405374:	mov	rdi, rbp
+0x405377:	call	0x4015f0
+		Instruction group(s): [2, 7, 145] 
+
+0x40537c:	mov	ebx, 1
+0x405381:	jmp	0x40532c
+		Instruction group(s): [7, 1] 
+
+0x405383:	movzx	ebx, ah
+0x405386:	jmp	0x40532c
+		Instruction group(s): [7, 1] 
+
+0x405388:	mov	rbp, qword ptr [rip + 0x2129c1]
+0x40538f:	jmp	0x40535e
+		Instruction group(s): [7, 1] 
+
+0x405391:	nop	word ptr cs:[rax + rax]
+0x40539b:	nop	dword ptr [rax + rax]
+0x4053a0:	push	r15
+		Instruction group(s): [145] 
+
+0x4053a2:	mov	r15d, edi
+0x4053a5:	push	r14
+		Instruction group(s): [145] 
+
+0x4053a7:	mov	r14, rsi
+0x4053aa:	push	r13
+		Instruction group(s): [145] 
+
+0x4053ac:	mov	r13, rdx
+0x4053af:	push	r12
+		Instruction group(s): [145] 
+
+0x4053b1:	lea	r12, [rip + 0x2021d8]
+0x4053b8:	push	rbp
+		Instruction group(s): [145] 
+
+0x4053b9:	lea	rbp, [rip + 0x2021d8]
+0x4053c0:	push	rbx
+		Instruction group(s): [145] 
+
+0x4053c1:	sub	rbp, r12
+0x4053c4:	xor	ebx, ebx
+0x4053c6:	sar	rbp, 3
+0x4053ca:	sub	rsp, 8
+0x4053ce:	call	0x401578
+		Instruction group(s): [2, 7, 145] 
+
+0x4053d3:	test	rbp, rbp
+0x4053d6:	je	0x4053f6
+		Instruction group(s): [7, 1] 
+
+0x4053d8:	nop	dword ptr [rax + rax]
+0x4053e0:	mov	rdx, r13
+0x4053e3:	mov	rsi, r14
+0x4053e6:	mov	edi, r15d
+0x4053e9:	call	qword ptr [r12 + rbx*8]
+		Instruction group(s): [2, 145] 
+
+0x4053ed:	add	rbx, 1
+0x4053f1:	cmp	rbx, rbp
+0x4053f4:	jne	0x4053e0
+		Instruction group(s): [7, 1] 
+
+0x4053f6:	add	rsp, 8
+0x4053fa:	pop	rbx
+		Instruction group(s): [145] 
+
+0x4053fb:	pop	rbp
+		Instruction group(s): [145] 
+
+0x4053fc:	pop	r12
+		Instruction group(s): [145] 
+
+0x4053fe:	pop	r13
+		Instruction group(s): [145] 
+
+0x405400:	pop	r14
+		Instruction group(s): [145] 
+
+0x405402:	pop	r15
+		Instruction group(s): [145] 
+
+0x405404:	ret	
+		Instruction group(s): [3, 145] 
+
+0x405405:	nop	word ptr cs:[rax + rax]
+0x405410:	ret	
+		Instruction group(s): [3, 145] 
+
