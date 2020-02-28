@@ -1,11 +1,11 @@
 Disassembling: /usr/bin/make...
 
 --------------------------------------------------
-Top Address of .text Section: 36224
+Top Address of .text Section: 0x8d80
 
-Program Entry Point Address: 44256
+Program Entry Point Address: 0xace0
 
-Address Offset: 8032
+Address Offset: 0x1f60
 
 Section header for .text : Container({'sh_name': 141, 'sh_type': 'SHT_PROGBITS', 'sh_flags': 6, 'sh_addr': 36224, 'sh_offset': 36224, 'sh_size': 135200, 'sh_link': 0, 'sh_info': 0, 'sh_addralign': 16, 'sh_entsize': 0})
 

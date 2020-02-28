@@ -1,11 +1,11 @@
 Disassembling: dist/entry_point/entry_point...
 
 --------------------------------------------------
-Top Address of .text Section: 4201024
+Top Address of .text Section: 0x401a40
 
-Program Entry Point Address: 4201029
+Program Entry Point Address: 0x401a45
 
-Address Offset: 5
+Address Offset: 0x5
 
 Section header for .text : Container({'sh_name': 132, 'sh_type': 'SHT_PROGBITS', 'sh_flags': 6, 'sh_addr': 4201024, 'sh_offset': 6720, 'sh_size': 14802, 'sh_link': 0, 'sh_info': 0, 'sh_addralign': 16, 'sh_entsize': 0})
 

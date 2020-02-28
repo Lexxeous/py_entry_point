@@ -76,9 +76,9 @@ def main():
         # Print section and program header information.
         print("Disassembling: %s...\n" % filename, file=of)
         print("-"*50, file=of)
-        print("Top Address of", section_name, "Section:", top_addr, file=of)
-        print("\nProgram Entry Point Address:", entry_point, file=of)
-        print("\nAddress Offset:", offset, file=of)
+        print("Top Address of", section_name, "Section: 0x%x" % top_addr, file=of)
+        print("\nProgram Entry Point Address: 0x%x" % entry_point, file=of)
+        print("\nAddress Offset: 0x%x" % offset, file=of)
         print("\nSection header for", section_name, ":", section.header, file=of)
         print("\nProgram header:", elf.header, "\n", file=of)
         print("-"*50, file=of)
